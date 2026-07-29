@@ -1,0 +1,19 @@
+# Store and check out everything with LF. The CI runs `dart format
+# --set-exit-if-changed` on Linux, which would otherwise trip over CRLF files
+# committed from Windows.
+* text=auto eol=lf
+
+*.ttf binary
+*.png binary
+*.jpg binary
+*.jks binary
+*.keystore binary
+*.pdf binary
+
+# Generated — collapse in diffs and exclude from language statistics.
+*.g.dart linguist-generated=true
+*.drift.dart linguist-generated=true
+app/lib/l10n/generated/** linguist-generated=true
+
+# Batch files genuinely need CRLF.
+*.bat text eol=crlf
