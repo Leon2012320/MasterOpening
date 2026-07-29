@@ -1,19 +1,17 @@
 targets:
   $default:
     builders:
-      drift_dev:analyzer:
-        options: &drift_options
-          # Modern Drift defaults: typed booleans/date-times stored as text and
-          # the null-aware type system. Set once here so every table agrees.
+      drift_dev:
+        options:
+          # Zeitstempel als ISO-Text statt Unix-Sekunden: lesbar beim Debuggen
+          # und beim Abgleich mit dem Server ohne Umrechnung verwendbar.
           store_date_time_values_as_text: true
           named_parameters: true
           sql:
             dialect: sqlite
             options:
               modules:
-                - json
-      drift_dev:modular:
-        options: *drift_options
+                - json1
 
       json_serializable:
         options:

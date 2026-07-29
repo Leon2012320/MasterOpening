@@ -59,6 +59,7 @@ dependencies:
   crypto: ^3.0.7 # pathHash for repertoire nodes
   equatable: ^2.1.0
   json_annotation: ^4.12.0
+  meta: ^1.18.0
 
 dev_dependencies:
   flutter_test:

@@ -28,3 +28,7 @@ linter:
     prefer_final_locals: true
     avoid_positional_boolean_parameters: true
     use_build_context_synchronously: true
+    # Drift-Basisklassen nennen ihre Konstruktorparameter `e` und
+    # `attachedDatabase`. Diese Regel würde erzwingen, dass unsere
+    # Unterklassen dieselben nichtssagenden Namen übernehmen.
+    matching_super_parameters: false
