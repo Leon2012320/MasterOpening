@@ -1,11 +1,11 @@
-{
-    "name": "masteropening",
-    "short_name": "masteropening",
+﻿{
+    "name": "MasterOpening",
+    "short_name": "MasterOpening",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#161826",
+    "theme_color": "#968AE0",
+    "description": "Schacheroeffnungen lernen, trainieren und mit echten Partien abgleichen.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
