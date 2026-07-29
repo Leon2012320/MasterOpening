@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:masteropening/app.dart';
+import 'package:masteropening/core/db/app_database.dart';
 import 'package:masteropening/core/settings/app_settings.dart';
 import 'package:masteropening/core/settings/settings_controller.dart';
 import 'package:masteropening/core/settings/settings_store.dart';
 import 'package:masteropening/core/theme/app_theme.dart';
 import 'package:masteropening/core/theme/app_tokens.dart';
+import 'package:masteropening/features/library/data/library_repository.dart';
+import 'package:masteropening/features/library/domain/library_opening.dart';
+import 'package:masteropening/features/repertoire/data/repertoire_providers.dart';
 import 'package:masteropening/l10n/generated/app_localizations.dart';
 
 /// Startet die vollständige App mit einem Einstellungsspeicher im Arbeits-
@@ -18,6 +22,8 @@ import 'package:masteropening/l10n/generated/app_localizations.dart';
 Future<InMemorySettingsStore> pumpApp(
   WidgetTester tester, {
   AppSettings settings = const AppSettings(languageCode: 'de'),
+  List<LibraryOpeningSummary> library = const [],
+  List<Repertoire> repertoires = const [],
 }) async {
   final store = InMemorySettingsStore(settings);
 
@@ -26,6 +32,11 @@ Future<InMemorySettingsStore> pumpApp(
       overrides: [
         settingsStoreProvider.overrideWithValue(store),
         initialSettingsProvider.overrideWithValue(settings),
+        // Bibliothek und Datenbank werden vorgegeben: beide laden echt
+        // asynchron, und in einem Widget-Test läuft die Uhr simuliert —
+        // `pumpAndSettle` würde sonst am Ladekringel hängen bleiben.
+        libraryIndexProvider.overrideWithValue(AsyncValue.data(library)),
+        repertoiresProvider.overrideWithValue(AsyncValue.data(repertoires)),
       ],
       child: const MasterOpeningApp(),
     ),

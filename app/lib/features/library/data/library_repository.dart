@@ -60,18 +60,6 @@ class LibraryRepository {
     _trees[id] = parsed;
     return parsed;
   }
-
-  /// Die Stellung nach der Startfolge — dient als Symbol der Eröffnung.
-  Future<String> iconFen(LibraryOpeningSummary summary) async {
-    final tree = await this.tree(summary.id);
-    final seedLength = PgnIo.parse(summary.seedPgn).tree.maxDepth;
-
-    var node = tree.children.firstOrNull;
-    for (var ply = 1; ply < seedLength && node != null; ply++) {
-      node = node.children.firstOrNull;
-    }
-    return node?.fenAfter ?? RepertoireTree.initialFen;
-  }
 }
 
 final libraryRepositoryProvider = Provider<LibraryRepository>(

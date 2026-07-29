@@ -6,6 +6,7 @@ import 'package:masteropening/core/router/app_shell.dart';
 import 'package:masteropening/features/home/presentation/home_screen.dart';
 import 'package:masteropening/features/learn/presentation/study_screen.dart';
 import 'package:masteropening/features/library/presentation/library_screen.dart';
+import 'package:masteropening/features/library/presentation/opening_detail_screen.dart';
 import 'package:masteropening/features/lichess/presentation/lichess_screen.dart';
 import 'package:masteropening/features/settings/presentation/settings_screen.dart';
 
@@ -50,6 +51,16 @@ final routerProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: Routes.library,
                 builder: (context, state) => const LibraryScreen(),
+                routes: [
+                  GoRoute(
+                    path: ':openingId',
+                    name: Routes.libraryDetailName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => OpeningDetailScreen(
+                      openingId: state.pathParameters['openingId']!,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

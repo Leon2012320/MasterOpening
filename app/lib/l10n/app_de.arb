@@ -47,12 +47,74 @@
   "homeEmptyMessage": "Füge deine erste Eröffnung aus der Bibliothek hinzu oder importiere ein PGN.",
   "homeEmptyAction": "Eröffnung hinzufügen",
 
-  "libraryEmptyTitle": "Bibliothek wird vorbereitet",
-  "libraryEmptyMessage": "Rund 50 Eröffnungen mit Varianten, Plänen und Meisterpartien kommen in einem der nächsten Schritte.",
+  "libraryTitle": "Bibliothek",
   "librarySearchHint": "Eröffnung oder ECO-Code",
   "libraryFilterWhite": "Weiß",
   "libraryFilterBlack": "Schwarz",
   "libraryFilterAll": "Alle",
+  "libraryNoResultsTitle": "Nichts gefunden",
+  "libraryNoResultsMessage": "Kein Eintrag passt zu deiner Suche. Versuch einen anderen Namen oder ECO-Code.",
+  "libraryResultCount": "{count, plural, =0{Keine Eröffnung} =1{1 Eröffnung} other{{count} Eröffnungen}}",
+  "@libraryResultCount": {
+    "description": "Zahl der gefilterten Einträge über der Liste.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryLoadError": "Die Bibliothek konnte nicht geladen werden.",
+  "libraryFilterTags": "Merkmale",
+  "libraryFilterReset": "Filter zurücksetzen",
+  "libraryMovesAndLines": "{moves} Züge · {lines} Varianten",
+  "@libraryMovesAndLines": {
+    "description": "Umfang einer Eröffnung auf der Detailseite.",
+    "placeholders": {
+      "moves": {
+        "type": "int"
+      },
+      "lines": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryDifficulty": "Schwierigkeit",
+  "libraryDifficulty1": "Einsteiger",
+  "libraryDifficulty2": "Leicht",
+  "libraryDifficulty3": "Mittel",
+  "libraryDifficulty4": "Anspruchsvoll",
+  "libraryDifficulty5": "Sehr anspruchsvoll",
+  "librarySectionPlans": "Pläne",
+  "librarySectionLines": "Varianten",
+  "librarySectionMistakes": "Typische Fehler",
+  "libraryAddToRepertoire": "Zum Repertoire hinzufügen",
+  "libraryAlreadyAdded": "Bereits im Repertoire",
+  "libraryAdded": "„{name}\" wurde deinem Repertoire hinzugefügt.",
+  "@libraryAdded": {
+    "description": "Bestätigung nach dem Hinzufügen.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "libraryPreview": "Ansehen",
+
+  "tagAttacking": "Angriff",
+  "tagSolid": "Solide",
+  "tagTactical": "Taktisch",
+  "tagPositional": "Positionell",
+  "tagOpen": "Offen",
+  "tagClosed": "Geschlossen",
+  "tagGambit": "Gambit",
+  "tagSystem": "System",
+  "tagClassical": "Klassisch",
+  "tagModern": "Modern",
+  "tagFlexible": "Flexibel",
+  "tagUniversal": "Universell",
+  "tagBeginnerFriendly": "Einsteigerfreundlich",
+  "tagTheoryLight": "Wenig Theorie",
+  "tagTheoryHeavy": "Viel Theorie",
 
   "lichessNotConnectedTitle": "Lichess noch nicht verbunden",
   "lichessNotConnectedMessage": "Verbinde dein Lichess-Konto, um Partien zu importieren und dein Repertoire mit deiner echten Praxis zu vergleichen.",

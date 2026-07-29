@@ -1,4 +1,6 @@
 import 'package:dartchess/dartchess.dart' show Side;
+import 'package:masteropening/chess/pgn_io.dart';
+import 'package:masteropening/chess/repertoire_tree.dart';
 import 'package:meta/meta.dart';
 
 /// Die Stil-Merkmale einer Eröffnung.
@@ -133,6 +135,26 @@ class LibraryOpeningSummary {
 
   String summary(String languageCode) =>
       languageCode == 'de' ? summaryDe : summaryEn;
+
+  /// Die Stellung nach der Startfolge — das Symbol der Eröffnung.
+  ///
+  /// Wird aus [seedPgn] gerechnet und nicht in den Daten mitgeführt: die
+  /// Startfolge ist nur wenige Züge lang, und der Erzeuger in `tools/` hat
+  /// keinen Schachmotor, der ein FEN ausrechnen könnte.
+  String get iconFen {
+    var node = PgnIo.parse(seedPgn).tree.children.firstOrNull;
+    var fen = RepertoireTree.initialFen;
+    while (node != null) {
+      fen = node.fenAfter;
+      node = node.children.firstOrNull;
+    }
+    return fen;
+  }
+
+  /// Die Startfolge als reine Zugliste, für die Anzeige unter dem Namen.
+  List<String> get seedMoves => [
+    for (final node in PgnIo.parse(seedPgn).tree.walk()) node.san,
+  ];
 
   /// Ob der Suchbegriff auf Name, ECO-Code oder Zugfolge passt.
   bool matches(String query) {

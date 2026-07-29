@@ -181,13 +181,29 @@ void main() {
     });
   });
 
-  test('das Symbolfeld liefert die Stellung nach der Startfolge', () async {
+  test('das Symbolfeld liefert die Stellung nach der Startfolge', () {
     final italian = index.firstWhere((o) => o.id == 'italian-game');
-    final fen = await repository.iconFen(italian);
 
     // Nach 1. e4 e5 2. Sf3 Sc6 3. Lc4 steht der Läufer auf c4.
-    expect(fen, startsWith('r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP'));
+    expect(
+      italian.iconFen,
+      startsWith('r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP'),
+    );
+    expect(italian.seedMoves, ['e4', 'e5', 'Nf3', 'Nc6', 'Bc4']);
   });
+
+  test(
+    'jede Eröffnung hat ein Symbolfeld, das nicht die Grundstellung ist',
+    () {
+      for (final opening in index) {
+        expect(
+          opening.iconFen,
+          isNot(RepertoireTree.initialFen),
+          reason: opening.id,
+        );
+      }
+    },
+  );
 
   test('alle Dateien im Asset-Ordner gehören zum Index', () {
     final dir = Directory('assets/data/openings');
