@@ -4,13 +4,11 @@ import 'package:masteropening/core/theme/app_dimens.dart';
 import 'package:masteropening/core/theme/app_tokens.dart';
 import 'package:masteropening/core/theme/app_typography.dart';
 
-/// Die vier wählbaren Erscheinungsbilder. `black` ist die AMOLED-Variante:
-/// echtes Schwarz statt des dunklen Blaugrau.
+/// Die drei wählbaren Erscheinungsbilder.
 enum AppThemeMode {
   system,
   light,
-  dark,
-  black;
+  dark;
 
   String get storageKey => name;
 
@@ -26,7 +24,6 @@ enum AppThemeMode {
     return switch (this) {
       AppThemeMode.light => AppTokens.light,
       AppThemeMode.dark => AppTokens.dark,
-      AppThemeMode.black => AppTokens.black,
       AppThemeMode.system => platformDark ? AppTokens.dark : AppTokens.light,
     };
   }

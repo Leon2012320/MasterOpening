@@ -46,7 +46,6 @@ class SettingsScreen extends ConsumerWidget {
             segments: [
               AppSegment(value: AppThemeMode.light, label: l10n.themeLight),
               AppSegment(value: AppThemeMode.dark, label: l10n.themeDark),
-              AppSegment(value: AppThemeMode.black, label: l10n.themeBlack),
               AppSegment(value: AppThemeMode.system, label: l10n.themeSystem),
             ],
           ),

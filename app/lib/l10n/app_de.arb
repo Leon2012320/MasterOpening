@@ -68,10 +68,6 @@
   "settingsTheme": "Erscheinungsbild",
   "themeLight": "Hell",
   "themeDark": "Dunkel",
-  "themeBlack": "Schwarz",
-  "@themeBlack": {
-    "description": "AMOLED-Variante mit echtem Schwarz."
-  },
   "themeSystem": "System",
 
   "settingsBoardStyle": "Brett-Stil",

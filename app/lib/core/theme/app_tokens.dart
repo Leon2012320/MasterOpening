@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 /// Die Design-Tokens des Nocturne-Systems, wie sie im Entwurf festgelegt sind.
 ///
 /// Kein Widget darf Farben, Radien oder Schatten selbst literalisieren — alles
-/// kommt über `Theme.of(context).tokens` aus dieser Erweiterung. Dadurch bleiben
-/// die vier Themes (hell, dunkel, schwarz, System) an einer Stelle definiert.
+/// kommt über `Theme.of(context).tokens` aus dieser Erweiterung. Dadurch bleibt
+/// das Erscheinungsbild beider Paletten an einer Stelle definiert.
 @immutable
 class AppTokens extends ThemeExtension<AppTokens> {
   const AppTokens({
@@ -171,7 +171,7 @@ class AppTokens extends ThemeExtension<AppTokens> {
     );
   }
 
-  // ── Die drei ausgelieferten Paletten ──────────────────────────────────────
+  // ── Die beiden ausgelieferten Paletten ────────────────────────────────────
 
   static const dark = AppTokens(
     bg: Color(0xFF161826),
@@ -225,36 +225,6 @@ class AppTokens extends ThemeExtension<AppTokens> {
       Color(0xFF5D5294),
     ],
     isDark: false,
-  );
-
-  /// Für OLED-Displays: echter Schwarzgrund, damit unbenutzte Pixel aus
-  /// bleiben. Der Akzent bleibt der der dunklen Palette, damit die App nicht
-  /// wie ein anderes Produkt aussieht.
-  static const black = AppTokens(
-    bg: Color(0xFF000000),
-    surface: Color(0xFF0D0E14),
-    surfaceSunken: Color(0xFF07080C),
-    text: Color(0xFFE9E9ED),
-    accent: Color(0xFF968AE0),
-    accentMuted: Color(0xFF796CBF),
-    divider: Color(0x24E9E9ED),
-    hairline: Color(0xFF2A2C36),
-    shadowAmbient: Color(0xB3000000),
-    success: Color(0xFF5FBF87),
-    danger: Color(0xFFE07A76),
-    warning: Color(0xFFDCAE63),
-    tagAccentBg: Color(0xFF2B2741),
-    tagAccentFg: Color(0xFFF5F4FF),
-    tagNeutralBg: Color(0xFF23252F),
-    tagNeutralFg: Color(0xFFF3F5FE),
-    heatScale: [
-      Color(0xFF121319),
-      Color(0xFF221F33),
-      Color(0xFF3A3358),
-      Color(0xFF574C87),
-      Color(0xFF968AE0),
-    ],
-    isDark: true,
   );
 }
 

@@ -128,20 +128,13 @@ void main() {
       expect(tokens.bg, const Color(0xFF161826));
     });
 
-    testWidgets('Schwarz ist echtes Schwarz, nicht das dunkle Blaugrau', (
-      tester,
-    ) async {
-      await pumpApp(
-        tester,
-        settings: const AppSettings(
-          languageCode: 'de',
-          themeMode: AppThemeMode.black,
-        ),
-      );
+    testWidgets('System folgt der Helligkeit der Plattform', (tester) async {
+      tester.platformDispatcher.platformBrightnessTestValue = Brightness.dark;
+      addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
 
-      final tokens = tokensOf(tester, find.byType(HomeScreen));
-      expect(tokens.bg, const Color(0xFF000000));
-      expect(tokens.isDark, isTrue);
+      await pumpApp(tester);
+
+      expect(tokensOf(tester, find.byType(HomeScreen)).isDark, isTrue);
     });
 
     testWidgets('der Umschalter in den Einstellungen wirkt sofort', (

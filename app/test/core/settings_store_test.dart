@@ -25,7 +25,7 @@ void main() {
     test('übersteht einen Speicher-Lade-Umlauf unverändert', () async {
       final store = SharedPreferencesSettingsStore();
       const settings = AppSettings(
-        themeMode: AppThemeMode.black,
+        themeMode: AppThemeMode.dark,
         boardStyle: BoardStyle.wood,
         pieceSet: 'merida',
         languageCode: 'en',

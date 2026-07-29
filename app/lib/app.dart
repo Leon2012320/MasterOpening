@@ -16,18 +16,12 @@ class MasterOpeningApp extends ConsumerWidget {
     final router = ref.watch(routerProvider);
 
     final lightTheme = AppTheme.build(AppTokens.light);
+    final darkTheme = AppTheme.build(AppTokens.dark);
 
-    // Material kennt nur zwei Theme-Steckplätze, wir haben drei Paletten.
-    // „Schwarz" reist deshalb im Dunkel-Steckplatz mit; welche Palette dort
-    // landet, entscheidet die Nutzerwahl.
-    final (dark, mode) = switch (settings.themeMode) {
-      AppThemeMode.system => (
-        AppTheme.build(AppTokens.dark),
-        ThemeMode.system,
-      ),
-      AppThemeMode.light => (lightTheme, ThemeMode.light),
-      AppThemeMode.dark => (AppTheme.build(AppTokens.dark), ThemeMode.dark),
-      AppThemeMode.black => (AppTheme.build(AppTokens.black), ThemeMode.dark),
+    final mode = switch (settings.themeMode) {
+      AppThemeMode.system => ThemeMode.system,
+      AppThemeMode.light => ThemeMode.light,
+      AppThemeMode.dark => ThemeMode.dark,
     };
 
     return MaterialApp.router(
@@ -35,7 +29,7 @@ class MasterOpeningApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       routerConfig: router,
       theme: lightTheme,
-      darkTheme: dark,
+      darkTheme: darkTheme,
       themeMode: mode,
       locale: settings.languageCode == null
           ? null
