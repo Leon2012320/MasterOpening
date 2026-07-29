@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+
+  "appName": "MasterOpening",
+  "tabHome": "Home",
+  "tabLibrary": "Library",
+  "tabLichess": "Lichess",
+  "tabSettings": "Settings"
+}

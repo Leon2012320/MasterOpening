@@ -1,0 +1,30 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.drift.dart"
+    - "lib/l10n/generated/**"
+    - "build/**"
+  errors:
+    # Generated localization getters are referenced before the first build.
+    uri_has_not_been_generated: ignore
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # The domain language of this app is German (opening names, plans, UI copy).
+    # Requiring English doc comments on every public member would add noise
+    # without adding meaning, so that rule stays off.
+    public_member_api_docs: false
+    lines_longer_than_80_chars: false
+    # `sort_pub_dependencies` fights the grouped, commented pubspec layout.
+    sort_pub_dependencies: false
+    # Blocks read better than `=>` for anything past a single expression.
+    prefer_expression_function_bodies: false
+    prefer_final_locals: true
+    avoid_positional_boolean_parameters: true
+    use_build_context_synchronously: true

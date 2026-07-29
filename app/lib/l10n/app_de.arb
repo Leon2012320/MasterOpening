@@ -1,0 +1,25 @@
+{
+  "@@locale": "de",
+
+  "appName": "MasterOpening",
+  "@appName": {
+    "description": "Produktname, wird nicht übersetzt."
+  },
+
+  "tabHome": "Start",
+  "@tabHome": {
+    "description": "Erster Tab der Hauptnavigation."
+  },
+  "tabLibrary": "Bibliothek",
+  "@tabLibrary": {
+    "description": "Zweiter Tab: vorgefertigte Eröffnungen."
+  },
+  "tabLichess": "Lichess",
+  "@tabLichess": {
+    "description": "Dritter Tab: Lichess-Konto und Partien."
+  },
+  "tabSettings": "Einstellungen",
+  "@tabSettings": {
+    "description": "Vierter Tab."
+  }
+}

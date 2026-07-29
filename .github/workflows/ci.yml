@@ -1,0 +1,97 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: 3.44.2
+
+jobs:
+  app:
+    name: Flutter-App
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Abhängigkeiten
+        run: flutter pub get
+
+      - name: Code-Generierung
+        run: dart run build_runner build --delete-conflicting-outputs
+
+      - name: Formatierung
+        run: dart format --output=none --set-exit-if-changed lib test
+
+      - name: Analyse
+        run: flutter analyze --fatal-infos
+
+      - name: Tests
+        run: flutter test --coverage
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: app-coverage
+          path: app/coverage/lcov.info
+          if-no-files-found: ignore
+
+  backend:
+    name: Backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The backend lands in Phase 11; until then this job is a no-op instead
+      # of a red cross on every commit.
+      - name: Existiert das Backend schon?
+        id: exists
+        shell: bash
+        run: |
+          if [ -f backend/package.json ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::backend/package.json fehlt noch — Job übersprungen."
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.exists.outputs.ready == 'true'
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Abhängigkeiten
+        if: steps.exists.outputs.ready == 'true'
+        working-directory: backend
+        run: npm ci
+
+      - name: Typprüfung
+        if: steps.exists.outputs.ready == 'true'
+        working-directory: backend
+        run: npm run typecheck
+
+      - name: Lint
+        if: steps.exists.outputs.ready == 'true'
+        working-directory: backend
+        run: npm run lint
+
+      - name: Tests
+        if: steps.exists.outputs.ready == 'true'
+        working-directory: backend
+        run: npm test

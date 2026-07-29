@@ -1,0 +1,82 @@
+name: masteropening
+description: "MasterOpening — Schachöffnungstrainer mit Repertoire-Verwaltung, Spaced Repetition und Lichess-Anbindung."
+publish_to: "none"
+
+# versionName+versionCode for Android, CFBundleShortVersionString+CFBundleVersion for iOS.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ── State & navigation ────────────────────────────────────────────────────
+  # Providers are hand-written (no riverpod_generator): its analyzer constraint
+  # currently conflicts with drift_dev, and Riverpod 3's plain API is enough.
+  flutter_riverpod: 3.4.2
+  go_router: ^17.3.0
+
+  # ── Persistence ───────────────────────────────────────────────────────────
+  drift: ^2.34.3
+  drift_flutter: ^0.3.1
+  path_provider: ^2.1.6
+  path: ^1.9.1
+  shared_preferences: ^2.5.5
+  flutter_secure_storage: ^10.3.1
+
+  # ── Chess ─────────────────────────────────────────────────────────────────
+  dartchess: ^0.13.1 # rules, FEN, SAN, PGN with variations/comments/NAGs
+  chessground: ^10.1.1 # lichess board widget (no chess logic of its own)
+
+  # ── Network ───────────────────────────────────────────────────────────────
+  dio: ^5.11.0
+  flutter_web_auth_2: ^5.0.3 # Lichess OAuth2 PKCE callback
+
+  # ── UI ────────────────────────────────────────────────────────────────────
+  flutter_animate: ^4.5.2
+  fl_chart: ^1.2.0
+  phosphor_flutter: ^2.1.0 # the icon set used in the design draft
+
+  # ── Platform ──────────────────────────────────────────────────────────────
+  flutter_local_notifications: ^22.2.0
+  timezone: ^0.11.1
+  flutter_timezone: ^5.1.0
+  url_launcher: ^6.3.2
+  package_info_plus: ^10.2.1
+  share_plus: ^13.3.0
+  file_selector: ^1.1.0 # official picker; file_picker conflicts with share_plus on win32
+
+  # ── Utilities ─────────────────────────────────────────────────────────────
+  intl: 0.20.2 # pinned by flutter_localizations
+  collection: ^1.19.1
+  crypto: ^3.0.7 # pathHash for repertoire nodes
+  equatable: ^2.1.0
+  json_annotation: ^4.12.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.15.1
+  drift_dev: ^2.34.0
+  json_serializable: ^6.14.0
+  very_good_analysis: ^10.3.0
+  mocktail: ^1.0.5
+
+flutter:
+  uses-material-design: true
+  generate: true # builds AppLocalizations from lib/l10n/*.arb
+
+  assets:
+    - assets/data/
+    - assets/data/openings/
+
+  fonts:
+    # Inter is a variable font: Flutter maps TextStyle.fontWeight onto the
+    # `wght` axis automatically, so a single declaration covers 400–700.
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Variable.ttf

@@ -1,0 +1,112 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Secrets — never commit
+# ─────────────────────────────────────────────────────────────────────────────
+*.env
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+key.properties
+**/android/key.properties
+**/*.p12
+**/*.pem
+secrets.json
+service-account*.json
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Flutter / Dart
+# ─────────────────────────────────────────────────────────────────────────────
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+*.g.dart
+*.freezed.dart
+*.gr.dart
+*.mocks.dart
+app/lib/l10n/generated/
+doc/api/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+.metadata.bak
+
+# Android
+app/android/.gradle/
+app/android/captures/
+app/android/gradlew
+app/android/gradlew.bat
+app/android/gradle/wrapper/gradle-wrapper.jar
+app/android/local.properties
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+app/android/.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# iOS / macOS
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/App.framework
+app/ios/Flutter/Flutter.framework
+app/ios/Flutter/Flutter.podspec
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/ephemeral/
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Runner/GeneratedPluginRegistrant.*
+app/ios/ServiceDefinitions.json
+**/Podfile.lock
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Windows
+app/windows/flutter/ephemeral/
+app/windows/flutter/generated_plugin*
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Backend (Node / TypeScript)
+# ─────────────────────────────────────────────────────────────────────────────
+node_modules/
+dist/
+*.tsbuildinfo
+.npm/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+backend/prisma/*.db
+backend/prisma/*.db-journal
+backend/prisma/migrations/dev.db*
+backend/.prisma/
+
+# Tooling caches
+tools/.cache/
+tools/node_modules/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Editors / OS
+# ─────────────────────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Claude Code local state
+.claude/settings.local.json
