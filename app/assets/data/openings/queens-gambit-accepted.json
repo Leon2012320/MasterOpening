@@ -1,0 +1,54 @@
+{
+  "id": "queens-gambit-accepted",
+  "eco": "D20",
+  "side": "black",
+  "seed": "1. d4 d5 2. c4 dxc4",
+  "tags": [
+    "open",
+    "flexible",
+    "theoryLight"
+  ],
+  "difficulty": 3,
+  "popularity": 62,
+  "namedLines": 55,
+  "nodeCount": 115,
+  "lineCount": 37,
+  "maxDepth": 18,
+  "pgn": "[Event \"Damengambit — Angenommen\"]\n[Site \"MasterOpening\"]\n[ECO \"D20\"]\n[Opening \"Queen’s Gambit Accepted\"]\n[Result \"*\"]\n\n1. d4 d5 2. c4 dxc4 {Damengambit — Angenommen} 3. e4 {Queen's Gambit Accepted: Saduleto Variation} (3. Nf3 {Queen's Gambit Accepted: Normal Variation} Nf6 {Queen's Gambit Accepted} (3... e6 {Queen's Gambit Accepted: Rosenthal Variation} 4. e3 Nf6 5. Bxc4 Be7 6. O-O O-O 7. Nc3 a6 8. a4 c5 {Queen's Gambit Accepted: Classical Defense, Rubinstein Variation}) (3... a6 {Queen's Gambit Accepted: Alekhine Defense} 4. e3 (4. e4 {Queen's Gambit Accepted: Alekhine Defense, Borisenko-Furman Variation}) 4... Bg4 (4... b5 {Queen's Gambit Accepted: Alekhine Defense, Haberditz Variation}) 5. Bxc4 e6 6. d5 {Queen's Gambit Accepted: Alekhine Defense, Alatortsev Variation}) (3... b5 {Queen's Gambit Accepted: Slav Gambit}) (3... c5 {Queen's Gambit Accepted: Gunsberg Defense}) (3... Nd7 {Queen's Gambit Accepted: Godes Variation}) 4. e3 {Queen's Gambit Accepted: Normal Variation} (4. Nc3 {Queen's Gambit Accepted: Showalter Variation} c5 (4... a6 5. e4 {Queen's Gambit Accepted: Bogoljubow Defense}) 5. d5 e6 6. e4 exd5 7. e5 {Queen's Gambit Accepted: Gunsberg Defense, Prianishenmo Gambit}) (4. Qa4+ {Queen's Gambit Accepted: Mannheim Variation}) 4... e6 {Queen's Gambit Accepted: Normal Variation, Traditional System} (4... Be6 {Queen's Gambit Accepted: Winawer Defense}) (4... Bg4 {Queen's Gambit Accepted: Janowski-Larsen Variation}) (4... g6 {Queen's Gambit Accepted: Smyslov Variation}) 5. Bxc4 c5 {Queen's Gambit Accepted: Classical Defense} (5... Be7 6. O-O O-O {Queen's Gambit Accepted: Normal Variation, Traditional System} (6... a6 {Queen's Gambit Accepted: Normal Variation, Traditional System}) 7. Nc3 {Queen's Gambit Accepted: Normal Variation, Traditional System}) 6. O-O {Queen's Gambit Accepted: Classical Defense, Normal Line} (6. Qe2 a6 7. dxc5 Bxc5 8. O-O Nc6 9. e4 b5) 6... a6 {Queen's Gambit Accepted: Classical Defense, Main Line} (6... cxd4 {Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Exchange Variation}) (6... Nc6 {Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Development Variation}) 7. Qe2 {Queen's Gambit Accepted: Classical Defense, Alekhine System} (7. dxc5 Bxc5 {Queen's Gambit Accepted: Furman Variation}) (7. a4 {Queen's Gambit Accepted: Classical Defense, Rubinstein Variation}) (7. Nc3 {Queen's Gambit Accepted: Classical Defense, Main Line}) 7... b5 {Queen's Gambit Accepted: Classical Defense, Alekhine System} 8. Bb3 Bb7 {Queen's Gambit Accepted: Classical Defense, Alekhine System, Main Line} (8... Nc6 9. Rd1 c4) 9. Rd1 (9. Nc3 {Queen's Gambit Accepted: Classical Defense, Alekhine System, Main Line}) 9... Nbd7) (3. e3 {Queen's Gambit Accepted: Old Variation} e5 (3... Nf6 4. Bxc4 e6 5. Nf3 c5 6. O-O a6 7. e4 {Queen's Gambit Accepted: Classical Defense, Russian Gambit}) 4. Bxc4 exd4 5. Qb3 Qe7 6. a3 {Queen's Gambit Accepted: Old Variation, Billinger Gambit} (6. Kf1 {Queen's Gambit Accepted: Old Variation, Korchnoi Gambit}) (6. Nd2 {Queen's Gambit Accepted: Old Variation, Novikov Gambit}) (6. Nf3 {Queen's Gambit Accepted: Old Variation, Christensen Gambit})) (3. Qa4+ {Queen's Gambit Accepted: Accelerated Mannheim Variation}) 3... Nf6 {Queen's Gambit Accepted: Central Variation, Alekhine System} (3... c5 {Queen's Gambit Accepted: Central Variation, Rubinstein Defense} 4. d5 Nf6 (4... b5 {Queen's Gambit Accepted: Central Variation, Rubinstein Defense, Yefimov Gambit}) 5. Nc3 b5 {Queen's Gambit Accepted: Linares Variation}) (3... e5 {Queen's Gambit Accepted: Central Variation, McDonnell Defense} 4. Bxc4 {Queen's Gambit Accepted: Central Variation, McDonnell Defense, Somov Gambit}) (3... b5 {Queen's Gambit Accepted: Central Variation, Greco Variation}) (3... f5 {Queen's Gambit Accepted: Schwartz Defense}) (3... Nc6 {Queen's Gambit Accepted: Central Variation, Modern Defense}) 4. Nc3 e5 5. Nf3 exd4 6. Qxd4 Qxd4 7. Nxd4 *\n",
+  "name": {
+    "de": "Damengambit — Angenommen",
+    "en": "Queen’s Gambit Accepted"
+  },
+  "summary": {
+    "de": "Schwarz nimmt den Bauern, gibt aber das Zentrum ab und holt ihn spaeter nicht zwingend. Dafuer wird der Laeufer c8 frei und die Stellung oeffnet sich schnell.",
+    "en": "Black takes the pawn but concedes the centre and does not necessarily keep the extra pawn. In return the c8 bishop is free and the position opens quickly."
+  },
+  "plans": {
+    "de": [
+      "Mit c7–c5 oder e7–e5 das Zentrum sofort angreifen.",
+      "Den Laeufer c8 nach f5 oder g4 entwickeln.",
+      "Nicht am Mehrbauern kleben — Entwicklung geht vor."
+    ],
+    "en": [
+      "Hit the centre immediately with c7–c5 or e7–e5.",
+      "Develop the c8 bishop to f5 or g4.",
+      "Do not cling to the extra pawn — development comes first."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 d5 2. c4 dxc4 3. Nf3 b5 4. a4 c6 5. axb5 cxb5 6. Nc3 a6 7. Nxb5 axb5 8. Rxa8",
+      "why": {
+        "de": "Der Versuch, den Bauern mit b5 zu halten, endet regelmaessig im Turmverlust auf a8.",
+        "en": "Trying to hold the pawn with b5 regularly ends with the rook falling on a8."
+      }
+    },
+    {
+      "line": "1. d4 d5 2. c4 dxc4 3. e4 e5 4. Nf3 Bb4+ 5. Nc3 exd4 6. Nxd4 Nf6 7. Bxc4 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. Qb3",
+      "why": {
+        "de": "Zwei Bauern zu nehmen kostet die Entwicklung und laeuft in den Doppelangriff auf b3.",
+        "en": "Grabbing two pawns costs all development and walks into the double attack from b3."
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "sicilian-sveshnikov",
+  "eco": "B33",
+  "side": "black",
+  "seed": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5",
+  "tags": [
+    "attacking",
+    "tactical",
+    "open",
+    "theoryHeavy"
+  ],
+  "difficulty": 5,
+  "popularity": 58,
+  "namedLines": 9,
+  "nodeCount": 28,
+  "lineCount": 7,
+  "maxDepth": 21,
+  "pgn": "[Event \"Sizilianisch — Sweschnikow\"]\n[Site \"MasterOpening\"]\n[ECO \"B33\"]\n[Opening \"Sicilian — Sveshnikov\"]\n[Result \"*\"]\n\n1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 {Sizilianisch — Sweschnikow} 6. Ndb5 (6. Nb3 {Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation}) (6. Nf3 {Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation}) (6. Nxc6 {Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation}) 6... d6 7. Bg5 a6 8. Na3 b5 {Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation} (8... Be6 {Sicilian Defense: Lasker-Pelikan Variation, Bird Variation}) 9. Nd5 {Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation} (9. Bxf6 gxf6 10. Nd5 f5 {Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation} (10... Bg7 {Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Novosibirsk Variation}) 11. Bxb5 {Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Peresypkin's Sacrifice}) 9... Be7 *\n",
+  "name": {
+    "de": "Sizilianisch — Sweschnikow",
+    "en": "Sicilian — Sveshnikov"
+  },
+  "summary": {
+    "de": "Schwarz akzeptiert ein Loch auf d5 und einen Rueckstandsbauern, bekommt dafuer aber Figurenspiel und das Laeuferpaar. Eine der modernsten und kaempferischsten Antworten auf 1.e4.",
+    "en": "Black accepts a hole on d5 and a backward pawn in return for piece play and the bishop pair. One of the most modern and combative answers to 1.e4."
+  },
+  "plans": {
+    "de": [
+      "Mit f7–f5 den Springer d5 unter Druck setzen.",
+      "Das Laeuferpaar behalten und die Diagonalen oeffnen.",
+      "Auf der halboffenen c-Linie und mit b5–b4 am Damenfluegel spielen."
+    ],
+    "en": [
+      "Pressure the d5 knight with f7–f5.",
+      "Keep the bishop pair and open diagonals.",
+      "Play on the half-open c-file and with b5–b4 on the queenside."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 a6",
+      "why": {
+        "de": "a6 sofort verliert einen Bauern nach Sd6+ — erst d6 muss kommen.",
+        "en": "a6 at once drops a pawn to Nd6+ — d6 has to come first."
+      }
+    },
+    {
+      "line": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nf3",
+      "why": {
+        "de": "Weiss darf den Springer nicht passiv zurueckziehen; Ndb5 ist der ganze Punkt.",
+        "en": "White must not retreat the knight passively; Ndb5 is the entire point."
+      }
+    }
+  ]
+}

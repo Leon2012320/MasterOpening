@@ -1,0 +1,54 @@
+{
+  "id": "scotch-game",
+  "eco": "C45",
+  "side": "white",
+  "seed": "1. e4 e5 2. Nf3 Nc6 3. d4",
+  "tags": [
+    "open",
+    "tactical",
+    "theoryLight"
+  ],
+  "difficulty": 2,
+  "popularity": 70,
+  "namedLines": 58,
+  "nodeCount": 148,
+  "lineCount": 38,
+  "maxDepth": 19,
+  "pgn": "[Event \"Schottische Partie\"]\n[Site \"MasterOpening\"]\n[ECO \"C45\"]\n[Opening \"Scotch Game\"]\n[Result \"*\"]\n\n1. e4 e5 2. Nf3 Nc6 3. d4 {Schottische Partie} exd4 {Scotch Game} (3... Nxd4 {Scotch Game: Lolli Variation} 4. Nxd4 exd4 5. Bc4 {Scotch Game: Napoleon Gambit} (5. Qxd4 {Scotch Game: Lolli Variation})) 4. Nxd4 {Scotch Game} (4. Bc4 {Scotch Game: Scotch Gambit} Nf6 (4... Bc5 {Scotch Game: Haxo Gambit} 5. O-O (5. Ng5 {Scotch Game: Scotch Gambit, Sarratt Variation} Nh6 6. Nxf7 (6. Qh5 {Scotch Game: Vitzthum Attack}) 6... Nxf7 7. Bxf7+ Kxf7 8. Qh5+ g6 9. Qxc5 d5 {Scotch Game: Cochrane-Shumov Defense}) 5... Nf6 (5... d6 6. c3 Bg4 {Scotch Game: Scotch Gambit, Cochrane-Anderssen Variation}) 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. Ng5 g6 {Italian Game: Two Knights Defense, Max Lange Attack, Loman Defense}) (4... Bb4+ {Scotch Game: Scotch Gambit, London Defense} 5. c3 dxc3 6. O-O (6. bxc3 Ba5 7. e5 {Scotch Game: Cochrane Variation}) 6... cxb2 7. Bxb2 Nf6 8. Ng5 O-O 9. e5 Nxe5 {Scotch Game: Hanneken Variation}) 5. O-O (5. e5 {Scotch Game: Scotch Gambit, Advance Variation}) 5... Bc5 {Italian Game: Scotch Gambit, Max Lange Attack} (5... Nxe4 6. Re1 d5 7. Bxd5 (7. Nc3 {Italian Game: Scotch Gambit, Canal Variation}) 7... Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. Bg5) (5... Be7 {Italian Game: Scotch Gambit, de Riviere Defense}) (5... d6 {Italian Game: Scotch Gambit, Janowski Defense}) 6. e5 {Italian Game: Two Knights Defense, Max Lange Attack} d5 (6... Ng4 {Italian Game: Scotch Gambit, Max Lange Attack, Spielmann Defense}) 7. exf6 dxc4 8. Re1+ Be6 9. Ng5 Qd5 10. Nc3) (4. c3 {Scotch Game: Göring Gambit} dxc3 (4... d5 {Scotch Game: Scotch Gambit, Göring Gambit Declined}) 5. Nxc3 (5. Bc4 {Scotch Game: Göring Gambit, Double Pawn Sacrifice} Nf6 6. Nxc3 Bb4 {Scotch Game: Göring Gambit, Bardeleben Variation}) 5... d6 (5... Bb4 {Scotch Game: Göring Gambit, Main Line}) 6. Bc4 Bg4 7. O-O Ne5 8. Nxe5 Bxd1 9. Bxf7+ Ke7 10. Nd5# {Scotch Game: Sea-Cadet Mate}) (4. Bb5 {Scotch Game: Relfsson Gambit}) 4... Bc5 {Scotch Game: Classical Variation} (4... Qh4 {Scotch Game: Steinitz Variation} 5. Nb5 {Scotch Game: Horwitz Attack} (5. Nc3 {Scotch Game: Steinitz Variation} Bb4 {Scotch Game: Modern Defense}) (5. Be3 {Scotch Game: Braune Variation}) (5. Nf3 {Scotch Game: Fraser Variation}) (5. Nf5 {Scotch Game: Paulsen Variation}) 5... Bb4+ 6. Bd2 {Scotch Game} Qxe4+ 7. Be2 Kd8 8. O-O Bxd2 9. Nxd2 (9. Qxd2 {Scotch Game: Horwitz Attack, Blackburne Variation}) 9... Qg6 {Scotch Game: Rosenthal Variation}) (4... Nf6 {Scotch Game: Schmidt Variation} 5. Nxc6 (5. e5 {Scotch Game: Alekhine Gambit}) 5... bxc6 6. e5 {Scotch Game: Mieses Variation} (6. Nd2 {Scotch Game: Tartakower Variation})) (4... Nxd4 5. Qxd4 d6 6. Bd3 {Scotch Game: Ghulam-Kassim Variation}) (4... Bb4+ {Scotch Game: Malaniuk Variation}) 5. Be3 (5. Nb3 {Scotch Game: Potter Variation} Bb4+ {Scotch Game: Romanishin Variation}) (5. Nxc6 Qf6 {Scotch Game: Classical Variation, Intermezzo Variation}) 5... Qf6 6. c3 (6. Nb5 {Scotch Game: Blumenfeld Attack}) 6... Nge7 (6... Qg6 {Scotch Game: Classical Variation, Millennium Variation}) 7. Qd2 {Scotch Game: Classical Variation, Blackburne Attack} (7. Bb5 {Scotch Game: Paulsen Attack} Nd8 {Scotch Game: Paulsen, Gunsberg Defense}) (7. Nc2 {Scotch Game: Meitner Variation}) 7... d5 8. Nb5 Bxe3 9. Qxe3 O-O 10. Nxc7 *\n",
+  "name": {
+    "de": "Schottische Partie",
+    "en": "Scotch Game"
+  },
+  "summary": {
+    "de": "Weiss oeffnet das Zentrum sofort und tauscht den d-Bauern gegen freie Figurenentwicklung. Ein guter Weg, der riesigen Theorie der Spanischen aus dem Weg zu gehen.",
+    "en": "White opens the centre at once, trading the d-pawn for free piece play. A practical way to sidestep the huge body of Ruy Lopez theory."
+  },
+  "plans": {
+    "de": [
+      "Den Springer auf d4 zentral halten und mit c3 und Be3 stuetzen.",
+      "Nach Nxc6 bxc6 die schwarzen Doppelbauern zum Ziel machen.",
+      "Schnell rochieren und die e-Linie besetzen."
+    ],
+    "en": [
+      "Keep the knight centralised on d4, supported by c3 and Be3.",
+      "After Nxc6 bxc6, target Black’s doubled pawns.",
+      "Castle quickly and occupy the e-file."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qh4",
+      "why": {
+        "de": "Sieht aggressiv aus, kostet Schwarz aber Zeit — Weiss gewinnt mit Nb5 und Be3 Tempo.",
+        "en": "Looks aggressive but loses time — White gains tempi with Nb5 and Be3."
+      }
+    },
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. Ng5",
+      "why": {
+        "de": "Der Springerangriff auf f7 verpufft; Schwarz spielt Ne5 und steht ausgezeichnet.",
+        "en": "The knight sortie against f7 fizzles out; Black plays Ne5 with an excellent game."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "catalan",
+  "eco": "E00",
+  "side": "white",
+  "seed": "1. d4 Nf6 2. c4 e6 3. g3",
+  "tags": [
+    "positional",
+    "solid",
+    "theoryHeavy"
+  ],
+  "difficulty": 4,
+  "popularity": 72,
+  "namedLines": 33,
+  "nodeCount": 105,
+  "lineCount": 20,
+  "maxDepth": 19,
+  "pgn": "[Event \"Katalanisch\"]\n[Site \"MasterOpening\"]\n[ECO \"E00\"]\n[Opening \"Catalan\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. c4 e6 3. g3 {Katalanisch} d5 {Catalan Opening} (3... Bb4+ 4. Bd2 Be7 5. Bg2 d5 6. Nf3 {Bogo-Indian Defense: Retreat Variation} Nbd7 (6... O-O {Bogo-Indian Defense: Retreat Variation} 7. Qc2 (7. O-O {Bogo-Indian Defense: Retreat Variation}) 7... c6 8. O-O {Bogo-Indian Defense: Retreat Variation}) 7. O-O O-O 8. Qc2 c6 {Bogo-Indian Defense: Retreat Variation} 9. Rd1 {Bogo-Indian Defense: Retreat Variation} (9. b3 {Bogo-Indian Defense: Retreat Variation}) (9. Rc1 {Bogo-Indian Defense: Retreat Variation}) 9... h6 {Bogo-Indian Defense: Retreat Variation}) (3... c5 4. d5 exd5 5. cxd5 d6 6. Nc3 g6 7. Bg2 Bg7 8. Nf3 O-O {Benoni Defense: Fianchetto Variation} 9. O-O a6 (9... Nbd7 {Benoni Defense: Fianchetto Variation, Hastings Defense}) 10. a4) (3... Be7 4. Bg2 d5 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. b3 b6 9. Rd1 Bb7 10. Nc3) (3... e5 {Catalan Opening: Hungarian Gambit}) 4. Bg2 {Catalan Opening: Open Defense} Be7 (4... dxc4 {Catalan Opening: Open Defense} 5. Nf3 {Catalan Opening: Open Defense} (5. Qa4+ Nbd7 6. Qxc4 {Catalan Opening: Open Defense} a6 7. Qc2 {Catalan Opening: Open Defense, Alekhine Variation}) 5... Nc6 (5... Be7 {Catalan Opening: Open Defense, Classical Line}) 6. Qa4 Bb4+ {Catalan Opening: Open Defense, Modern Sharp Variation}) (4... c5 5. Nf3 Nc6 {Catalan Opening: Tarrasch Defense}) 5. Nf3 {Catalan Opening: Closed} O-O 6. O-O dxc4 (6... Nbd7 {Catalan Opening: Closed} 7. Qc2 {Catalan Opening: Closed} (7. Nc3 c6 8. Qd3 {Catalan Opening: Closed, Botvinnik Variation}) 7... c6 8. Bf4 (8. Nbd2 b6 9. b3 a5 10. Bb2) (8. b3 {Catalan Opening: Closed} b6 {Catalan Opening: Closed}) 8... b6 9. Nbd2 Bb7 10. e4 {Catalan Opening: Closed}) (6... c6 7. Qc2 b6 8. Nbd2 (8. Rd1 Nbd7 9. Bf4 {Catalan Opening: Closed}) 8... Bb7 9. e4 Na6 {Catalan Opening: Closed}) 7. Qc2 *\n",
+  "name": {
+    "de": "Katalanisch",
+    "en": "Catalan"
+  },
+  "summary": {
+    "de": "Der Laeufer auf g2 druckt die ganze Partie ueber auf die lange Diagonale. Weiss opfert oft zeitweise den c4-Bauern und bekommt dafuer dauerhaften Druck.",
+    "en": "The g2 bishop presses along the long diagonal all game. White often gives up the c4 pawn temporarily and gets lasting pressure in return."
+  },
+  "plans": {
+    "de": [
+      "Den Bauern c4 mit Qc2 oder a4 zurueckholen.",
+      "Auf der langen Diagonale a8–h1 gegen b7 und c6 druecken.",
+      "Mit e4 im richtigen Moment das Zentrum sprengen."
+    ],
+    "en": [
+      "Regain the c4 pawn with Qc2 or a4.",
+      "Press on the a8–h1 diagonal against b7 and c6.",
+      "Break with e4 at the right moment."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Nf3 b5 6. a4 c6 7. axb5 cxb5 8. Ne5",
+      "why": {
+        "de": "Den Bauern mit b5 halten zu wollen zerstoert die eigene Damenseite.",
+        "en": "Trying to keep the pawn with b5 shreds your own queenside."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O dxc4 7. Ne5 Nc6 8. Bxc6 bxc6 9. Nxc6 Qe8 10. Nxe7+ Qxe7",
+      "why": {
+        "de": "Der Abtausch des Katalanen-Laeufers gibt genau die Figur auf, die die Eroeffnung ausmacht.",
+        "en": "Trading the Catalan bishop gives up the very piece the opening is built around."
+      }
+    }
+  ]
+}

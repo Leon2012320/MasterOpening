@@ -1,0 +1,55 @@
+{
+  "id": "open-sicilian",
+  "eco": "B50",
+  "side": "white",
+  "seed": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3",
+  "tags": [
+    "open",
+    "tactical",
+    "attacking",
+    "theoryHeavy"
+  ],
+  "difficulty": 5,
+  "popularity": 92,
+  "namedLines": 97,
+  "nodeCount": 169,
+  "lineCount": 55,
+  "maxDepth": 20,
+  "pgn": "[Event \"Sizilianisch — Offene Variante\"]\n[Site \"MasterOpening\"]\n[ECO \"B50\"]\n[Opening \"Sicilian — Open Variation\"]\n[Result \"*\"]\n\n1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 {Sizilianisch — Offene Variante} a6 {Sicilian Defense: Najdorf Variation} (5... g6 {Sicilian Defense: Dragon Variation} 6. Be3 {Sicilian Defense: Dragon Variation} (6. Be2 {Sicilian Defense: Dragon Variation, Classical Variation} Bg7 7. O-O O-O (7... Nc6 8. Be3 {Sicilian Defense: Dragon Variation, Classical Variation}) 8. Be3 Nc6 9. Nb3 {Sicilian Defense: Dragon Variation, Classical Variation, Normal Line} (9. Qd2 {Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation}) 9... Be6 10. f4) (6. f4 {Sicilian Defense: Dragon Variation, Levenfish Variation} Nbd7 {Sicilian Defense: Dragon Variation, Levenfish Variation, Main Line}) (6. g3 {Sicilian Defense: Dragon Variation, Fianchetto Variation}) 6... Bg7 (6... Nc6 7. f3 h5 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Hungarian Dragon}) 7. f3 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Early Deviations} (7. Be2 {Sicilian Defense: Dragon Variation, Classical Variation} Nc6 {Sicilian Defense: Dragon Variation, Classical Variation} 8. Nb3 {Sicilian Defense: Dragon Variation, Classical Variation}) 7... O-O {Sicilian Defense: Dragon Variation, Yugoslav Attack} (7... Nc6 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Belezky Line} 8. Qd2 O-O 9. Bc4 (9. O-O-O {Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line}) 9... Nxd4 (9... Nd7 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Sosonko Variation}) 10. Bxd4) 8. Qd2 Nc6 {Sicilian Defense: Dragon Variation, Yugoslav Attack} 9. Bc4 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line} (9. g4 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Panov Variation}) 9... Bd7 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line} (9... a5 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Byrne Variation}) 10. Bb3 {Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line} (10. h4) (10. O-O-O {Sicilian Defense: Dragon Variation, Yugoslav Attack})) (5... Nc6 {Sicilian Defense: Classical Variation} 6. Bg5 {Sicilian Defense: Richter-Rauzer Variation} (6. Bc4 {Sicilian Defense: Classical Variation, Sozin Attack} e6 7. Be3 Be7 8. Bb3 O-O 9. O-O Na5 10. f4 b6 {Sicilian Defense: Sozin Attack, Main Line, Sherbakov Variation}) (6. Be2 {Sicilian Defense: Classical Variation} Nxd4 (6... e5 {Sicilian Defense: Boleslavsky Variation}) 7. Qxd4 g6 {Sicilian Defense: Classical Variation, Dragon Transfer}) (6. g3 {Sicilian Defense: Classical Variation, Fianchetto Variation}) 6... e6 {Sicilian Defense: Richter-Rauzer Variation} (6... Bd7 {Sicilian Defense: Richter-Rauzer Variation, Modern Variation}) 7. Qd2 {Sicilian Defense: Richter-Rauzer Variation, Traditional Variation} (7. Bb5 {Sicilian Defense: Richter-Rauzer Variation, Vitolins Variation}) (7. Nxc6 {Sicilian Defense: Richter-Rauzer Variation, Exchange Variation}) (7. Qd3 {Sicilian Defense: Richter-Rauzer Variation}) 7... Be7 {Sicilian Defense: Richter-Rauzer Variation, Classical Variation} (7... a6 {Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Early Deviations}) (7... Qb6 {Sicilian Defense: Richter-Rauzer Variation, Ivanov Variation}) 8. O-O-O Nxd4 (8... O-O 9. f4 {Sicilian Defense: Richter-Rauzer Variation, Classical Variation} Nxd4 {Sicilian Defense: Richter-Rauzer Variation, Rauzer Attack} 10. Qxd4 {Sicilian Defense: Richter-Rauzer Variation, Classical Variation}) 9. Qxd4 a6 10. f4) (5... e5 6. Bb5+ {Sicilian Defense: Venice Attack}) (5... Bd7 {Sicilian Defense: Kupreichik Variation}) 6. Be3 {Sicilian Defense: Najdorf Variation, English Attack} (6. Bg5 {Sicilian Defense: Najdorf Variation} e6 {Sicilian Defense: Najdorf Variation} (6... Nbd7 7. Bc4 Qa5 8. Qd2 e6 9. O-O-O b5 10. Bb3) 7. f4 {Sicilian Defense: Najdorf Variation} Be7 {Sicilian Defense: Najdorf Variation} (7... b5 {Sicilian Defense: Najdorf Variation, Polugaevsky Variation} 8. e5 dxe5 9. fxe5 Qc7 10. Qe2 {Sicilian Defense: Najdorf Variation, Polugaevsky Variation, Simagin Line}) (7... Qb6 {Sicilian Defense: Najdorf Variation, Poisoned Pawn Variation} 8. Qd2 Qxb2 9. Rb1 Qa3 {Sicilian Defense: Najdorf Variation, Poisoned Pawn Accepted}) (7... Nc6 {Sicilian Defense: Najdorf Variation, Neo-Classical Defense}) 8. Qf3 h6 (8... Qc7 {Sicilian Defense: Najdorf Variation, Traditional Line} 9. O-O-O Nbd7 {Sicilian Defense: Najdorf Variation, Main Line}) 9. Bh4 g5 {Sicilian Defense: Najdorf Variation, Goteborg Variation} (9... Qc7 {Sicilian Defense: Najdorf Variation, Browne Variation})) (6. Be2 {Sicilian Defense: Najdorf Variation, Opocensky Variation} e5 (6... e6 {Sicilian Defense: Scheveningen Variation, Classical Variation} 7. O-O Nbd7 {Sicilian Defense: Najdorf Variation, Scheveningen Variation} (7... Qc7 {Sicilian Defense: Scheveningen Variation, Classical Variation})) 7. Nb3 Be7 8. O-O Be6 {Sicilian Defense: Najdorf Variation, Opocensky Variation, Modern Line} (8... O-O {Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line})) (6. f4 {Sicilian Defense: Najdorf Variation, Amsterdam Variation} e6 7. Be2 Qc7 8. O-O Nc6 {Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation}) (6. Bc4 {Sicilian Defense: Najdorf Variation, Lipnitsky Attack} e6 7. Bb3 b5 {Sicilian Defense: Sozin Attack, Flank Variation}) (6. Bd3 {Sicilian Defense: Najdorf Variation, Yates Variation}) (6. g3 {Sicilian Defense: Najdorf Variation, Zagreb Variation}) (6. g4 {Sicilian Defense: Najdorf Variation, Dekker Gambit}) (6. h3 {Sicilian Defense: Najdorf Variation, Adams Attack}) (6. Rg1 {Sicilian Defense: Najdorf Variation, Petronić Attack}) 6... e5 (6... e6 7. g4 {Sicilian Defense: Scheveningen Variation, Delayed Keres Attack} (7. f3 {Sicilian Defense: Scheveningen Variation, English Attack, with f3}) (7. Qd2 {Sicilian Defense: Scheveningen Variation, English Attack, with Qd2}) 7... e5 8. Nf5 g6 9. g5 {Sicilian Defense: Scheveningen Variation, Delayed Keres Attack, Perenyi Gambit}) (6... Ng4 {Sicilian Defense: Najdorf Variation, English Attack, Anti-English}) 7. Nb3 Be6 (7... Be7 8. f3 {Sicilian Defense: Najdorf Variation, English Attack} (8. h3 {Sicilian Defense: Najdorf Variation, English Attack})) 8. f3 {Sicilian Defense: Najdorf Variation, English Attack} (8. h3 {Sicilian Defense: Najdorf Variation, English Attack}) 8... Be7 *\n",
+  "name": {
+    "de": "Sizilianisch — Offene Variante",
+    "en": "Sicilian — Open Variation"
+  },
+  "summary": {
+    "de": "Der Hauptweg gegen Sizilianisch: Weiss tauscht auf d4 und spielt auf Entwicklungsvorsprung. Dafuer muss man Najdorf, Drachen und Scheveningen im Griff haben.",
+    "en": "The main road against the Sicilian: White trades on d4 and plays for a development lead. It demands a working knowledge of the Najdorf, Dragon and Scheveningen."
+  },
+  "plans": {
+    "de": [
+      "Lange rochieren und mit f3, g4, h4 am Koenigsfluegel stuermen.",
+      "Den Springer d4 gut platzieren — nach b3 oder f3 statt ihn abtauschen zu lassen.",
+      "Die halboffene d-Linie fuer den Turm nutzen."
+    ],
+    "en": [
+      "Castle long and storm the kingside with f3, g4 and h4.",
+      "Place the d4 knight well — on b3 or f3 rather than letting it be traded.",
+      "Use the half-open d-file for a rook."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Qb6 8. Qd2 Qxb2",
+      "why": {
+        "de": "Der vergiftete Bauer: wer ihn ohne genaue Kenntnis nimmt oder gibt, steht schnell verloren.",
+        "en": "The poisoned pawn: taking or offering it without precise knowledge loses quickly."
+      }
+    },
+    {
+      "line": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Qxd4",
+      "why": {
+        "de": "Die Dame zu frueh ins Zentrum: Nc6 gewinnt mit Tempo die Initiative.",
+        "en": "Bringing the queen out too early: Nc6 gains the initiative with tempo."
+      }
+    }
+  ]
+}

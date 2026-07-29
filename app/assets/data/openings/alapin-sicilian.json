@@ -1,0 +1,55 @@
+{
+  "id": "alapin-sicilian",
+  "eco": "B22",
+  "side": "white",
+  "seed": "1. e4 c5 2. c3",
+  "tags": [
+    "positional",
+    "solid",
+    "theoryLight",
+    "beginnerFriendly"
+  ],
+  "difficulty": 2,
+  "popularity": 66,
+  "namedLines": 12,
+  "nodeCount": 51,
+  "lineCount": 8,
+  "maxDepth": 17,
+  "pgn": "[Event \"Sizilianisch — Alapin\"]\n[Site \"MasterOpening\"]\n[ECO \"B22\"]\n[Opening \"Sicilian — Alapin\"]\n[Result \"*\"]\n\n1. e4 c5 2. c3 {Sizilianisch — Alapin} Nf6 (2... d5 3. exd5 Qxd5 {Sicilian Defense: Alapin Variation, Barmen Defense} (3... Nf6 {Sicilian Defense: Alapin Variation, Anti-Alapin Gambit}) 4. d4 cxd4 (4... Nc6 5. Nf3 {Sicilian Defense: Alapin Variation, Barmen Defense} cxd4 6. cxd4 e5 7. Nc3 Bb4 8. Be2 {Sicilian Defense: Alapin Variation, Barmen Defense, Milner-Barry Attack}) (4... Nf6 5. Nf3 Bg4 {Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line}) (4... g6 5. Nf3 {Sicilian Defense: Alapin Variation, Barmen Defense}) 5. cxd4 Nc6 6. Nf3 Bg4 {Sicilian Defense: Alapin Variation, Barmen Defense, Central Exchange} 7. Nc3 Bxf3 8. gxf3 Qxd4 9. Qxd4) 3. e5 Nd5 4. d4 (4. Nf3 Nc6 5. Bc4 (5. Na3 {Sicilian Defense: Heidenfeld Variation}) 5... Nb6 6. Bb3 {Sicilian Defense: Alapin Variation, Stoltz Attack} c4 7. Bc2 Qc7 8. Qe2 g5 {Sicilian Defense: Alapin Variation, Stoltz Attack, Ivanchuk Line}) 4... cxd4 {Sicilian Defense: Alapin Variation, Smith-Morra Declined} 5. Nf3 Nc6 6. cxd4 d6 *\n",
+  "name": {
+    "de": "Sizilianisch — Alapin",
+    "en": "Sicilian — Alapin"
+  },
+  "summary": {
+    "de": "Weiss bereitet d2–d4 vor und baut ein grosses Bauernzentrum, statt sich auf die Theorieschlacht einzulassen. Der praktischste Weg gegen Sizilianisch fuer alle, die wenig Zeit zum Lernen haben.",
+    "en": "White prepares d2–d4 and builds a big pawn centre instead of entering a theory battle. The most practical anti-Sicilian for anyone short on study time."
+  },
+  "plans": {
+    "de": [
+      "Mit d4 ein Bauernzentrum bilden und es mit c3 halten.",
+      "Nach e5 den Springer nach d5 locken und ihn dort mit Tempo vertreiben.",
+      "Auf dem isolierten Damenbauern aktiv spielen, statt ihn zu bedauern."
+    ],
+    "en": [
+      "Build a pawn centre with d4 and hold it with c3.",
+      "Lure the knight to d5 with e5, then chase it with tempo.",
+      "Play actively with the isolated queen’s pawn rather than regretting it."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 Nf6 5. Nf3 Bg4 6. Be2 e6 7. h3 Bh5 8. O-O Nc6 9. Be3 cxd4 10. cxd4 Be7 11. Nc3 Qd6 12. a3 O-O 13. Nb5",
+      "why": {
+        "de": "Der Springerausfall nach b5 verliert Zeit, solange die Dame nicht wirklich gestoert wird.",
+        "en": "The knight sortie to b5 loses time while the queen is not genuinely disturbed."
+      }
+    },
+    {
+      "line": "1. e4 c5 2. c3 Nf6 3. e5 Nd5 4. Nf3 Nc6 5. Bc4 Nb6 6. Bb3 c4",
+      "why": {
+        "de": "Weiss darf hier nicht Bc2 spielen; der Laeufer gehoert nach c2 erst nach d3.",
+        "en": "White must not shuffle the bishop aimlessly here; it belongs on c2 only after d3."
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "masteropening-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Build-Skripte fuer die Bibliotheksdaten der App. Erzeugen app/assets/data/.",
+  "scripts": {
+    "openings": "node build-openings.mjs",
+    "games": "node harvest-master-games.mjs",
+    "icons": "node generate-icons.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

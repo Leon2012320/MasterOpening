@@ -1,0 +1,54 @@
+{
+  "id": "caro-kann-classical",
+  "eco": "B18",
+  "side": "black",
+  "seed": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5",
+  "tags": [
+    "solid",
+    "positional",
+    "beginnerFriendly"
+  ],
+  "difficulty": 3,
+  "popularity": 70,
+  "namedLines": 0,
+  "nodeCount": 52,
+  "lineCount": 6,
+  "maxDepth": 24,
+  "pgn": "[Event \"Caro-Kann — Klassisch\"]\n[Site \"MasterOpening\"]\n[ECO \"B18\"]\n[Opening \"Caro-Kann — Classical\"]\n[Result \"*\"]\n\n1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 {Caro-Kann — Klassisch} 5. Ng3 Bg6 6. h4 (6. f4 e6 7. Nf3 Bd6 8. Bd3 Bxd3 9. Qxd3 Ne7 {Weiss stuermt mit f4}) (6. Nh3 Nf6 7. Nf4 e5 8. Nxg6 hxg6 {Sh3 gegen den Laeufer}) 6... h6 (6... h5 7. Nf3 Nd7 8. Bd3 Bxd3 9. Qxd3 e6 {h5 statt h6}) 7. Nf3 Nd7 (7... e6 8. Ne5 Bh7 9. Bd3 Bxd3 10. Qxd3 {Frueher Springer auf e5}) 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 (10... Ngf6 11. Bd2 e6 12. O-O-O Qc7 {Hauptvariante mit langer Rochade}) *\n",
+  "name": {
+    "de": "Caro-Kann — Klassisch",
+    "en": "Caro-Kann — Classical"
+  },
+  "summary": {
+    "de": "Schwarz entwickelt den Laeufer c8 vor e7–e6 und loest damit das Hauptproblem franzoesischer Stellungen. Sehr solide Struktur ohne Schwaechen.",
+    "en": "Black develops the c8 bishop before e7–e6, solving the main problem of French structures. A very solid structure with no weaknesses."
+  },
+  "plans": {
+    "de": [
+      "Den Laeufer gegen den weissen Laeufer d3 abtauschen.",
+      "Mit c6–c5 im richtigen Moment das Zentrum angreifen.",
+      "Lang rochieren, wenn Weiss am Koenigsfluegel stuermt."
+    ],
+    "en": [
+      "Trade the bishop for White’s light-squared bishop on d3.",
+      "Hit the centre with c6–c5 at the right moment.",
+      "Castle long if White storms the kingside."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h5",
+      "why": {
+        "de": "h5 statt h6 schwaecht g5 dauerhaft und laesst den Springer nach f4.",
+        "en": "h5 instead of h6 permanently weakens g5 and invites the knight to f4."
+      }
+    },
+    {
+      "line": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Qe2 Ngf6 6. Nd6#",
+      "why": {
+        "de": "Das beruehmte Matt in sechs Zuegen: Ngf6 verstellt der Dame das Feld e7.",
+        "en": "The famous six-move mate: Ngf6 blocks the queen’s escape on e7."
+      }
+    }
+  ]
+}

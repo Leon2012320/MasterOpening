@@ -1,0 +1,54 @@
+{
+  "id": "caro-kann-advance",
+  "eco": "B12",
+  "side": "white",
+  "seed": "1. e4 c6 2. d4 d5 3. e5",
+  "tags": [
+    "positional",
+    "closed",
+    "flexible"
+  ],
+  "difficulty": 3,
+  "popularity": 68,
+  "namedLines": 10,
+  "nodeCount": 51,
+  "lineCount": 10,
+  "maxDepth": 15,
+  "pgn": "[Event \"Caro-Kann — Vorstossvariante\"]\n[Site \"MasterOpening\"]\n[ECO \"B12\"]\n[Opening \"Caro-Kann — Advance Variation\"]\n[Result \"*\"]\n\n1. e4 c6 2. d4 d5 3. e5 {Caro-Kann — Vorstossvariante} Bf5 (3... c5 {Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense} 4. dxc5 e6 5. Be3 Nd7 6. Nf3 Ne7 7. c4 {Den Mehrbauern halten}) 4. Nf3 {Caro-Kann Defense: Advance Variation, Short Variation} (4. Nc3 {Caro-Kann Defense: Advance Variation, Van der Wiel Attack} e6 (4... Qb6 {Caro-Kann Defense: Advance Variation, Van der Wiel Attack, Dreyev Defense}) 5. g4 Bg6 6. Nge2 c5 7. h4 {Caro-Kann Defense: Advance Variation, Van der Wiel Attack} h5 8. Nf4 {Scharfe Behandlung mit g4}) (4. h4 {Caro-Kann Defense: Advance Variation, Tal Variation} h5 5. c4 e6 6. Nc3 Ne7 7. Nge2 {Sofortiger Bauernsturm mit h4}) (4. c3 e6 5. Be2 {Caro-Kann Defense: Advance, Short Variation}) (4. b4 {Caro-Kann Defense: Advance Variation, Prins Attack}) (4. g4 {Caro-Kann Defense: Advance Variation, Bayonet Attack}) (4. Ne2 {Caro-Kann Defense: Advance Variation, Bronstein Variation}) 4... e6 5. Be2 c5 (5... Ne7 6. O-O Nd7 7. Nbd2 h6 8. Nb3 {Ruhiger Aufbau mit Sb3}) 6. Be3 Nd7 7. O-O Ne7 *\n",
+  "name": {
+    "de": "Caro-Kann — Vorstossvariante",
+    "en": "Caro-Kann — Advance Variation"
+  },
+  "summary": {
+    "de": "Weiss nimmt Raum und laesst Schwarz den Laeufer nach f5 entwickeln — den Laeufer, den der Franzose vermisst. Dafuer geraet er dort ins Visier von Nh4 und g4.",
+    "en": "White takes space and lets Black develop the bishop to f5 — the bishop the French player misses. In return it becomes a target for Nh4 and g4."
+  },
+  "plans": {
+    "de": [
+      "Den Laeufer f5 mit Nh4 oder g4 abtauschen oder vertreiben.",
+      "Die Bauernkette d4–e5 mit c3 halten.",
+      "Am Koenigsfluegel mit h4–h5 Raum gewinnen."
+    ],
+    "en": [
+      "Trade or chase the f5 bishop with Nh4 or g4.",
+      "Hold the d4–e5 pawn chain with c3.",
+      "Gain kingside space with h4–h5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3",
+      "why": {
+        "de": "Der Abtausch hilft Schwarz: nach Bxd3 Qxd3 hat er sein Hauptproblem geloest.",
+        "en": "The trade helps Black: after Bxd3 Qxd3 his main problem is solved."
+      }
+    },
+    {
+      "line": "1. e4 c6 2. d4 d5 3. e5 c5 4. dxc5 e6 5. Be3 Nd7 6. Nf3 Ne7 7. c4 Nc6 8. cxd5 exd5 9. Nc3 Bxc5",
+      "why": {
+        "de": "Den c5-Bauern zu halten kostet mehr Zeit, als er wert ist.",
+        "en": "Hanging on to the c5 pawn costs more time than it is worth."
+      }
+    }
+  ]
+}

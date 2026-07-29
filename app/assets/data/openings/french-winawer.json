@@ -1,0 +1,54 @@
+{
+  "id": "french-winawer",
+  "eco": "C18",
+  "side": "black",
+  "seed": "1. e4 e6 2. d4 d5 3. Nc3 Bb4",
+  "tags": [
+    "tactical",
+    "closed",
+    "theoryHeavy"
+  ],
+  "difficulty": 4,
+  "popularity": 56,
+  "namedLines": 54,
+  "nodeCount": 113,
+  "lineCount": 32,
+  "maxDepth": 19,
+  "pgn": "[Event \"Franzoesisch — Winawer\"]\n[Site \"MasterOpening\"]\n[ECO \"C18\"]\n[Opening \"French — Winawer\"]\n[Result \"*\"]\n\n1. e4 e6 2. d4 d5 3. Nc3 Bb4 {Franzoesisch — Winawer} 4. e5 {French Defense: Winawer Variation, Advance Variation} (4. Ne2 {French Defense: Winawer Variation, Alekhine-Maróczy Gambit} dxe4 (4... Nf6 5. Bg5 {French Defense: McCutcheon Variation, Wolf Gambit}) 5. a3 Be7 (5... Bxc3+ {French Defense: Winawer Variation, Alekhine Gambit Accepted} 6. Nxc3 Nc6 {French Defense: Winawer Variation, Alekhine Gambit, Kan Variation}) 6. Nxe4 Nf6 7. N2g3 O-O 8. Be2 Nc6 {French Defense: Winawer Variation, Alekhine Gambit, Alatortsev Variation}) (4. Bd2 {French Defense: Winawer Variation, Fingerslip Variation} dxe4 (4... Ne7 5. Nb1 {French Defense: Winawer Variation, Fingerslip Variation, Schwarz's Line}) 5. Qg4 Nf6 (5... Qxd4 {French Defense: Winawer Variation, Fingerslip Variation, Kunin Double Gambit}) 6. Qxg7 Rg8 7. Qh6 {French Defense: Winawer Variation, Fingerslip Variation, Main Line}) (4. a3 Bxc3+ 5. bxc3 dxe4 6. f3 {French Defense: Winawer Variation, Winckelmann-Reimer Gambit}) (4. Bd3 c5 5. exd5 Qxd5 6. Bd2 {French Defense: Winawer Variation, Kondratiyev Variation}) (4. exd5 {French Defense: Winawer Variation, Delayed Exchange Variation} exd5 5. Bd3 Ne7 6. Qh5 {French Defense: Winawer Variation, Exchange Variation, Canal Attack}) 4... c5 {French Defense: Winawer Variation, Advance Variation} (4... Ne7 5. a3 Bxc3+ 6. bxc3 c5 7. a4 {French Defense: Winawer Variation, Advance Variation, Smyslov Variation} Qc7 {French Defense: Winawer Variation, Advance Variation, Smyslov Variation}) (4... Qd7 {French Defense: Winawer Variation, Petrosian Variation}) 5. a3 {French Defense: Winawer Variation, Advance Variation} (5. Bd2 {French Defense: Winawer Variation, Bogoljubow Variation} Ne7 6. f4 {French Defense: Winawer Variation, Bogoljubow Variation, Icelandic Defense}) (5. Qg4 {French Defense: Winawer Variation, Advance Variation, Moscow Variation}) 5... Bxc3+ (5... cxd4 6. axb4 dxc3 {French Defense: Winawer Variation, Maróczy-Wallis Variation} 7. Nf3 {French Defense: Winawer Variation, Advance Variation}) (5... Ba5 {French Defense: Winawer Variation, Retreat Variation} 6. b4 cxd4 {French Defense: Winawer Variation, Retreat Variation, Armenian Line}) 6. bxc3 {French Defense: Winawer Variation, Advance Variation} Ne7 {French Defense: Winawer Variation, Advance Variation} (6... Nc6 7. Nf3 Qa5 (7... Nge7 {French Defense: Winawer Variation, Positional Variation}) 8. Bd2 Nge7 {French Defense: Winawer Variation, Positional Variation}) (6... Qa5 {French Defense: Winawer Variation, Portisch-Hook Variation}) (6... Qc7 {French Defense: Winawer Variation, Classical Variation}) 7. Qg4 (7. a4 Nbc6 8. Nf3 {French Defense: Winawer Variation, Positional Variation} Qa5 9. Bd2 {French Defense: Winawer Variation, Positional Variation} (9. Qd2 {French Defense: Winawer Variation, Positional Variation} Bd7 {French Defense: Winawer Variation, Positional Variation}) 9... Bd7 {French Defense: Winawer Variation, Positional Variation} (9... c4 {French Defense: Winawer Variation, Positional Variation})) (7. Bd3 {French Defense: Winawer Variation, Advance Variation, with Bd3} Nbc6 (7... Qc7 {French Defense: Winawer Variation, Advance Variation, with Bd3}) 8. Nf3 {French Defense: Winawer Variation, Positional Variation}) (7. Nf3 {French Defense: Winawer Variation, Positional Variation} Qc7 {French Defense: Winawer Variation, Positional Variation} 8. h4 {French Defense: Winawer Variation, Positional Variation}) (7. h4 {French Defense: Winawer Variation, Advance Variation, with h4} Qc7 {French Defense: Winawer Variation, Advance Variation, with h4}) 7... Qc7 {French Defense: Winawer Variation, Poisoned Pawn Variation} (7... cxd4 8. Qxg7 {French Defense: Winawer Variation, Poisoned Pawn Variation} Rg8 9. Qxh7 Nbc6 {French Defense: Winawer Variation, Poisoned Pawn Variation}) (7... Kf8 {French Defense: Winawer Variation, Eingorn Variation}) (7... O-O {French Defense: Winawer Variation, Warsaw Variation}) 8. Qxg7 (8. Bd3 {French Defense: Winawer Variation, Poisoned Pawn Variation Declined}) 8... Rg8 9. Qxh7 cxd4 10. Kd1 {French Defense: Winawer Variation, Poisoned Pawn Variation, Paoli Variation} (10. Ne2 {French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line}) *\n",
+  "name": {
+    "de": "Franzoesisch — Winawer",
+    "en": "French — Winawer"
+  },
+  "summary": {
+    "de": "Schwarz gibt das Laeuferpaar und bekommt dafuer ein bleibendes Ziel: die weissen Doppelbauern auf c3. Unsymmetrisch, scharf und voller Gift auf beiden Seiten.",
+    "en": "Black gives up the bishop pair for a permanent target: White’s doubled pawns on c3. Unbalanced, sharp and full of poison on both sides."
+  },
+  "plans": {
+    "de": [
+      "Den Bauern c3 und die Kette d4–e5 mit c5 und Nc6 unter Druck setzen.",
+      "Den Koenig oft in der Mitte lassen und stattdessen im Zentrum kontern.",
+      "Auf der halboffenen c-Linie Turm und Dame aufbauen."
+    ],
+    "en": [
+      "Pressure the c3 pawn and the d4–e5 chain with c5 and Nc6.",
+      "Often leave the king in the centre and counter there instead.",
+      "Build up rook and queen on the half-open c-file."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 Ne7 7. Qg4 O-O",
+      "why": {
+        "de": "Kurz zu rochieren stellt den Koenig direkt in den weissen Angriff — Qc7 ist der Hauptzug.",
+        "en": "Castling short walks straight into White’s attack — Qc7 is the main move."
+      }
+    },
+    {
+      "line": "1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Ba5 6. b4 cxd4 7. Qg4 Ne7 8. bxa5 dxc3 9. Qxg7 Rg8 10. Qxh7 Nbc6 11. Nf3 Qxa5 12. Bd2",
+      "why": {
+        "de": "Den Laeufer auf a5 zu halten kostet Material, wenn Schwarz die Folgezuege nicht kennt.",
+        "en": "Keeping the bishop on a5 costs material unless Black knows the follow-up."
+      }
+    }
+  ]
+}

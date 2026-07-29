@@ -1,0 +1,54 @@
+{
+  "id": "sicilian-accelerated-dragon",
+  "eco": "B34",
+  "side": "black",
+  "seed": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6",
+  "tags": [
+    "positional",
+    "open",
+    "flexible"
+  ],
+  "difficulty": 3,
+  "popularity": 48,
+  "namedLines": 13,
+  "nodeCount": 58,
+  "lineCount": 9,
+  "maxDepth": 22,
+  "pgn": "[Event \"Sizilianisch — Beschleunigter Drache\"]\n[Site \"MasterOpening\"]\n[ECO \"B34\"]\n[Opening \"Sicilian — Accelerated Dragon\"]\n[Result \"*\"]\n\n1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 {Sizilianisch — Beschleunigter Drache} 5. Nc3 {Sicilian Defense: Accelerated Dragon, Modern Variation} (5. c4 {Sicilian Defense: Accelerated Dragon, Maróczy Bind} Bg7 {Sicilian Defense: Accelerated Dragon, Maróczy Bind} (5... Nf6 6. Nc3 Nxd4 7. Qxd4 d6 {Sicilian Defense: Accelerated Dragon, Maróczy Bind, Gurgenidze Variation}) 6. Be3 {Sicilian Defense: Accelerated Dragon, Maróczy Bind} (6. Nc2 d6 7. Be2 Nh6 {Sicilian Defense: Accelerated Dragon, Simagin Variation}) 6... Nf6 7. Nc3 Ng4 {Sicilian Defense: Accelerated Dragon, Maróczy Bind, Breyer Variation}) (5. Be3 Bg7 6. Be2 Nf6 7. Nc3 O-O 8. O-O d6 9. f4 Qb6 10. e5 {Sicilian Defense: Dragon Variation, Classical Variation, Zollner Gambit}) (5. Nxc6 {Sicilian Defense: Accelerated Dragon, Exchange Variation}) 5... Bg7 6. Be3 Nf6 7. Bc4 {Sicilian Defense: Accelerated Dragon, Modern Bc4 Variation} (7. Be2 O-O 8. Nb3 (8. O-O d6 9. Nb3 a5 {Sicilian Defense: Dragon Variation, Classical Variation, Alekhine Line}) 8... d6 9. O-O Be6 10. f4 Na5 11. f5 Bc4) 7... O-O (7... d6 {Sicilian Defense: Dragon Variation, Modern Bc4 Variation}) 8. Bb3 d6 *\n",
+  "name": {
+    "de": "Sizilianisch — Beschleunigter Drache",
+    "en": "Sicilian — Accelerated Dragon"
+  },
+  "summary": {
+    "de": "Der Drachenlaeufer kommt ohne d6 aufs Brett, was Schwarz spaeter d7–d5 in einem Zug erlaubt. Dafuer muss man den Maroczy-Aufbau mit c4 aushalten.",
+    "en": "The Dragon bishop appears without d6, letting Black play d7–d5 in one go later. The price is having to handle the Maroczy Bind with c4."
+  },
+  "plans": {
+    "de": [
+      "d7–d5 in einem Zug durchsetzen und ausgleichen.",
+      "Gegen den Maroczy-Aufbau die Figuren abtauschen und auf b2 und d4 druecken.",
+      "Den Laeufer g7 mit Qa5 und Rfc8 unterstuetzen."
+    ],
+    "en": [
+      "Achieve d7–d5 in a single move and equalise.",
+      "Against the Maroczy Bind, trade pieces and press on b2 and d4.",
+      "Support the g7 bishop with Qa5 and Rfc8."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. Nxc6 bxc6 6. Qd4 f6 7. e5",
+      "why": {
+        "de": "Nach Nxc6 muss Schwarz mit dem b-Bauern schlagen und die Struktur akzeptieren.",
+        "en": "After Nxc6 Black has to recapture with the b-pawn and accept the structure."
+      }
+    },
+    {
+      "line": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Be3 Nf6 7. Nc3 Ng4 8. Qxg4 Nxd4 9. Qd1 Ne6 10. Qd2",
+      "why": {
+        "de": "Der Doppelangriff mit Ng4 funktioniert nur, wenn Weiss ungenau spielt.",
+        "en": "The Ng4 double attack only works if White plays inaccurately."
+      }
+    }
+  ]
+}

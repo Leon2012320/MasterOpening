@@ -1,0 +1,54 @@
+{
+  "id": "french-tarrasch",
+  "eco": "C03",
+  "side": "white",
+  "seed": "1. e4 e6 2. d4 d5 3. Nd2",
+  "tags": [
+    "positional",
+    "solid",
+    "flexible"
+  ],
+  "difficulty": 3,
+  "popularity": 58,
+  "namedLines": 24,
+  "nodeCount": 65,
+  "lineCount": 16,
+  "maxDepth": 19,
+  "pgn": "[Event \"Franzoesisch — Tarrasch\"]\n[Site \"MasterOpening\"]\n[ECO \"C03\"]\n[Opening \"French — Tarrasch\"]\n[Result \"*\"]\n\n1. e4 e6 2. d4 d5 3. Nd2 {Franzoesisch — Tarrasch} Nf6 {French Defense: Tarrasch Variation, Closed Variation} (3... c5 {French Defense: Tarrasch Variation, Open System} 4. exd5 (4. c3 {French Defense: Tarrasch Variation, Open System, Süchting Line}) (4. Ngf3 {French Defense: Tarrasch Variation, Open System, Euwe-Keres Line}) 4... Qxd5 {French Defense: Tarrasch Variation, Chistyakov Defense} (4... exd5 {French Defense: Tarrasch Variation, Open System} 5. Ngf3 Nc6 {French Defense: Tarrasch Variation, Open System, Main Line} (5... c4 {French Defense: Tarrasch Variation, Open System, Advance Line}) 6. Bb5 Bd6 7. dxc5 Bxc5 8. O-O Ne7 9. c3 {French Defense: Tarrasch Variation, Open System, Main Line}) (4... Nf6 {French Defense: Tarrasch Variation, Open System, Shaposhnikov Gambit}) 5. Ngf3 cxd4 6. Bc4 Qd6 (6... Qd8 {French Defense: Tarrasch Variation, Eliskases Variation}) 7. O-O Nf6 8. Nb3 Nc6 9. Nbxd4 Nxd4 10. Nxd4) (3... dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Nxf6+ Nxf6 7. c3 {French Defense: Rubinstein Variation, Kasparov Attack}) (3... Nc6 {French Defense: Tarrasch Variation, Guimard Defense} 4. c3 (4. Ngf3 Nf6 {French Defense: Tarrasch Variation, Guimard Defense, Main Line}) 4... dxe4 5. Nxe4 e5 {French Defense: Tarrasch Variation, Guimard Defense, Thunderbunny Variation}) (3... a6 {French Defense: Tarrasch Variation, Modern System}) (3... Be7 {French Defense: Tarrasch Variation, Morozevich Variation}) (3... f5 {French Defense: Tarrasch Variation, Haberditz Variation}) 4. e5 Nfd7 5. Bd3 (5. f4 {French Defense: Tarrasch Variation, Pawn Center Variation}) 5... c5 6. c3 Nc6 {French Defense: Tarrasch Variation, Closed Variation} (6... b6 {French Defense: Tarrasch Variation, Botvinnik Variation}) 7. Ne2 cxd4 8. cxd4 {French Defense: Tarrasch Variation, Closed Variation, Main Line} Nb6 {French Defense: Tarrasch Variation, Leningrad Variation} *\n",
+  "name": {
+    "de": "Franzoesisch — Tarrasch",
+    "en": "French — Tarrasch"
+  },
+  "summary": {
+    "de": "Der Springer geht nach d2 statt c3 und vermeidet die Fesselung durch Bb4. Weiss behaelt die Struktur flexibel und spielt auf einen kleinen, dauerhaften Vorteil.",
+    "en": "The knight goes to d2 instead of c3, avoiding the pin with Bb4. White keeps the structure flexible and plays for a small, lasting edge."
+  },
+  "plans": {
+    "de": [
+      "Nach e5 den Raumvorteil mit c3 und f4 festigen.",
+      "Bei Abtausch auf d5 mit dem isolierten Damenbauern aktiv spielen.",
+      "Den Springer d2 ueber f1 nach g3 oder e3 entwickeln."
+    ],
+    "en": [
+      "After e5, consolidate the space advantage with c3 and f4.",
+      "If pawns are traded on d5, play actively with the isolated queen’s pawn.",
+      "Develop the d2 knight via f1 to g3 or e3."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e6 2. d4 d5 3. Nd2 c5 4. exd5 Qxd5 5. Ngf3 cxd4 6. Bc4 Qd6 7. O-O Nf6 8. Nb3 Nc6 9. Nbxd4 Nxd4 10. Nxd4 a6 11. Re1 Qc7 12. Bb3 Bd6 13. Nf5",
+      "why": {
+        "de": "Der Springerausfall nach f5 ist verfrueht, solange die Grundreihe nicht gedeckt ist.",
+        "en": "The knight jump to f5 is premature while the back rank is loose."
+      }
+    },
+    {
+      "line": "1. e4 e6 2. d4 d5 3. Nd2 Nf6 4. e5 Nfd7 5. f4 c5 6. c3 Nc6 7. Ndf3 Qb6 8. g3 cxd4 9. cxd4 Bb4+",
+      "why": {
+        "de": "Das Schach auf b4 kommt mit Tempo — Weiss haette Bd2 vorbereiten muessen.",
+        "en": "The check on b4 comes with tempo — White should have prepared Bd2."
+      }
+    }
+  ]
+}

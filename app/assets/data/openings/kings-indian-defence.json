@@ -1,0 +1,55 @@
+{
+  "id": "kings-indian-defence",
+  "eco": "E60",
+  "side": "black",
+  "seed": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7",
+  "tags": [
+    "attacking",
+    "closed",
+    "tactical",
+    "theoryHeavy"
+  ],
+  "difficulty": 4,
+  "popularity": 78,
+  "namedLines": 96,
+  "nodeCount": 166,
+  "lineCount": 51,
+  "maxDepth": 17,
+  "pgn": "[Event \"Koenigsindische Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"E60\"]\n[Opening \"King’s Indian Defence\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 {Koenigsindische Verteidigung} 4. e4 {King's Indian Defense: Normal Variation} (4. Nf3 d6 (4... O-O 5. e3 (5. g3 d5 6. cxd5 Nxd5 7. Bg2 c5 8. O-O {Neo-Grünfeld Defense: Delayed Exchange Variation}) 5... d6 6. Be2 {King's Indian Defense: Semi-Classical Variation} Nbd7 (6... c6 {King's Indian Defense: Semi-Classical Variation, Benoni Variation}) 7. O-O e5 8. dxe5 (8. b4 {King's Indian Defense: Semi-Classical Variation, Queenside Storm Line}) 8... dxe5 {King's Indian Defense: Semi-Classical Variation, Exchange Variation}) 5. g3 {King's Indian Defense: Fianchetto Variation, Delayed Fianchetto} (5. Bg5 {King's Indian Defense: Smyslov Variation}) 5... O-O 6. Bg2 Nbd7 (6... c6 7. O-O Bf5 {King's Indian Defense: Fianchetto Variation, Larsen Defense} (7... Qb6 {King's Indian Defense: Fianchetto Variation, Benjamin Defense})) (6... Nc6 7. O-O Bg4 {King's Indian Defense: Fianchetto Variation, Simagin Variation}) 7. O-O e5 8. e4 Re8 9. h3) 4... d6 {King's Indian Defense: Normal Variation} 5. Nf3 {King's Indian Defense: Normal Variation, Rare Defenses} (5. f3 {King's Indian Defense: Sämisch Variation} O-O {King's Indian Defense: Sämisch Variation, Normal Defense} 6. Be3 (6. Bg5 {King's Indian Defense: Steiner Attack} c5 7. d5 {Benoni Defense: King's Pawn Line, with Bg5} e6 (7... h6 8. Bf4 {King's Indian Defense: Steiner Attack}) 8. Qd2 h6 (8... exd5) 9. Bxh6 {King's Indian Defense: Steiner Attack}) (6. Nge2 {King's Indian Defense: Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation} c5 7. d5 e6 8. Ng3 exd5 9. cxd5 {Benoni Defense: King's Pawn Line, with Nge2}) 6... e5 {King's Indian Defense: Sämisch Variation, Orthodox Variation} (6... Nc6 {King's Indian Defense: Sämisch Variation, Yates Defense} 7. Nge2 a6 {King's Indian Defense: Sämisch Variation, Panno Formation} (7... Rb8 {King's Indian Defense: Sämisch Variation, Ruban Variation}) 8. Qd2 Rb8 {King's Indian Defense: Sämisch Variation, Panno Main Line}) (6... c5 {King's Indian Defense: Sämisch Variation, Sämisch Gambit} 7. dxc5 dxc5 8. Qxd8 Rxd8) (6... c6 7. Bd3 a6 {King's Indian Defense: Sämisch Variation, Byrne Defense}) (6... b6 {King's Indian Defense: Sämisch Variation, Double Fianchetto}) 7. d5 {King's Indian Defense: Sämisch Variation, Closed Variation} (7. Nge2 c6 {King's Indian Defense: Sämisch Variation} 8. d5 cxd5 {King's Indian Defense: Sämisch Variation, Closed Variation, Main Line}) 7... Nh5 (7... c6 {King's Indian Defense: Sämisch Variation, Closed Variation}) 8. Qd2 Qh4+) (5. f4 {King's Indian Defense: Four Pawns Attack} O-O (5... Na6 {King's Indian Defense: Four Pawns Attack, Modern Defense}) 6. Nf3 (6. Be2 c5 7. d5 e6 8. dxe6 fxe6 9. g4) 6... c5 7. Be2 {King's Indian Defense: Four Pawns Attack, Fluid Attack} (7. d5 {King's Indian Defense: Four Pawns Attack, Dynamic Attack} e6 8. Be2 {King's Indian Defense: Four Pawns Attack, Normal Attack} exd5 9. e5 {King's Indian Defense: Four Pawns Attack, Florentine Gambit}) 7... cxd4 8. Nxd4 Nc6 9. Be3 {King's Indian Defense: Four Pawns Attack, Exchange Variation}) (5. Be2 {King's Indian Defense: Normal Variation, Standard Development} O-O 6. Bg5 {King's Indian Defense: Averbakh Variation} (6. Be3 {King's Indian Defense: Semi-Averbakh System}) (6. f4 {King's Indian Defense: Four Pawns Attack}) 6... c5 {King's Indian Defense: Averbakh Variation, Benoni Defense} (6... Na6 {King's Indian Defense: Averbakh Variation, Modern Defense} 7. Qd2 c6 {King's Indian Defense: Averbakh Variation, Modern Defense, Burgess Line}) (6... a6 {King's Indian Defense: Averbakh Variation, Spanish Defense}) (6... h6 {King's Indian Defense: Averbakh Variation, Flexible Defense}) (6... Nbd7 {King's Indian Defense: Averbakh Variation, Geller Defense}) (6... Nc6 {King's Indian Defense: Averbakh Variation, Nc6 Defense}) 7. d5 {King's Indian Defense: Averbakh Variation, Benoni Defense, Advance Variation} (7. dxc5 {King's Indian Defense: Averbakh Variation, Benoni Defense, Exchange Variation}) 7... e6 {King's Indian Defense: Averbakh Variation, Main Line}) (5. g3 {King's Indian Defense: Normal Variation, Deferred Fianchetto} O-O 6. Bg2 e5 7. Nge2 {King's Indian Defense: Pomar System}) (5. h3 {King's Indian Defense: Makogonov Variation} O-O 6. Be3 {King's Indian Defense: Karpov System}) (5. Bg5 {King's Indian Defense: Accelerated Averbakh Variation}) (5. Nge2 {King's Indian Defense: Kramer Variation}) 5... O-O 6. Be2 {King's Indian Defense: Orthodox Variation} (6. Be3 {King's Indian Defense: Larsen Variation}) (6. Bg5 {King's Indian Defense: Zinnowitz Variation}) 6... e5 {King's Indian Defense: Orthodox Variation} (6... Nbd7 7. O-O e5 8. d5 {King's Indian Defense: Orthodox Variation, Positional Defense, Closed Line}) (6... Na6 {King's Indian Defense: Kazakh Variation}) 7. O-O {King's Indian Defense: Orthodox Variation} (7. d5 {King's Indian Defense: Petrosian Variation} Nbd7 {King's Indian Defense: Petrosian Variation, Normal Defense} (7... a5 {King's Indian Defense: Petrosian Variation, Stein Defense}) 8. Bg5 h6) (7. Be3 {King's Indian Defense: Orthodox Variation, Gligoric-Taimanov System}) (7. dxe5 {King's Indian Defense: Exchange Variation}) 7... Nc6 {King's Indian Defense: Orthodox Variation, Aronin-Taimanov Defense} (7... Nbd7 8. Re1 {King's Indian Defense: Orthodox Variation} c6) (7... a5 {King's Indian Defense: Orthodox Variation, Ukrainian Defense}) (7... c6 {King's Indian Defense: Orthodox Variation, Donner Defense}) (7... Na6 {King's Indian Defense: Orthodox Variation, Glek Defense}) 8. d5 Ne7 *\n",
+  "name": {
+    "de": "Koenigsindische Verteidigung",
+    "en": "King’s Indian Defence"
+  },
+  "summary": {
+    "de": "Schwarz gibt das Zentrum ab und stuermt spaeter mit f5–f4–g5 am Koenigsfluegel. Eine der kaempferischsten Eroeffnungen ueberhaupt — Remis ist hier selten.",
+    "en": "Black concedes the centre and later storms the kingside with f5–f4–g5. One of the most combative openings there is — draws are rare here."
+  },
+  "plans": {
+    "de": [
+      "Mit f7–f5 und g6–g5 den Koenigsfluegel aufreissen.",
+      "Den Springer ueber e7 oder d7 nach f6 und h5 umgruppieren.",
+      "Das Zentrum geschlossen halten, damit der Gegenangriff Zeit hat."
+    ],
+    "en": [
+      "Tear open the kingside with f7–f5 and g6–g5.",
+      "Regroup the knight via e7 or d7 to f6 and h5.",
+      "Keep the centre closed so the counterattack has time."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O exd4 8. Nxd4",
+      "why": {
+        "de": "Der Abtausch auf d4 gibt die Spannung auf, aus der der Koenigsfluegelangriff lebt.",
+        "en": "Trading on d4 releases the tension the kingside attack lives on."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 exd5 9. cxd5 Bg4 10. O-O Nbd7 11. h3 Bxf3 12. Bxf3 a6 13. a4 Qc7 14. e5",
+      "why": {
+        "de": "Gegen den Vier-Bauern-Angriff muss Schwarz sofort kontern; passives Spiel wird ueberrollt.",
+        "en": "Against the Four Pawns Attack Black must counter immediately; passive play gets steamrolled."
+      }
+    }
+  ]
+}

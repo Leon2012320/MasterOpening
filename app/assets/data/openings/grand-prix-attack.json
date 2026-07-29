@@ -1,0 +1,54 @@
+{
+  "id": "grand-prix-attack",
+  "eco": "B23",
+  "side": "white",
+  "seed": "1. e4 c5 2. Nc3 Nc6 3. f4",
+  "tags": [
+    "attacking",
+    "tactical",
+    "theoryLight"
+  ],
+  "difficulty": 2,
+  "popularity": 44,
+  "namedLines": 1,
+  "nodeCount": 40,
+  "lineCount": 6,
+  "maxDepth": 13,
+  "pgn": "[Event \"Sizilianisch — Grand-Prix-Angriff\"]\n[Site \"MasterOpening\"]\n[ECO \"B23\"]\n[Opening \"Sicilian — Grand Prix Attack\"]\n[Result \"*\"]\n\n1. e4 c5 2. Nc3 Nc6 3. f4 {Sizilianisch — Grand-Prix-Angriff} g6 (3... d6 4. Nf3 g6 5. Bb5 Bd7 6. O-O Bg7 7. d3 {Klassischer Grand-Prix-Aufbau}) (3... e6 4. Nf3 d5 5. Bb5 Nge7 6. O-O a6 {Franzoesischer Aufbau}) (3... a6 4. Nf3 b5 5. d4 cxd4 6. Nxd4 {Vorzeitige Damenfluegel-Expansion}) 4. Nf3 Bg7 5. Bc4 (5. Bb5 Nd4 6. O-O a6 7. Bd3 {Gegen Sd4 den Laeufer halten}) 5... e6 6. f5 {Sicilian Defense: Grand Prix Attack, Schofman Variation} (6. d3 Nge7 7. O-O {Ruhige Behandlung mit d3}) *\n",
+  "name": {
+    "de": "Sizilianisch — Grand-Prix-Angriff",
+    "en": "Sicilian — Grand Prix Attack"
+  },
+  "summary": {
+    "de": "Direkter Angriff mit f4 und Bc4 ohne d4-Abtausch. Im Schnellschach gefaehrlich, weil Schwarz sofort konkret verteidigen muss.",
+    "en": "A direct attack with f4 and Bc4 without trading on d4. Dangerous in rapid play because Black has to defend concretely at once."
+  },
+  "plans": {
+    "de": [
+      "Mit f4–f5 die Diagonale zum Koenigsfluegel oeffnen.",
+      "Die Dame nach e1–h4 bringen.",
+      "Den Laeufer auf c4 oder b5 aktiv einsetzen, bevor Schwarz d5 schafft."
+    ],
+    "en": [
+      "Open the diagonal towards the kingside with f4–f5.",
+      "Swing the queen to e1 and on to h4.",
+      "Activate the bishop on c4 or b5 before Black gets in d5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 Nd4 6. Bc4 e6 7. f5 Nxf5",
+      "why": {
+        "de": "Das Bauernopfer auf f5 funktioniert hier nicht — Weiss steht nach exf5 einfach schlechter.",
+        "en": "The f5 pawn sacrifice does not work here — after exf5 White is simply worse."
+      }
+    },
+    {
+      "line": "1. e4 c5 2. f4",
+      "why": {
+        "de": "Ohne Nc3 zuerst schlaegt d5 sofort zurueck und Weiss verliert das Zentrum.",
+        "en": "Without Nc3 first, d5 hits back immediately and White loses the centre."
+      }
+    }
+  ]
+}

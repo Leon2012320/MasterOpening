@@ -1,0 +1,54 @@
+{
+  "id": "english-reversed-sicilian",
+  "eco": "A20",
+  "side": "white",
+  "seed": "1. c4 e5",
+  "tags": [
+    "positional",
+    "flexible",
+    "open"
+  ],
+  "difficulty": 3,
+  "popularity": 50,
+  "namedLines": 58,
+  "nodeCount": 140,
+  "lineCount": 40,
+  "maxDepth": 16,
+  "pgn": "[Event \"Englisch — Umgekehrtes Sizilianisch\"]\n[Site \"MasterOpening\"]\n[ECO \"A20\"]\n[Opening \"English — Reversed Sicilian\"]\n[Result \"*\"]\n\n1. c4 e5 {Englisch — Umgekehrtes Sizilianisch} 2. Nc3 {English Opening: King's English Variation, Reversed Sicilian} (2. g3 Nf6 (2... h5 {English Opening: Drill Variation}) 3. Bg2 d5 (3... Nc6 4. Nc3 Bb4 5. e4 (5. Nd5 {English Opening: King's English Variation, Reversed Closed Sicilian}) 5... d6 6. Nge2 {English Opening: King's English Variation, Reversed Closed Sicilian} Bg4 {English Opening: King's English Variation, Reversed Closed Sicilian}) 4. cxd5 Nxd5 5. Nf3 Nc6 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line} 6. d3 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line} Be7 7. O-O O-O {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line}) (2. e3 Nf6 3. f4 exf4 4. Nf3 {English Opening: King's English Variation, Kahiko-Hula Gambit}) (2. Nf3 {English Opening: King's English Variation, Nimzowitsch Variation} e4 {English Opening: King's English Variation, Nimzowitsch-Flohr Variation}) 2... Nf6 {English Opening: King's English Variation, Two Knights Variation} (2... Nc6 {English Opening: King's English Variation, Reversed Closed Sicilian} 3. g3 (3. Nf3 {English Opening: King's English Variation, Three Knights System}) 3... g6 (3... d6 4. Bg2 Be6 {English Opening: King's English Variation, Troger Defense}) 4. Bg2 (4. Rb1 Nh6 5. Bg2 Bg7 {English Opening: Closed, Taimanov Variation}) 4... Bg7 {English Opening: King's English Variation, Taimanov Variation} 5. e3 (5. d3 {English Opening: King's English Variation, Closed System} d6 {English Opening: King's English Variation, Closed System, Full Symmetry} 6. e4 {English Opening: King's English Variation, Botvinnik System}) (5. Rb1 {English Opening: King's English Variation, Hungarian Attack}) 5... d6 6. Nge2 Be6 {English Opening: King's English Variation, Bremen-Hort Variation} (6... Nh6 {English Opening: Closed, Taimanov Variation})) (2... d6 3. g3 (3. Nf3 {English Opening: King's English Variation} Bg4 {English Opening: King's English Variation, Smyslov Defense}) 3... c6 {English Opening: King's English Variation, Keres Defense}) (2... Bb4 {English Opening: King's English Variation, Kramnik-Shirov Counterattack}) 3. Nf3 (3. g3 {English Opening: Carls-Bremen System} Bb4 {English Opening: King's English Variation, Two Knights Variation, Smyslov System} (3... Nc6 4. Bg2 d6 5. d3 Be7 6. Nf3 O-O {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, Be7}) (3... Bc5 4. Bg2 c6 {English Opening: King's English Variation, Two Knights Variation, Keres Variation}) (3... c6 {English Opening: King's English Variation, Two Knights Variation, Keres Variation}) (3... d5 {English Opening: King's English Variation, Two Knights Variation, Reversed Dragon}) (3... g6 {English Opening: King's English Variation, Two Knights Variation, Fianchetto Line}) 4. Bg2 (4. e4 O-O 5. Nge2 Nc6 6. Bg2 {English Opening: King's English Variation, Reversed Closed Sicilian}) 4... O-O 5. Nf3 Re8 6. O-O e4 7. Nd4 Nc6 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, Delayed .. Nc6}) (3. f4 {English Opening: King's English, Mazedonisch}) 3... Nc6 {English Opening: King's English Variation, Four Knights Variation} (3... e4 4. Ng5 b5 {English Opening: King's English Variation, Bellon Gambit} (4... c6 {English Opening: King's English Variation, Adhiban Gambit}) (4... Ng4 {English Opening: King's English, Erbenheimer Gambit})) 4. g3 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line} (4. d4 exd4 (4... e4 {English Opening: King's English Variation, Four Knights Variation, Bradley Beach Variation}) 5. Nxd4 Bb4 6. Bg5 h6 7. Bh4 Bxc3+ 8. bxc3 Ne5 {English Opening: King's English Variation, Four Knights Variation}) (4. e3 {English Opening: King's English Variation, Four Knights Variation, Quiet Line} Bb4 5. Qc2 O-O (5... Bxc3 {English Opening: King's English Variation, Four Knights Variation, Quiet Line}) 6. Nd5 Re8 7. Qf5 {English Opening: King's English Variation, Four Knights Variation, Quiet Line}) (4. a3 {English Opening: King's English Variation, Four Knights Variation, Korchnoi Line}) (4. d3 {English Opening: King's English Variation, Four Knights Variation, Flexible Line}) (4. e4 {English Opening: Four Knights System, Nimzowitsch Variation}) 4... d5 (4... Bc5 5. d3 d6 6. Bg2 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6} O-O (6... a6 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, a6}) (6... h6 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, h6}) 7. O-O {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6}) (4... Bb4 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line} 5. Bg2 Bxc3 6. dxc3 d6 7. O-O O-O {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line}) 5. cxd5 Nxd5 6. Bg2 Bc5 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Bc5} (6... Nb6 {English Opening: King's English Variation, Four Knights Variation, Fianchetto Line, with Nb6}) *\n",
+  "name": {
+    "de": "Englisch — Umgekehrtes Sizilianisch",
+    "en": "English — Reversed Sicilian"
+  },
+  "summary": {
+    "de": "Dieselben Strukturen wie im Sizilianer, nur mit einem Tempo mehr und den Farben vertauscht. Wer Sizilianisch mit Schwarz kennt, findet sich hier sofort zurecht.",
+    "en": "The same structures as the Sicilian, with an extra tempo and colours reversed. If you know the Sicilian as Black, you will feel at home here."
+  },
+  "plans": {
+    "de": [
+      "Mit g3 und Bg2 gegen den Bauern d5 arbeiten.",
+      "Auf der Damenseite mit b4 und Rb1 Raum gewinnen.",
+      "Den Springer nach d5 bringen, wenn Schwarz ihn nicht vertreiben kann."
+    ],
+    "en": [
+      "Work against the d5 pawn with g3 and Bg2.",
+      "Gain queenside space with b4 and Rb1.",
+      "Post a knight on d5 when Black cannot chase it away."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. Ng5 b5",
+      "why": {
+        "de": "Der Bauernvorstoss e4 ohne Vorbereitung verliert den Bauern nach Ngxe4.",
+        "en": "Pushing e4 without preparation loses the pawn to Ngxe4."
+      }
+    },
+    {
+      "line": "1. c4 e5 2. g3 c6 3. d4 exd4 4. Qxd4 d5 5. Bg2 Nf6 6. Nf3 Be7 7. O-O O-O 8. Qd1",
+      "why": {
+        "de": "Die Dame drei Mal zu ziehen kostet genau den Vorteil, den der Anzug gibt.",
+        "en": "Moving the queen three times costs exactly the advantage of the first move."
+      }
+    }
+  ]
+}

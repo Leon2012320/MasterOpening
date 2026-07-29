@@ -1,0 +1,55 @@
+{
+  "id": "ruy-lopez",
+  "eco": "C60",
+  "side": "white",
+  "seed": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+  "tags": [
+    "classical",
+    "positional",
+    "open",
+    "theoryHeavy"
+  ],
+  "difficulty": 4,
+  "popularity": 96,
+  "namedLines": 234,
+  "nodeCount": 165,
+  "lineCount": 84,
+  "maxDepth": 11,
+  "pgn": "[Event \"Spanische Partie\"]\n[Site \"MasterOpening\"]\n[ECO \"C60\"]\n[Opening \"Ruy Lopez\"]\n[Result \"*\"]\n\n1. e4 e5 2. Nf3 Nc6 3. Bb5 {Spanische Partie} a6 {Ruy Lopez: Morphy Defense} (3... Nf6 {Ruy Lopez: Berlin Defense} 4. O-O {Ruy Lopez: Berlin Defense} (4. d3 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation} d6 (4... Ne7 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation} 5. Nxe5 c6 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap}) (4... Bc5 5. Be3 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation}) 5. Bxc6+ {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation} (5. c4 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation})) (4. d4 exd4 5. O-O {Ruy Lopez: Berlin Defense, Nyholm Attack}) (4. Nxe5 {Ruy Lopez: Halloween Attack}) 4... Nxe4 {Ruy Lopez: Berlin Defense, Rio Gambit Accepted} (4... d6 {Ruy Lopez: Berlin Defense, Improved Steinitz Defense} 5. d4 Bd7 (5... Nd7 {Ruy Lopez: Closed Berlin Defense, Chigorin Variation}) 6. Nc3) (4... Bc5 {Ruy Lopez: Berlin Defense, Beverwijk Variation} 5. c3 {Ruy Lopez: Classical Variation, Zukertort Gambit} O-O 6. d4) (4... Ng4 {Ruy Lopez: Berlin Defense, Fishing Pole Variation}) 5. d4 Nd6 {Ruy Lopez: Berlin Defense, l'Hermet Variation} (5... Be7 {Ruy Lopez: Berlin Defense, Rio de Janeiro Variation} 6. dxe5 {Ruy Lopez: Berlin Defense, Minckwitz Variation} (6. Qe2)) (5... a6 {Ruy Lopez: Berlin Defense, Rosenthal Variation}) 6. Ba4 {Ruy Lopez: Open Berlin Defense, Showalter Variation} (6. Bxc6) (6. dxe5 {Ruy Lopez: Open Berlin Defense, l'Hermet Variation})) (3... g6 {Ruy Lopez: Fianchetto Defense} 4. c3 (4. d4 exd4 5. Nxd4 Bg7 6. Be3) 4... a6 (4... f5 {Ruy Lopez: Fianchetto Defense, Kevitz Gambit}) 5. Ba4 d6 6. d4) (3... f5 {Ruy Lopez: Schliemann Defense} 4. Nc3 {Ruy Lopez: Schliemann Defense, Dyckhoff Variation} (4. Bxc6 {Ruy Lopez: Schliemann Defense, Exchange Variation}) (4. d4 {Ruy Lopez: Schliemann Defense, Schönemann Attack}) (4. exf5 {Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted}) 4... fxe4 5. Nxe4 d5 (5... Be7 {Ruy Lopez: Schliemann Defense, Kostić Defense}) (5... Nf6 {Ruy Lopez: Schliemann Defense, Tartakower Variation}) 6. Nxe5) (3... Bc5 {Ruy Lopez: Classical Variation} 4. c3 {Ruy Lopez: Classical Variation, Central Variation} (4. O-O Nd4 5. b4 {Ruy Lopez: Classical Defense, Zaitsev Variation}) (4. b4 {Ruy Lopez: Classical Variation, Spanish Wing Gambit}) 4... Bb6 {Ruy Lopez: Classical Variation, Charousek Variation} (4... d5 {Ruy Lopez: Classical Variation, Konikowski Gambit}) (4... f5 {Ruy Lopez: Classical Variation, Cordel Gambit}) (4... Qe7 {Ruy Lopez: Classical Defense, Boden Variation})) (3... d6 {Ruy Lopez: Steinitz Defense} 4. d4 {Ruy Lopez: Steinitz Defense} Bd7 (4... exd4 5. O-O {Ruy Lopez: Steinitz Defense, Center Gambit}) 5. Nc3 (5. c4 {Ruy Lopez: Steinitz Defense, Semi-Duras Variation}) 5... Nf6 6. Bxc6 {Ruy Lopez: Steinitz Defense, Nimzowitsch Attack} (6. O-O)) (3... Bb4 {Ruy Lopez: Alapin Defense} 4. c3 Ba5 5. Bxc6 dxc6 {Ruy Lopez: Alapin Defense, Alapin Gambit}) (3... d5 {Ruy Lopez: Spanish Countergambit} 4. Nxe5 Qg5 5. Nxc6 {Ruy Lopez: Spanish Countergambit, Harding Gambit} (5. O-O {Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit})) (3... Nd4 {Ruy Lopez: Bird Variation} 4. Nxd4 exd4 5. O-O Ne7 {Ruy Lopez: Bird Variation, Paulsen Variation}) (3... Nge7 {Ruy Lopez: Cozio Defense} 4. Nc3 g6 {Ruy Lopez: Cozio Defense, Paulsen Variation}) (3... a5 {Ruy Lopez: Bulgarian Variation}) (3... b6 {Ruy Lopez: Rotary-Albany Gambit}) (3... Be7 {Ruy Lopez: Lucena Variation}) (3... f6 {Ruy Lopez: Nürnberg Variation}) (3... g5 {Ruy Lopez: Brentano Gambit}) (3... Na5 {Ruy Lopez: Pollock Defense}) (3... Nb8 {Ruy Lopez: Retreat Variation}) (3... Qe7 {Ruy Lopez: Vinogradov Variation}) 4. Ba4 (4. Bxc6 {Ruy Lopez: Exchange Variation} dxc6 (4... bxc6 {Ruy Lopez: Exchange Variation, Lutikov Variation}) 5. O-O {Ruy Lopez: Exchange Variation, Normal Variation} (5. Nc3 {Ruy Lopez: Exchange Variation, Keres Variation} f6 6. d3 {Ruy Lopez: Exchange Variation, Romanovsky Variation}) (5. d4 exd4) 5... Bg4 (5... Bd6 {Ruy Lopez: Exchange Variation, King's Bishop Variation}) (5... f6 {Ruy Lopez: Exchange Variation, Gligoric Variation}) (5... Qd6 {Ruy Lopez: Exchange Variation, Bronstein Variation}) 6. h3) 4... Nf6 (4... d6 {Ruy Lopez: Morphy Defense, Modern Steinitz Defense} 5. c3 {Ruy Lopez: Morphy Defense, Modern Steinitz Defense} (5. Bxc6+ bxc6) (5. O-O {Ruy Lopez: Morphy Defense, Modern Steinitz Defense} Bd7) (5. c4 {Ruy Lopez: Morphy Defense, Modern Steinitz Defense}) (5. Nc3 {Ruy Lopez: Morphy Defense, Modern Steinitz Defense}) 5... Bd7 {Ruy Lopez: Morphy Defense, Modern Steinitz Defense} (5... f5 {Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation})) (4... b5 {Ruy Lopez: Morphy Defense, Caro Variation} 5. Bb3 Bc5 {Ruy Lopez: Morphy Defense, Graz Variation} (5... d6) (5... Na5 {Ruy Lopez: Morphy Defense, Norwegian Variation})) (4... f5 {Ruy Lopez: Morphy Defense, Schliemann Defense Deferred} 5. exf5 {Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred}) (4... Bb4 {Ruy Lopez: Morphy Defense, Alapin's Defense Deferred}) (4... Bc5 {Ruy Lopez: Morphy Defense, Classical Defense Deferred}) (4... g6 {Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred}) (4... Nd4 {Ruy Lopez: Bird's Defense Deferred}) (4... Nge7 {Ruy Lopez: Morphy Defense, Cozio Defense}) 5. O-O {Ruy Lopez: Morphy Defense} (5. Qe2 {Ruy Lopez: Morphy Defense, Wormald Attack} b5 (5... Be7)) (5. d3 {Ruy Lopez: Morphy Defense, Anderssen Variation} d6) (5. Bxc6 {Ruy Lopez: Morphy Defense, Bayreuth Variation}) (5. c3 {Ruy Lopez: Morphy Defense, Jaffe Gambit}) (5. d4 {Ruy Lopez: Morphy Defense, Mackenzie Variation}) (5. Nc3 {Ruy Lopez: Morphy Defense, Tarrasch Variation}) 5... Be7 {Ruy Lopez: Closed} (5... b5) (5... Bc5 {Ruy Lopez: Morphy Defense, Møller Variation}) (5... d5 {Ruy Lopez: Central Countergambit}) (5... d6 {Ruy Lopez: Morphy Defense, Steinitz Deferred}) (5... g6 {Ruy Lopez: Brix Variation}) (5... Nxe4 {Ruy Lopez: Open}) *\n",
+  "name": {
+    "de": "Spanische Partie",
+    "en": "Ruy Lopez"
+  },
+  "summary": {
+    "de": "Die am gruendlichsten erforschte offene Eroeffnung. Weiss setzt den Springer c6 unter Druck und spielt langfristig auf einen Raumvorteil am Koenigsfluegel.",
+    "en": "The most thoroughly explored open opening. White pressures the c6 knight and plays for long-term space on the kingside."
+  },
+  "plans": {
+    "de": [
+      "Den Springer ueber d2–f1–g3 zum Koenigsfluegel manoevrieren.",
+      "Mit d2–d4 im richtigen Moment das Zentrum oeffnen.",
+      "Den Laeufer b3 auf der Diagonale a2–g8 halten und c2–c3 als Rueckhalt spielen."
+    ],
+    "en": [
+      "Manoeuvre the knight via d2–f1–g3 to the kingside.",
+      "Open the centre with d2–d4 at the right moment.",
+      "Keep the b3 bishop on the a2–g8 diagonal, backed up by c2–c3."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 dxc6 5. Nxe5",
+      "why": {
+        "de": "Bauernraub: nach Qd4 gewinnt Schwarz die Figur zurueck und steht besser.",
+        "en": "Pawn grab: after Qd4 Black regains the piece with the better game."
+      }
+    },
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6 6. Nxe5 Nxe5 7. Rxe5+ Be7 8. Nc3 O-O 9. Nd5 Nf5",
+      "why": {
+        "de": "Die Berliner Mauer ist zaeh — wer hier auf schnellen Angriff hofft, verrechnet sich.",
+        "en": "The Berlin Wall is resilient — hoping for a quick attack here is a miscalculation."
+      }
+    }
+  ]
+}

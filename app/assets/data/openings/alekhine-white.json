@@ -1,0 +1,54 @@
+{
+  "id": "alekhine-white",
+  "eco": "B03",
+  "side": "white",
+  "seed": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4",
+  "tags": [
+    "open",
+    "positional",
+    "theoryLight"
+  ],
+  "difficulty": 3,
+  "popularity": 26,
+  "namedLines": 13,
+  "nodeCount": 64,
+  "lineCount": 11,
+  "maxDepth": 21,
+  "pgn": "[Event \"Aljechin-Verteidigung (aus Weiss’ Sicht)\"]\n[Site \"MasterOpening\"]\n[ECO \"B03\"]\n[Opening \"Alekhine Defence (White’s side)\"]\n[Result \"*\"]\n\n1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 {Aljechin-Verteidigung (aus Weiss’ Sicht)} Nb6 5. exd6 {Alekhine Defense: Exchange Variation} (5. f4 {Alekhine Defense: Four Pawns Attack} dxe5 (5... Bf5 {Alekhine Defense: Four Pawns Attack, Trifunovic Variation}) (5... g5 {Alekhine Defense: Four Pawns Attack, Cambridge Gambit}) (5... g6 {Alekhine Defense: Four Pawns Attack, Fianchetto Variation}) 6. fxe5 Nc6 (6... Bf5 7. Nc3 e6 8. Nf3 Be7 9. Be2 O-O 10. O-O f6 {Alekhine Defense: Four Pawns Attack, Korchnoi Variation}) 7. Be3 {Alekhine Defense: Four Pawns Attack, Main Line} (7. Nf3 Bg4 8. e6 fxe6 9. c5 {Alekhine Defense: Four Pawns Attack, Ilyin-Zhenevsky Variation}) 7... Bf5 8. Nc3 e6 9. Nf3 Qd7 10. Be2 O-O-O 11. O-O) (5. Nf3 Bg4 6. Be2 {Alekhine Defense: Modern Variation, Alekhine Gambit}) (5. c5 {Alekhine Defense: Hunt Variation}) 5... exd6 (5... cxd6 6. Nc3 g6 7. h3 (7. Be3 Bg7 8. Rc1 O-O 9. b3 {Alekhine Defense: Exchange Variation, Voronezh Variation}) 7... Bg7 8. Nf3 O-O 9. Be2 Nc6 10. O-O Bf5 11. Bf4 {Alekhine Defense: Exchange Variation, Karpov Variation}) 6. Nc3 Be7 7. Bd3 *\n",
+  "name": {
+    "de": "Aljechin-Verteidigung (aus Weiss’ Sicht)",
+    "en": "Alekhine Defence (White’s side)"
+  },
+  "summary": {
+    "de": "Schwarz laedt die weissen Bauern ein, vorzuruecken, um sie spaeter anzugreifen. Weiss nimmt den Raum — muss ihn dann aber auch halten koennen.",
+    "en": "Black invites White’s pawns forward in order to attack them later. White takes the space — but then has to be able to hold it."
+  },
+  "plans": {
+    "de": [
+      "Mit c4 und d4 die Bauern breit aufstellen und den Springer zurueckdraengen.",
+      "Die Entwicklung nicht vergessen: Nc3, Nf3, Be2 und rochieren.",
+      "Erst dann mit f4 oder d5 den Raumvorteil in Angriff verwandeln."
+    ],
+    "en": [
+      "Set up broadly with c4 and d4 and push the knight back.",
+      "Do not forget development: Nc3, Nf3, Be2 and castle.",
+      "Only then convert the space into an attack with f4 or d5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Bc4 e6 6. Nc3 d6 7. Nxd5 exd5 8. Bxd5 Qh4",
+      "why": {
+        "de": "Der Vier-Bauern-Angriff wird schnell ueberzogen; die Bauern werden zur Schwaeche.",
+        "en": "The Four Pawns Attack overextends quickly; the pawns become weaknesses."
+      }
+    },
+    {
+      "line": "1. e4 Nf6 2. Nc3 d5 3. e5 d4 4. exf6 dxc3 5. fxg7 cxd2+ 6. Bxd2 Bxg7",
+      "why": {
+        "de": "Die Abtauschorgie fuehrt zu einer gleichen Stellung ohne jeden Vorteil.",
+        "en": "The exchange spree leads to an equal position with no advantage at all."
+      }
+    }
+  ]
+}

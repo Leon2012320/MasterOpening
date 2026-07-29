@@ -1,0 +1,54 @@
+{
+  "id": "reti-opening",
+  "eco": "A09",
+  "side": "white",
+  "seed": "1. Nf3 d5 2. c4",
+  "tags": [
+    "positional",
+    "flexible",
+    "theoryLight"
+  ],
+  "difficulty": 3,
+  "popularity": 48,
+  "namedLines": 14,
+  "nodeCount": 37,
+  "lineCount": 10,
+  "maxDepth": 13,
+  "pgn": "[Event \"Reti-Eroeffnung\"]\n[Site \"MasterOpening\"]\n[ECO \"A09\"]\n[Opening \"Réti Opening\"]\n[Result \"*\"]\n\n1. Nf3 d5 2. c4 {Reti-Eroeffnung} e6 (2... c6 3. g3 (3. b3 {Réti Opening: Anglo-Slav Variation, Bogoljubow Variation} Bf5 {Réti Opening: Anglo-Slav Variation, Bogoljubow Variation} (3... Bg4 {Réti Opening: Anglo-Slav Variation, Bogoljubow Variation}) 4. Bb2 {Réti Opening: Anglo-Slav Variation, Bogoljubow Variation}) 3... Nf6 4. Bg2 e6 5. b3 Be7 6. Bb2 {Réti Opening: Anglo-Slav Variation}) (2... d4 {Réti Opening: Advance Variation} 3. b4 (3. e3 c5 4. b4 {Réti Opening: Reversed Blumenfeld Gambit}) (3. Rg1 {Réti Opening: Penguin Variation}) 3... c5 {Réti Opening: Advance Variation, Michel Gambit} (3... g5 {Réti Opening: Advance Variation, Navara Gambit})) (2... dxc4 {Réti Opening: Réti Accepted} 3. e3 Be6 {Réti Opening: Réti Gambit, Keres Variation}) (2... b5 {Réti Opening: Zilbermints Gambit}) 3. g3 Nf6 4. Bg2 Be7 5. O-O O-O 6. b3 c6 7. Bb2 {Réti Opening: Anglo-Slav Variation, Bogoljubow Variation, Stonewall Line} *\n",
+  "name": {
+    "de": "Reti-Eroeffnung",
+    "en": "Réti Opening"
+  },
+  "summary": {
+    "de": "Weiss greift das Zentrum von der Flanke an, statt es zu besetzen. Hypermodern und sehr flexibel — der Uebergang in Englisch oder Katalanisch steht immer offen.",
+    "en": "White attacks the centre from the flank instead of occupying it. Hypermodern and very flexible — transposing to the English or Catalan is always available."
+  },
+  "plans": {
+    "de": [
+      "Mit g3, Bg2 und b3, Bb2 beide Diagonalen besetzen.",
+      "Den Bauern d5 unter Druck setzen, statt ihn zu blockieren.",
+      "Im richtigen Moment d4 oder e4 spielen und das Zentrum uebernehmen."
+    ],
+    "en": [
+      "Take both diagonals with g3, Bg2 and b3, Bb2.",
+      "Pressure the d5 pawn rather than blockading it.",
+      "Play d4 or e4 at the right moment and take over the centre."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. Nf3 d5 2. c4 d4 3. b4 e5 4. Nxe5",
+      "why": {
+        "de": "Der Vorstoss e5 haengt einfach — der Springer f3 schlaegt ihn.",
+        "en": "The e5 push simply hangs — the f3 knight takes it."
+      }
+    },
+    {
+      "line": "1. Nf3 d5 2. c4 dxc4 3. Na3 c5 4. Nxc4 Nc6 5. b3 e5 6. Bb2 f6",
+      "why": {
+        "de": "Das Zentrum mit Bauern zu halten laesst die weissen Laeufer erstarken.",
+        "en": "Holding the centre with pawns only strengthens White’s bishops."
+      }
+    }
+  ]
+}

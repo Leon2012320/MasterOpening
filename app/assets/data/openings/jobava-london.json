@@ -1,0 +1,54 @@
+{
+  "id": "jobava-london",
+  "eco": "D00",
+  "side": "white",
+  "seed": "1. d4 Nf6 2. Nc3 d5 3. Bf4",
+  "tags": [
+    "attacking",
+    "theoryLight",
+    "system"
+  ],
+  "difficulty": 2,
+  "popularity": 46,
+  "namedLines": 0,
+  "nodeCount": 60,
+  "lineCount": 7,
+  "maxDepth": 13,
+  "pgn": "[Event \"Jobava-London\"]\n[Site \"MasterOpening\"]\n[ECO \"D00\"]\n[Opening \"Jobava London\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. Nc3 d5 3. Bf4 {Jobava-London} e6 (3... a6 4. e3 e6 5. Nf3 c5 6. dxc5 Bxc5 7. Bd3 {a6 gegen Sb5 vorbeugend}) (3... Bf5 4. f3 e6 5. g4 Bg6 6. h4 h6 7. Nxd5 {Aggressives f3 und g4}) (3... c5 4. e4 cxd4 5. Nxd5 Nxd5 6. exd5 Qxd5 7. Bxb8 {Scharfes Bauernopfer mit e4}) (3... c6 4. e3 Bf5 5. f3 e6 6. g4 Bg6 7. h4 {Slawischer Aufbau gegen den Sturm}) (3... g6 4. e3 Bg7 5. h4 h5 6. Be2 O-O 7. Nf3 {Gegen den Fianchetto-Aufbau}) 4. e3 (4. Nb5 Na6 5. e3 Be7 6. Nf3 O-O 7. c3 {Sofort Sb5}) 4... Bd6 5. Bg3 O-O 6. Bd3 c5 7. Nb5 *\n",
+  "name": {
+    "de": "Jobava-London",
+    "en": "Jobava London"
+  },
+  "summary": {
+    "de": "Die scharfe Schwester des London-Systems: Nc3 statt c3, dazu oft schnelles Nb5 und f3–e4. Im Blitz eine der unangenehmsten Waffen gegen 1…d5.",
+    "en": "The sharp sister of the London System: Nc3 instead of c3, often with a quick Nb5 and f3–e4. One of the nastiest blitz weapons against 1…d5."
+  },
+  "plans": {
+    "de": [
+      "Mit Nb5 den Laeufer d6 abtauschen oder den Bauern c7 angreifen.",
+      "Mit f3 und e4 das Zentrum sprengen.",
+      "Lange rochieren und mit h4–h5 stuermen."
+    ],
+    "en": [
+      "Use Nb5 to trade off the d6 bishop or hit the c7 pawn.",
+      "Blow open the centre with f3 and e4.",
+      "Castle long and storm with h4–h5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. Nc3 d5 3. Bf4 a6 4. e3 e6 5. Nf3 c5 6. Ne5 Nc6 7. Bb5 Bd7 8. Nxd7 Qxd7 9. Bxc6 Qxc6",
+      "why": {
+        "de": "Beide Laeufer abzutauschen nimmt der Stellung genau die Kraft, wegen der man sie gewaehlt hat.",
+        "en": "Trading both bishops removes exactly the punch you chose this line for."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. Nc3 d5 3. Bf4 c5 4. e4 dxe4 5. d5 Nxd5 6. Nxd5 Qxd5 7. Qxd5",
+      "why": {
+        "de": "Der Abtausch der Damen verschenkt die gesamte Initiative des Gambits.",
+        "en": "Trading queens throws away the gambit’s entire initiative."
+      }
+    }
+  ]
+}

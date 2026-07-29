@@ -1,0 +1,54 @@
+{
+  "id": "queens-indian",
+  "eco": "E12",
+  "side": "black",
+  "seed": "1. d4 Nf6 2. c4 e6 3. Nf3 b6",
+  "tags": [
+    "solid",
+    "positional",
+    "flexible"
+  ],
+  "difficulty": 4,
+  "popularity": 58,
+  "namedLines": 53,
+  "nodeCount": 122,
+  "lineCount": 33,
+  "maxDepth": 19,
+  "pgn": "[Event \"Damenindische Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"E12\"]\n[Opening \"Queen’s Indian Defence\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. c4 e6 3. Nf3 b6 {Damenindische Verteidigung} 4. g3 {Queen's Indian Defense: Fianchetto Variation} (4. Nc3 {Queen's Indian Defense: Kasparov Variation} Bb7 (4... d5 5. cxd5 exd5 6. Bg5 Be7 7. e3 O-O 8. Bd3 Bb7 9. Ne5 {Queen's Gambit Declined: Pillsbury Attack}) (4... Bb4 5. Bg5 h6 6. Bh4 Bb7 {Queen's Indian Defense: Kasparov Variation}) 5. Bg5 (5. a3 d5 6. cxd5 Nxd5 7. e4 {Queen's Indian Defense: Kasparov-Petrosian Variation, Polovodin Gambit}) 5... h6 6. Bh4 g5 7. Bg3 Nh5 {Queen's Indian Defense: Kasparov Variation, Botvinnik Attack}) (4. e3 {Queen's Indian Defense: Spassky System} Bb7 {Queen's Indian Defense: Spassky System} 5. Bd3 {Queen's Indian Defense: Spassky System} c5 {Queen's Indian Defense: Spassky System3} (5... d5 {Queen's Indian Defense: Spassky System}) 6. Nc3 (6. O-O Be7 7. b3 O-O 8. Bb2 cxd4 9. Nxd4 {Queen's Indian Defense: Averbakh Variation}) 6... cxd4 7. exd4 Be7 8. O-O d5 9. cxd5 Nxd5 {Queen's Indian Defense: Spassky System3}) (4. a3 {Queen's Indian Defense: Petrosian Variation} Bb7 (4... Ba6 5. Qc2 Bb7 {Queen's Indian Defense: Petrosian Variation, Farago Defense}) 5. Nc3 {Queen's Indian Defense: Kasparov-Petrosian Variation} d5 {Queen's Indian Defense: Kasparov-Petrosian Variation, Main Line} (5... Be7 {Queen's Indian Defense: Kasparov-Petrosian Variation, Marco Defense}) (5... g6 {Queen's Indian Defense: Kasparov-Petrosian Variation, Hedgehog Variation}) (5... Ne4 {Queen's Indian Defense: Kasparov-Petrosian Variation, Andersson Variation}) 6. cxd5 Nxd5 {Queen's Indian Defense: Kasparov-Petrosian Variation, Modern Variation} (6... exd5 {Queen's Indian Defense: Kasparov-Petrosian Variation, Classical Variation}) 7. Bd2 {Queen's Indian Defense: Kasparov-Petrosian Variation, Romanishin Attack} (7. e3 {Queen's Indian Defense: Kasparov-Petrosian Variation, Petrosian Attack}) (7. Qa4+ {Queen's Indian Defense: Kasparov-Petrosian Variation, Rashkovsky Attack}) (7. Qc2 {Queen's Indian Defense: Kasparov-Petrosian Variation, Kasparov Attack})) (4. Bf4 {Queen's Indian Defense: Miles Variation}) 4... Ba6 {Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation} (4... Bb7 {Queen's Indian Defense: Fianchetto Variation, Traditional Line} 5. Bg2 Be7 {Queen's Indian Defense: Traditional Variation} (5... Bb4+ {Queen's Indian Defense: Capablanca Variation} 6. Bd2 Bxd2+ (6... Be7 {Queen's Indian Defense: Riumin Variation}) 7. Qxd2 O-O 8. Nc3 Ne4 9. Qc2 Nxc3 10. Ng5 {Bogo-Indian Defense: Monticelli Trap}) (5... c5 {Queen's Indian Defense: Fianchetto Variation, Sämisch Variation} 6. d5 exd5 7. Ng5 {Queen's Indian Defense: Buerger Variation} (7. Nh4 {Queen's Indian Defense: Fianchetto Variation, Rubinstein Variation})) 6. O-O {Queen's Indian Defense: Classical Variation} (6. Nc3 {Queen's Indian Defense: Anti-Queen's Indian System} Ne4 7. Bd2 {Queen's Indian Defense: Opocensky Variation}) 6... O-O 7. Nc3 {Queen's Indian Defense: Classical Variation, Traditional Variation} (7. d5 exd5 8. Nd4 {Queen's Indian Defense: Classical Variation, Taimanov Gambit} (8. Nh4 {Queen's Indian Defense: Classical Variation, Polugaevsky Gambit})) (7. b3 {Queen's Indian Defense: Euwe Variation}) (7. Re1 {Queen's Indian Defense: Fianchetto Variation, Kramnik Variation}) 7... Ne4 (7... d5 {Queen's Indian Defense: Classical Variation, Traditional Variation, Nimzowitsch Line}) (7... Na6 {Queen's Indian Defense: Classical Variation, Tiviakov Defense}) 8. Qc2 Nxc3 9. Qxc3 {Queen's Indian Defense: Classical Variation, Traditional Variation, Main Line}) 5. b3 {Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Quiet Line} (5. Qa4 {Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Nimzowitsch Attack}) (5. Qb3 {Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Timman's Line}) 5... Bb4+ {Queen's Indian Defense: Fianchetto Variation, Check Variation} 6. Bd2 Be7 {Queen's Indian Defense: Fianchetto Variation, Check Variation, Intermezzo Line} (6... Qe7 {Queen's Indian Defense: Fianchetto Variation, Check Variation, Modern Line}) 7. Bg2 c6 8. Bc3 d5 *\n",
+  "name": {
+    "de": "Damenindische Verteidigung",
+    "en": "Queen’s Indian Defence"
+  },
+  "summary": {
+    "de": "Der Laeufer geht nach b7 und kaempft mit dem Springer f6 um das Feld e4. Sehr solide, oft Uebergang ins Nimzoindische oder Katalanische.",
+    "en": "The bishop goes to b7 and fights with the f6 knight for the e4 square. Very solid, often transposing to the Nimzo-Indian or Catalan."
+  },
+  "plans": {
+    "de": [
+      "Das Feld e4 mit Bb7, Nf6 und d5 kontrollieren.",
+      "Mit Ba6 den Bauern c4 angreifen, bevor Weiss ihn deckt.",
+      "Nach d5 die Struktur des Damengambits mit besserem Laeufer erreichen."
+    ],
+    "en": [
+      "Control e4 with Bb7, Nf6 and d5.",
+      "Hit the c4 pawn with Ba6 before White defends it.",
+      "Reach a QGD structure with a better bishop after d5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. Nc3 Ne4 8. Qc2 Nxc3 9. Qxc3 f5 10. b3 Bf6 11. Bb2 d6 12. Rad1 Nd7 13. Ne1 Bxg2 14. Kxg2",
+      "why": {
+        "de": "Den Laeufer b7 abzutauschen gibt die Figur auf, die um e4 kaempft.",
+        "en": "Trading the b7 bishop gives up the piece that fights for e4."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. a3 Bb7 5. Nc3 d5 6. cxd5 Nxd5 7. e3 Nxc3 8. bxc3 Be7 9. Bb5+ c6 10. Bd3 c5 11. O-O Nc6 12. Bb2",
+      "why": {
+        "de": "Zweimal mit demselben Springer zu tauschen verschenkt zwei Tempi.",
+        "en": "Trading twice with the same knight throws away two tempi."
+      }
+    }
+  ]
+}

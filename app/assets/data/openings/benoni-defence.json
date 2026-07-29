@@ -1,0 +1,54 @@
+{
+  "id": "benoni-defence",
+  "eco": "A60",
+  "side": "black",
+  "seed": "1. d4 Nf6 2. c4 c5 3. d5 e6",
+  "tags": [
+    "attacking",
+    "tactical",
+    "modern"
+  ],
+  "difficulty": 4,
+  "popularity": 40,
+  "namedLines": 17,
+  "nodeCount": 36,
+  "lineCount": 9,
+  "maxDepth": 20,
+  "pgn": "[Event \"Moderne Benoni-Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"A60\"]\n[Opening \"Modern Benoni\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. c4 c5 3. d5 e6 {Moderne Benoni-Verteidigung} 4. Nc3 exd5 5. cxd5 d6 (5... Bd6 {Benoni Defense: Modern Variation, Snake Variation}) 6. e4 {Benoni Defense: King's Pawn Line} g6 7. Nf3 (7. f4 {Benoni Defense: Pawn Storm Variation} Bg7 8. Nf3 (8. Bb5+ {Benoni Defense: Taimanov Variation}) (8. e5 {Benoni Defense: Mikenas Variation}) 8... O-O {Benoni Defense: Four Pawns Attack} 9. Be2 Re8 {Benoni Defense: Four Pawns Attack, Main Line}) (7. f3 Bg7 {Benoni Defense: King's Pawn Line} 8. Be3 {Benoni Defense: King's Pawn Line, with Be3} (8. Bg5 {Benoni Defense: King's Pawn Line, with Bg5}) (8. Nge2 {Benoni Defense: King's Pawn Line, with Nge2})) 7... Bg7 8. Be2 O-O {Benoni Defense: Classical Variation} 9. O-O {Benoni Defense: Classical Variation, Main Line} Re8 {Benoni Defense: Classical Variation, Czerniak Defense} (9... a6 10. a4 {Benoni Defense: Classical Variation, Full Line}) 10. Nd2 {Benoni Defense: Classical Variation, Czerniak Defense, Tal Line} Na6 *\n",
+  "name": {
+    "de": "Moderne Benoni-Verteidigung",
+    "en": "Modern Benoni"
+  },
+  "summary": {
+    "de": "Schwarz akzeptiert einen Raumnachteil und einen Rueckstandsbauern, bekommt dafuer die halboffene e-Linie und den Bauernvorstoss b5. Alles oder nichts.",
+    "en": "Black accepts less space and a backward pawn in return for the half-open e-file and the b5 break. All or nothing."
+  },
+  "plans": {
+    "de": [
+      "Mit a6 und b5 am Damenfluegel durchbrechen.",
+      "Den Laeufer g7 gegen die weisse Bauernkette arbeiten lassen.",
+      "Die halboffene e-Linie mit dem Turm besetzen."
+    ],
+    "en": [
+      "Break on the queenside with a6 and b5.",
+      "Let the g7 bishop work against White’s pawn chain.",
+      "Occupy the half-open e-file with a rook."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. e4 g6 7. f4 Bg7 8. Bb5+ Nfd7 9. a4 O-O 10. Nf3 Na6 11. O-O Nc7 12. Bxd7",
+      "why": {
+        "de": "Gegen den Taimanow-Angriff muss Nfd7 kommen; Nbd7 verliert nach e5 sofort.",
+        "en": "Against the Taimanov Attack Nfd7 is required; Nbd7 loses at once to e5."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. e4 g6 7. Nf3 Bg7 8. Be2 O-O 9. O-O Re8 10. Nd2 Nbd7 11. a4 Ne5 12. Qc2 g5 13. Nf3",
+      "why": {
+        "de": "g5 schwaecht den eigenen Koenig, ohne dass der Damenfluegel schon laeuft.",
+        "en": "g5 weakens your own king while the queenside play has not even started."
+      }
+    }
+  ]
+}

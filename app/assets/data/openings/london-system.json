@@ -1,0 +1,56 @@
+{
+  "id": "london-system",
+  "eco": "D02",
+  "side": "white",
+  "seed": "1. d4 d5 2. Nf3 Nf6 3. Bf4",
+  "tags": [
+    "system",
+    "solid",
+    "positional",
+    "beginnerFriendly",
+    "theoryLight"
+  ],
+  "difficulty": 1,
+  "popularity": 84,
+  "namedLines": 3,
+  "nodeCount": 68,
+  "lineCount": 8,
+  "maxDepth": 15,
+  "pgn": "[Event \"London-System\"]\n[Site \"MasterOpening\"]\n[ECO \"D02\"]\n[Opening \"London System\"]\n[Result \"*\"]\n\n1. d4 d5 2. Nf3 Nf6 3. Bf4 {London-System} e6 (3... c5 4. e3 {Queen's Pawn Game: London System} Nc6 (4... e6 5. c3 Bd6 6. Bg3 Nc6 7. Nbd2 O-O 8. Bd3 {Symmetrischer Aufbau}) 5. c3 (5. Nbd2 {Queen's Pawn Game: London System} e6 6. c3 {Queen's Pawn Game: London System}) 5... Qb6 6. Qb3 c4 7. Qxb6 axb6 {Damentausch nach Db6}) (3... g6 4. e3 Bg7 5. h3 O-O 6. Be2 c5 7. c3 b6 8. O-O {Gegen den koenigsindischen Aufbau}) (3... Bf5 4. e3 e6 5. c4 c6 6. Nc3 Nbd7 7. Qb3 Qb6 {Schwarz spiegelt den Aufbau}) 4. e3 c5 (4... Bd6 5. Bg3 c5 (5... O-O 6. Bd3 b6 7. Nbd2 Bb7 8. Ne5 {Springer auf e5 verankern}) 6. c3 Nc6 7. Nbd2 Qc7 8. Bd3 {Db6 vermeiden mit Dc7}) 5. c3 Nc6 6. Nbd2 Bd6 7. Bg3 O-O 8. Bd3 *\n",
+  "name": {
+    "de": "London-System",
+    "en": "London System"
+  },
+  "summary": {
+    "de": "Immer dieselbe Aufstellung, fast egal was Schwarz spielt: Bf4, e3, c3, Nbd2, Bd3. Ideal fuer alle, die wenig Theorie lernen und trotzdem solide stehen wollen.",
+    "en": "The same setup almost regardless of what Black plays: Bf4, e3, c3, Nbd2, Bd3. Ideal for anyone who wants a solid position without learning much theory."
+  },
+  "plans": {
+    "de": [
+      "Den Aufbau Bf4, e3, Bd3, c3, Nbd2 vervollstaendigen und rochieren.",
+      "Mit Ne5 den Springer zentral verankern.",
+      "Am Koenigsfluegel mit Qe2, Rf1–e1 und e3–e4 vorbereiten."
+    ],
+    "en": [
+      "Complete the Bf4, e3, Bd3, c3, Nbd2 setup and castle.",
+      "Anchor a knight centrally with Ne5.",
+      "Prepare kingside play with Qe2, Rf1–e1 and e3–e4."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. e3 Qb6 5. Nc3 Qxb2",
+      "why": {
+        "de": "Der b2-Bauer ist nicht immer vergiftet — hier braucht Weiss Nc3 mit konkreter Kompensation.",
+        "en": "The b2 pawn is not always poisoned — here White needs Nc3 with concrete compensation."
+      }
+    },
+    {
+      "line": "1. d4 d5 2. Bf4 Nf6 3. e3 e6 4. Nf3 Bd6 5. Bg3 O-O 6. Bd3 b6 7. Nbd2 Bb7 8. Ne5 Nbd7 9. f4",
+      "why": {
+        "de": "Der Stonewall-Aufbau ohne vorbereitete Deckung des Feldes e4 schwaecht die eigene Koenigsstellung.",
+        "en": "A Stonewall setup without covering e4 first weakens your own king."
+      }
+    }
+  ]
+}

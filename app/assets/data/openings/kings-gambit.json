@@ -1,0 +1,55 @@
+{
+  "id": "kings-gambit",
+  "eco": "C30",
+  "side": "white",
+  "seed": "1. e4 e5 2. f4",
+  "tags": [
+    "gambit",
+    "attacking",
+    "tactical",
+    "open"
+  ],
+  "difficulty": 4,
+  "popularity": 34,
+  "namedLines": 189,
+  "nodeCount": 163,
+  "lineCount": 84,
+  "maxDepth": 9,
+  "pgn": "[Event \"Koenigsgambit\"]\n[Site \"MasterOpening\"]\n[ECO \"C30\"]\n[Opening \"King’s Gambit\"]\n[Result \"*\"]\n\n1. e4 e5 2. f4 {Koenigsgambit} exf4 {King's Gambit Accepted} (2... d5 {King's Gambit Declined: Falkbeer Countergambit} 3. exd5 {King's Gambit Declined: Falkbeer Countergambit Accepted} (3. Nc3 {King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation} dxe4 4. Nxe4 {Van Geet Opening: Grünfeld Defense, Steiner Gambit}) (3. d4 {King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit}) (3. Nf3 {King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack}) 3... e4 {King's Gambit Declined: Falkbeer Countergambit, Staunton Line} (3... c6 {King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit} 4. dxc6 Bc5 {King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit}) (3... Bc5 {King's Gambit Declined: Falkbeer Countergambit, Miles Gambit}) (3... exf4 {King's Gambit Declined: Falkbeer Countergambit, Modern Transfer}) 4. d3 {King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit} (4. Nc3 Nf6 5. Qe2 {King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation}) (4. Bb5+ {King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack}) 4... Nf6 5. dxe4 {King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted} (5. Nd2 {King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation}) (5. Qe2 {King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line})) (2... Bc5 {King's Gambit Declined: Classical Variation} 3. Nf3 (3. Qh5 {King's Gambit Declined: Classical Variation, Walthoffen Attack}) 3... d6 (3... g5 {King's Gambit Declined: Senechaud Countergambit}) 4. c3 {King's Gambit Declined: Classical Variation} (4. Nc3 Nd7 {King's Gambit Declined: Classical, Hanham Variation}) (4. b4 {King's Gambit Declined: Classical Variation, Rotlewi Countergambit}) (4. fxe5 {King's Gambit Declined: Classical, Soldatenkov Variation}) 4... Bg4 (4... f5 {King's Gambit Declined: Classical Variation, Rubinstein Countergambit} 5. fxe5) 5. fxe5) (2... f5 {King's Gambit Declined: Panteldakis Countergambit} 3. exf5 exf4 (3... Bc5 {King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense}) (3... Qh4+ {King's Gambit Declined: Panteldakis Countergambit, Greco Variation}) 4. Qh5+ (4. Nf3 d5 5. d4) 4... g6 (4... Ke7 {King's Gambit Declined: Panteldakis Countergambit, Shirazi Line}) 5. fxg6) (2... Qf6 {King's Gambit Declined: Norwalde Variation} 3. Nc3 Qxf4 4. Nf3 (4. d4 {King's Gambit Declined: Norwalde Variation, Schubert Variation}) 4... Bb4 5. Bc4 {King's Gambit Declined: Norwalde Variation, Bücker Gambit}) (2... Nc6 {King's Gambit Declined: Queen's Knight Defense} 3. Nf3 g5 {King's Gambit Declined: Zilbermints Double Gambit} (3... f5 {King's Gambit Declined: Miles Defense}) 4. fxg5 h6 {King's Gambit Declined: Hobbs-Zilbermints Gambit}) (2... f6 3. fxe5 Nc6 {King's Gambit Declined: Soller-Zilbermints Gambit}) (2... Qh4+ {King's Gambit Declined: Keene's Defense} 3. g3 {King's Gambit Declined: Keene's Defense} Qe7 {King's Gambit Declined: Keene Defense}) (2... g5 {King's Gambit Declined: Zilbermints Double Countergambit}) (2... Nf6 {King's Gambit Declined: Petrov's Defense}) 3. Nf3 {King's Gambit Accepted: King's Knight's Gambit} (3. Bc4 {King's Gambit Accepted: Bishop's Gambit} Qh4+ (3... d5 {King's Gambit Accepted: Bishop's Gambit, Bledow Variation} 4. Bxd5 Qh4+ (4... c6 {King's Gambit Accepted: Bishop's Gambit, Anderssen Variation}) (4... Nf6 {King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit}) 5. Kf1) (3... Nf6 {King's Gambit Accepted: Bishop's Gambit, Cozio Defense} 4. Nc3 {King's Gambit Accepted: Bishop's Gambit, Bogoljubow Variation} Bb4 (4... c6 {King's Gambit Accepted: Bishop's Gambit, Bogoljubow Defense}) 5. e5 {King's Gambit Accepted: Bishop's Gambit, Paulsen Attack}) (3... f5 {King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit} 4. Qe2 Qh4+ 5. Kd1) (3... b5 {King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit}) (3... c6 {King's Gambit Accepted: Bishop's Gambit, Lopez Defense}) (3... g5 {King's Gambit Accepted: Bishop's Gambit, Anderssen Defense}) (3... Nc6 {King's Gambit Accepted: Bishop's Gambit, Maurian Defense}) (3... Ne7 {King's Gambit Accepted: Bishop's Gambit, Steinitz Defense}) 4. Kf1 d5 (4... g5 {King's Gambit Accepted: Bishop's Gambit, Lopez Variation} 5. Qf3 {King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack}) (4... Ne7 5. Nc3) (4... b5 {King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit}) (4... Bc5 {King's Gambit Accepted: Bishop's Gambit, Greco Variation}) (4... d6 {King's Gambit Accepted: Bishop's Gambit, Cozio Variation}) (4... Nc6 {King's Gambit Accepted: Bishop's Gambit, Boden Variation}) (4... Nf6 {King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation}) 5. Bxd5) (3. Be2 {King's Gambit Accepted: Tartakower Gambit} f5 4. exf5 d6 {King's Gambit Accepted: Tartakower Gambit, Weiss Defense}) (3. b3 {King's Gambit Accepted: Orsini Gambit}) (3. Bb5 {King's Gambit Accepted: Schurig Gambit, with Bb5}) (3. Bd3 {King's Gambit Accepted: Schurig Gambit, with Bd3}) (3. d4 {King's Gambit Accepted: Villemson Gambit}) (3. g3 {King's Gambit Accepted: Gaga Gambit}) (3. h4 {King's Gambit Accepted: Stamma Gambit}) (3. Kf2 {King's Gambit Accepted: Tumbleweed}) (3. Nc3 {King's Gambit Accepted: Mason-Keres Gambit}) (3. Ne2 {King's Gambit Accepted: Paris Gambit}) (3. Nh3 {King's Gambit Accepted: Eisenberg Variation}) (3. Qe2 {King's Gambit Accepted: Basman Gambit}) (3. Qf3 {King's Gambit Accepted: Breyer Gambit}) (3. Qg4 {King's Gambit Accepted: Dodo Variation}) (3. Qh5 {King's Gambit Accepted: Carrera Gambit}) 3... g5 {King's Gambit Accepted: King's Knight's Gambit} (3... d6 {King's Gambit Accepted: Fischer Defense} 4. Bc4 (4. d4 Nf6) (4. b4 {King's Gambit Accepted: Fischer Defense, Schulder Gambit}) 4... h6) (3... Nc6 {King's Gambit Accepted: MacLeod Defense} 4. Bc4 (4. Nc3 g5) 4... g5 {King's Gambit Accepted: Blachly Gambit}) (3... Be7 {King's Gambit Accepted: Cunningham Defense} 4. Bc4 Bh4+ (4... Nf6 {King's Gambit Accepted: Cunningham Defense, McCormick Defense})) (3... d5 {King's Gambit Accepted: Modern Defense} 4. exd5 {King's Gambit Accepted: Modern Defense} Nf6 {King's Gambit Accepted: Abbazia Defense}) (3... h6 {King's Gambit Accepted: Becker Defense} 4. Bc4 d6) (3... Nf6 {King's Gambit Accepted: Schallopp Defense} 4. e5 Nh5) (3... f5 {King's Gambit Accepted: Gianutio Countergambit}) (3... h5 {King's Gambit Accepted: Wagenbach Defense}) (3... Ne7 {King's Gambit Accepted: Bonsch-Osmolovsky Variation}) 4. h4 {King's Gambit Accepted: King's Knight's Gambit} (4. Bc4 {King's Gambit Accepted: King's Knight's Gambit} Bg7 {King's Gambit Accepted: Traditional Variation} (4... d6) (4... g4)) (4. d4 {King's Gambit Accepted: Rosentreter Gambit} g4) (4. Nc3 {King's Gambit Accepted: Quaade Gambit}) 4... g4 *\n",
+  "name": {
+    "de": "Koenigsgambit",
+    "en": "King’s Gambit"
+  },
+  "summary": {
+    "de": "Weiss gibt einen Bauern fuer das Zentrum und die offene f-Linie. Romantisches Schach: wer beide Seiten kennt, gewinnt hier viele Blitzpartien.",
+    "en": "White gives a pawn for the centre and the open f-file. Romantic chess: knowing both sides wins a lot of blitz games."
+  },
+  "plans": {
+    "de": [
+      "Mit d4 das Zentrum besetzen, waehrend Schwarz den Mehrbauern verteidigt.",
+      "Den Turm ueber f1 auf die halboffene f-Linie bringen.",
+      "Den Bauern f4 spaeter mit Bxf4 oder g3 zurueckholen."
+    ],
+    "en": [
+      "Occupy the centre with d4 while Black defends the extra pawn.",
+      "Bring the rook to the half-open f-file.",
+      "Recapture on f4 later with Bxf4 or g3."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O",
+      "why": {
+        "de": "Das Muzio-Gambit opfert eine ganze Figur — spektakulaer, aber objektiv nicht ausreichend.",
+        "en": "The Muzio Gambit sacrifices a whole piece — spectacular but objectively insufficient."
+      }
+    },
+    {
+      "line": "1. e4 e5 2. f4 exf4 3. Nf3 d6 4. Bc4 h6 5. d4 g5 6. h4 Bg7 7. c3 Nc6 8. O-O Qe7 9. g3",
+      "why": {
+        "de": "Die Linie zu frueh aufzureissen kostet den Koenig die Deckung.",
+        "en": "Opening the file too early costs the king its cover."
+      }
+    }
+  ]
+}

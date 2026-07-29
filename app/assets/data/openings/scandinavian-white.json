@@ -1,0 +1,54 @@
+{
+  "id": "scandinavian-white",
+  "eco": "B01",
+  "side": "white",
+  "seed": "1. e4 d5 2. exd5",
+  "tags": [
+    "open",
+    "theoryLight",
+    "beginnerFriendly"
+  ],
+  "difficulty": 2,
+  "popularity": 36,
+  "namedLines": 42,
+  "nodeCount": 84,
+  "lineCount": 29,
+  "maxDepth": 14,
+  "pgn": "[Event \"Skandinavisch (aus Weiss’ Sicht)\"]\n[Site \"MasterOpening\"]\n[ECO \"B01\"]\n[Opening \"Scandinavian (White’s side)\"]\n[Result \"*\"]\n\n1. e4 d5 2. exd5 {Skandinavisch (aus Weiss’ Sicht)} Qxd5 {Scandinavian Defense: Mieses-Kotroc Variation} (2... Nf6 {Scandinavian Defense: Modern Variation} 3. d4 {Scandinavian Defense: Modern Variation} (3. c4 c6 {Scandinavian Defense: Panov Transfer} (3... e6 {Scandinavian Defense: Icelandic-Palme Gambit})) 3... Bg4 {Scandinavian Defense: Portuguese Gambit} (3... Nxd5 {Scandinavian Defense: Marshall Variation} 4. Nf3 (4. c4 Nb4 {Scandinavian Defense: Kiel Variation}) 4... Bg4 {Scandinavian Defense: Modern Variation, Gipslis Variation} (4... g6 {Scandinavian Defense: Richter Variation})) (3... c6 4. dxc6 e5 {Scandinavian Defense: Kádas Gambit}) (3... g6 {Scandinavian Defense: Richter Variation} 4. c4 b5 {Scandinavian Defense: Modern Variation, Wing Gambit}) 4. f3 (4. Bb5+ Nbd7 (4... c6 {Scandinavian Defense: Portuguese Gambit, Elbow Variation}) 5. Be2 {Scandinavian Defense: Portuguese Gambit, Lusophobe Variation}) (4. Be2 {Scandinavian Defense: Portuguese Gambit, Wuss Variation}) (4. Nf3 {Scandinavian Defense: Portuguese Gambit, Classical Variation}) 4... Bf5 5. Bb5+ (5. c4 {Scandinavian Defense: Portuguese Gambit, Banker Variation}) (5. g4 {Scandinavian Defense: Portuguese Gambit, Correspondence Refutation}) 5... Nbd7 6. c4 {Scandinavian Defense: Portuguese Gambit, Jadoul Variation} (6. Nc3 {Scandinavian Defense: Portuguese Gambit, Melbourne Shuffle Variation})) (2... c6 {Scandinavian Defense: Blackburne-Kloosterboer Gambit} 3. dxc6 e5 {Scandinavian Defense: Kloosterboer Gambit} (3... Nxc6 {Scandinavian Defense: Blackburne Gambit})) (2... e5 3. dxe6 Bxe6 {Scandinavian Defense: Boehnke Gambit}) 3. Nc3 Qa5 {Scandinavian Defense: Main Line} (3... Qd6 {Scandinavian Defense: Gubinsky-Melts Defense} 4. d4 Nf6 (4... c6 {Scandinavian Defense: Schiller-Pytel Variation}) 5. Bc4 (5. Nf3 a6 {Scandinavian Defense: Bronstein Variation}) 5... c6 6. Nge2 Bf5 7. Bf4 Qb4 {Scandinavian Defense: Schiller-Pytel Variation, Modern Variation}) (3... Qd8 {Scandinavian Defense: Valencian Variation} 4. d4 Nf6 5. Nf3 Bg4 {Scandinavian Defense: Valencian Variation, Main Line} (5... c6 {Scandinavian Defense: Valencian Variation, Ilundain Variation})) 4. d4 (4. b4 {Scandinavian Defense: Main Line, Leonhardt Gambit}) 4... Nf6 {Scandinavian Defense: Main Line, Mieses Variation} (4... e5 {Scandinavian Defense: Anderssen Counterattack} 5. dxe5 (5. Nf3 {Scandinavian Defense: Anderssen Counterattack, Goteborg System} Bg4 {Scandinavian Defense: Anderssen Counterattack, Collijn Variation}) 5... Nc6 6. Nf3 Bb4 7. Bd2 {Scandinavian Defense: Anderssen Counterattack, Orthodox Attack}) 5. Nf3 c6 (5... Bf5 {Scandinavian Defense: Classical Variation} 6. Ne5 c6 7. g4 {Scandinavian Defense: Grünfeld Variation}) (5... Bg4 6. h3 {Scandinavian Defense: Lasker Variation}) 6. Bc4 Bf5 *\n",
+  "name": {
+    "de": "Skandinavisch (aus Weiss’ Sicht)",
+    "en": "Scandinavian (White’s side)"
+  },
+  "summary": {
+    "de": "Schwarz holt den Bauern mit der Dame zurueck und verliert dabei Zeit. Weiss entwickelt mit Tempo und steht nach wenigen Zuegen bequem.",
+    "en": "Black recaptures with the queen and loses time doing so. White develops with tempo and is comfortable within a few moves."
+  },
+  "plans": {
+    "de": [
+      "Mit Nc3 die Dame angreifen und dabei entwickeln.",
+      "Mit d4 und Nf3 das Zentrum besetzen.",
+      "Den Laeufer nach d2 stellen, um die Dame auf a5 zu stoeren."
+    ],
+    "en": [
+      "Attack the queen with Nc3 while developing.",
+      "Occupy the centre with d4 and Nf3.",
+      "Put the bishop on d2 to harass the queen on a5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 d5 2. exd5 Qxd5 3. Nf3",
+      "why": {
+        "de": "Nc3 ist der Punkt der ganzen Variante — ohne den Angriff auf die Dame verliert Weiss seinen Vorteil.",
+        "en": "Nc3 is the whole point — without hitting the queen White gives up the edge."
+      }
+    },
+    {
+      "line": "1. e4 d5 2. exd5 Nf6 3. c4 c6 4. dxc6 Nxc6",
+      "why": {
+        "de": "Das Gambit anzunehmen kostet die gesamte Entwicklung; 3. d4 ist der sichere Weg.",
+        "en": "Accepting the gambit costs all development; 3. d4 is the safe route."
+      }
+    }
+  ]
+}

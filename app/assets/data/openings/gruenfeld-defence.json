@@ -1,0 +1,55 @@
+{
+  "id": "gruenfeld-defence",
+  "eco": "D80",
+  "side": "black",
+  "seed": "1. d4 Nf6 2. c4 g6 3. Nc3 d5",
+  "tags": [
+    "tactical",
+    "modern",
+    "open",
+    "theoryHeavy"
+  ],
+  "difficulty": 5,
+  "popularity": 68,
+  "namedLines": 52,
+  "nodeCount": 117,
+  "lineCount": 31,
+  "maxDepth": 20,
+  "pgn": "[Event \"Gruenfeld-Indisch\"]\n[Site \"MasterOpening\"]\n[ECO \"D80\"]\n[Opening \"Grünfeld Defence\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. c4 g6 3. Nc3 d5 {Gruenfeld-Indisch} 4. cxd5 (4. Nf3 {Grünfeld Defense: Three Knights Variation} Bg7 {Grünfeld Defense: Three Knights Variation} 5. Qb3 {Grünfeld Defense: Russian Variation} (5. e3 {Grünfeld Defense: Three Knights Variation, Burille Variation} O-O 6. Qb3 {Grünfeld Defense: Three Knights Variation, Vienna Variation} (6. b4 {Grünfeld Defense: Makogonov Variation}) (6. Bd2 {Grünfeld Defense: Opocensky Variation}) (6. Bd3 {Grünfeld Defense: Three Knights Variation, Paris Variation}) 6... e6 {Grünfeld Defense: Botvinnik Variation}) (5. Bf4 {Grünfeld Defense: Three Knights Variation, Hungarian Attack} O-O 6. e3 {Grünfeld Defense: Three Knights Variation, Hungarian Variation}) (5. Bg5 {Grünfeld Defense: Three Knights Variation, Petrosian System}) (5. Qa4+ {Grünfeld Defense: Flohr Variation}) 5... dxc4 6. Qxc4 O-O 7. e4 {Grünfeld Defense: Russian Variation} Bg4 {Grünfeld Defense: Russian Variation, Smyslov Variation} (7... a6 {Grünfeld Defense: Russian Variation, Hungarian Variation}) (7... b6 {Grünfeld Defense: Russian Variation, Levenfish Variation}) (7... c6 {Grünfeld Defense: Russian Variation, Szabo Variation}) (7... Na6 {Grünfeld Defense: Russian Variation, Prins Variation}) (7... Nc6 {Grünfeld Defense: Russian Variation, Byrne Variation}) 8. Be3 Nfd7 9. Be2 (9. Qb3 {Grünfeld Defense: Russian Variation, Smyslov Variation} c5 {Grünfeld Defense: Russian Variation, Yugoslav Variation}) 9... Nb6 10. Qd3 Nc6) (4. Bf4 {Grünfeld Defense: Brinckmann Attack} Bg7 5. e3 (5. Rc1 O-O 6. e3 c5 7. dxc5 Qa5 {Grünfeld Defense: Brinckmann Attack, Reshevsky Gambit}) 5... O-O {Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit} 6. cxd5 (6. Rc1 {Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit, Capablanca Variation} c5 7. dxc5 Be6 {Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit, Botvinnik Variation}) 6... Nxd5 7. Nxd5 Qxd5 8. Bxc7 {Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit Accepted}) (4. e3 Bg7 5. Qb3 dxc4 6. Bxc4 O-O 7. Nf3 Nbd7 8. Ng5 {Grünfeld Defense: Pachman Variation}) (4. Bg5 {Grünfeld Defense: Stockholm Variation} Ne4 5. Nxe4 dxe4 6. Qd2 c5 {Grünfeld Defense: Lundin Variation}) (4. f3 {Grünfeld Defense: Lutikov Variation} c5 5. cxd5 Nxd5 6. Na4 {Grünfeld Defense: Lutikov Variation, Murrey Attack}) (4. g4 {Grünfeld Defense: Gibbon Gambit}) (4. h4 {Grünfeld Defense: Zaitsev Gambit}) (4. Qb3 {Grünfeld Defense: Russian Variation, Accelerated Variation}) 4... Nxd5 {Grünfeld Defense: Exchange Variation} 5. e4 (5. Na4 {Grünfeld Defense: Exchange Variation, Nadanian Attack}) 5... Nxc3 6. bxc3 Bg7 7. Nf3 {Grünfeld Defense: Exchange Variation, Modern Exchange Variation} (7. Bc4 {Grünfeld Defense: Exchange Variation, Classical Variation} c5 (7... O-O 8. Ne2 Qd7 {Grünfeld Defense: Exchange Variation, Larsen Variation} (8... b6 {Grünfeld Defense: Exchange Variation, Simagin's Lesser Variation}) (8... Nc6 {Grünfeld Defense: Exchange Variation, Simagin's Improved Variation}) 9. O-O b6 {Grünfeld Defense: Exchange Variation, Larsen Variation}) 8. Ne2 Nc6 (8... O-O {Grünfeld Defense: Exchange Variation, Spassky Variation} 9. O-O Nc6 10. Be3 Bg4) 9. Be3 O-O 10. O-O Bg4 (10... cxd4)) 7... c5 {Grünfeld Defense: Exchange Variation, Modern Exchange Variation} 8. Rb1 O-O 9. Be2 Nc6 10. d5 Bxc3+ {Grünfeld Defense: Exchange Variation, Modern Exchange Variation, Pawn Grab Line} *\n",
+  "name": {
+    "de": "Gruenfeld-Indisch",
+    "en": "Grünfeld Defence"
+  },
+  "summary": {
+    "de": "Schwarz laesst Weiss ein Riesenzentrum bauen und schiesst es dann mit c5, Bg7 und Nc6 zusammen. Hypermodernes Schach in Reinform.",
+    "en": "Black lets White build a huge centre and then shoots it down with c5, Bg7 and Nc6. Hypermodern chess in its purest form."
+  },
+  "plans": {
+    "de": [
+      "Mit c7–c5 die Basis des weissen Zentrums angreifen.",
+      "Den Laeufer g7 gegen d4 und c3 arbeiten lassen.",
+      "Die Dame nach a5 stellen und den Bauern c3 unter Druck setzen."
+    ],
+    "en": [
+      "Attack the base of White’s centre with c7–c5.",
+      "Let the g7 bishop work against d4 and c3.",
+      "Put the queen on a5 and pressure the c3 pawn."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 b6",
+      "why": {
+        "de": "b6 ist zu langsam; c5 muss sofort kommen, sonst festigt Weiss das Zentrum.",
+        "en": "b6 is too slow; c5 has to come at once or White consolidates the centre."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Na6 8. Be2 c5 9. d5 e6 10. O-O exd5 11. exd5 Bf5 12. Rd1 Re8 13. d6",
+      "why": {
+        "de": "Der Freibauer d6 wird gefaehrlich, wenn Schwarz ihn nicht sofort blockiert.",
+        "en": "The d6 passed pawn becomes dangerous unless Black blockades it immediately."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "semi-slav",
+  "eco": "D43",
+  "side": "black",
+  "seed": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6",
+  "tags": [
+    "tactical",
+    "attacking",
+    "theoryHeavy"
+  ],
+  "difficulty": 5,
+  "popularity": 64,
+  "namedLines": 20,
+  "nodeCount": 64,
+  "lineCount": 12,
+  "maxDepth": 22,
+  "pgn": "[Event \"Halbslawisch\"]\n[Site \"MasterOpening\"]\n[ECO \"D43\"]\n[Opening \"Semi-Slav\"]\n[Result \"*\"]\n\n1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 {Halbslawisch} 5. Bg5 (5. e3 Nbd7 6. Bd3 (6. Qc2 Bd6 7. e4 {Semi-Slav Defense: Stoltz Variation, Center Variation} (7. g4 {Semi-Slav Defense: Stoltz Variation, Shabalov Attack}) 7... dxe4 8. Nxe4 Nxe4 9. Qxe4 e5 10. dxe5 {Semi-Slav Defense: Stoltz Variation, Center Variation, Mikhalchishin Line}) 6... dxc4 7. Bxc4 b5 8. Bd3 a6 (8... b4 {Semi-Slav Defense: Meran Variation, Lundin Variation}) 9. e4 c5 10. e5 (10. d5 {Semi-Slav Defense: Meran Variation, Reynolds' Variation}) 10... cxd4 11. Nxb5 Nxe5 {Semi-Slav Defense: Meran Variation, Sozin Variation}) 5... dxc4 {Semi-Slav Defense Accepted} (5... Nbd7 6. e3 {Queen's Gambit Declined} Qa5 {Queen's Gambit Declined: Cambridge Springs Defense} 7. Nd2 (7. cxd5 {Queen's Gambit Declined: Cambridge Springs Defense} Nxd5 {Queen's Gambit Declined: Cambridge Springs Defense, Yugoslav Variation}) 7... Bb4 (7... dxc4 {Queen's Gambit Declined: Cambridge Springs Defense, Rubinstein Variation}) 8. Qc2 {Queen's Gambit Declined: Cambridge Springs Defense, Bogoljubow Variation}) (5... h6 6. Bxf6 (6. Bh4 {Semi-Slav Defense: Anti-Moscow Gambit}) 6... Qxf6 {Semi-Slav Defense: Moscow Variation} 7. Qb3 {Semi-Slav Defense: Hastings Variation}) 6. e4 {Semi-Slav Defense: Botvinnik Variation} b5 7. e5 h6 8. Bh4 g5 9. Nxg5 {Semi-Slav Defense: Botvinnik Variation} (9. exf6 gxh4 10. Ne5 {Semi-Slav Defense: Botvinnik Variation, Ekstrom Variation}) 9... hxg5 10. Bxg5 Nbd7 11. g3 {Semi-Slav Defense: Botvinnik Variation, Lilienthal Variation} *\n",
+  "name": {
+    "de": "Halbslawisch",
+    "en": "Semi-Slav"
+  },
+  "summary": {
+    "de": "Die Kombination aus Slawisch und Damengambit — und der Einstieg in das Botwinnik-System, eine der schaerfsten Varianten des ganzen Schachs.",
+    "en": "The blend of Slav and QGD — and the gateway to the Botvinnik System, one of the sharpest variations in all of chess."
+  },
+  "plans": {
+    "de": [
+      "Mit dxc4 und b5 den Mehrbauern halten und die Damenseite ausdehnen.",
+      "Den Laeufer c8 ueber b7 auf die lange Diagonale bringen.",
+      "Mit c6–c5 den Befreiungsschlag vorbereiten."
+    ],
+    "en": [
+      "Hold the extra pawn with dxc4 and b5, expanding on the queenside.",
+      "Bring the c8 bishop to the long diagonal via b7.",
+      "Prepare the freeing break c6–c5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 hxg5 10. Bxg5 Be7 11. exf6 Bxf6 12. g3 Nd7",
+      "why": {
+        "de": "Im Botwinnik-System sind Bxf6 und Qxf6 nicht dasselbe — hier faellt Schwarz aus der Theorie.",
+        "en": "In the Botvinnik System Bxf6 and Qxf6 are not the same — Black leaves theory here."
+      }
+    },
+    {
+      "line": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 a6 9. e4 c5 10. e5 cxd4 11. Nxb5 axb5 12. exf6 gxf6 13. O-O",
+      "why": {
+        "de": "Das Springeropfer auf b5 ist bekannt — Schwarz muss Qb6 statt axb5 spielen.",
+        "en": "The knight sacrifice on b5 is well known — Black should play Qb6 instead of axb5."
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "italian-game",
+  "eco": "C50",
+  "side": "white",
+  "seed": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
+  "tags": [
+    "classical",
+    "positional",
+    "open",
+    "beginnerFriendly"
+  ],
+  "difficulty": 2,
+  "popularity": 88,
+  "namedLines": 183,
+  "nodeCount": 165,
+  "lineCount": 66,
+  "maxDepth": 12,
+  "pgn": "[Event \"Italienisch\"]\n[Site \"MasterOpening\"]\n[ECO \"C50\"]\n[Opening \"Italian Game\"]\n[Result \"*\"]\n\n1. e4 e5 2. Nf3 Nc6 3. Bc4 {Italienisch} Bc5 {Italian Game: Giuoco Piano} (3... Nf6 {Italian Game: Two Knights Defense} 4. Ng5 {Italian Game: Two Knights Defense, Knight Attack} (4. d4 {Italian Game: Two Knights Defense, Open Variation} exd4 {Scotch Game: Scotch Gambit, Dubois Réti Defense} (4... d6 {Italian Game: Scotch Invitation Declined}) 5. O-O {Italian Game: Scotch Gambit} (5. e5 d5 (5... Ng4 {Scotch Game: Scotch Gambit, Kingside Variation}) 6. Bb5 Ne4 {Italian Game: Scotch Gambit, Max Lange Attack}) (5. Ng5 {Italian Game: Two Knights Defense, Perreux Variation}) 5... Bc5 (5... Nxe4 {Italian Game: Scotch Gambit, Double Gambit Accepted} 6. Re1 (6. Nc3 {Italian Game: Scotch Gambit, Nakhmanson Gambit}) 6... d5) 6. e5 d5 (6... Ng4)) (4. O-O Bc5 5. d4 (5. Nc3 d6 6. d3 {Italian Game: Giuoco Pianissimo}) 5... Bxd4 6. Nxd4 Nxd4) (4. d3 {Italian Game: Two Knights Defense, Modern Bishop's Opening} h6 (4... Bc5 {Italian Game: Giuoco Pianissimo, Normal}) (4... Be7 {Italian Game: Two Knights Defense, Modern Bishop's Opening}) 5. O-O d6 {Italian Game: Two Knights Defense, Modern Bishop's Opening}) (4. Nc3 {Four Knights Game: Italian Variation} Nxe4 5. Nxe4 (5. Bxf7+ {Four Knights Game: Italian Variation, Noa Gambit}) 5... d5 {Italian Game: Two Knights Defense}) 4... d5 {Italian Game: Two Knights Defense, Knight Attack, Normal Variation} (4... Bc5 {Italian Game: Two Knights Defense, Traxler Counterattack} 5. Nxf7 {Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line} (5. Bxf7+ {Italian Game: Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line} Ke7 6. d4 {Italian Game: Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit}) 5... Bxf2+ 6. Kxf2 Nxe4+) (4... Nxe4 {Italian Game: Two Knights Defense, Ponziani-Steinitz Gambit}) 5. exd5 Na5 {Italian Game: Two Knights Defense, Polerio Defense} (5... Nxd5 6. d4 {Italian Game: Two Knights Defense, Lolli Attack} (6. Nxf7 {Italian Game: Two Knights Defense, Fried Liver Attack} Kxf7) 6... Bb4+ {Italian Game: Two Knights Defense, Pincus Variation}) (5... b5 {Italian Game: Two Knights Defense, Ulvestad Variation} 6. Bf1 h6) (5... Nd4 {Italian Game: Two Knights Defense, Fritz Variation} 6. c3 b5) (5... Nb4 {Italian Game: Two Knights Defense, Kloss Gambit}) 6. Bb5+ {Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line} (6. d3 {Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation} h6) 6... c6) (3... Be7 {Italian Game: Hungarian Defense} 4. d4 exd4 {Scotch Game: Benima Defense} 5. c3 Nf6 6. e5 Ne4 {Italian Game: Hungarian Defense, Tartakower Variation}) (3... d6 {Italian Game: Paris Defense}) (3... f5 {Italian Game: Rousseau Gambit}) (3... h6 {Italian Game: Anti-Fried Liver Defense}) (3... Nd4 {Italian Game: Blackburne-Kostić Gambit}) 4. c3 {Italian Game: Classical Variation} (4. b4 {Italian Game: Evans Gambit} Bxb4 {Italian Game: Evans Gambit Accepted} (4... Bb6 {Italian Game: Evans Gambit Declined} 5. a4 {Italian Game: Evans Gambit Declined} (5. b5 Na5 6. Nxe5) (5. Bb2 {Italian Game: Evans Gambit Declined, Cordel Variation}) 5... a6 6. Nc3 {Italian Game: Evans Gambit Declined, Showalter Variation}) (4... b5 {Italian Game: Evans Gambit, Fontaine Countergambit}) (4... d5 {Italian Game: Evans Gambit, Hein Countergambit}) 5. c3 Ba5 {Italian Game: Evans Gambit, Main Line} (5... Bc5 {Italian Game: Evans Gambit, McDonnell Defense} 6. d4) (5... Be7 {Italian Game: Evans Gambit, Anderssen Variation} 6. d4) (5... Bd6 {Italian Game: Evans Gambit, Stone-Ware Variation}) (5... Bf8 {Italian Game: Evans Gambit, Mayet Defense}) 6. d4 (6. O-O {Italian Game: Evans Gambit, Slow Variation})) (4. O-O Nf6 5. d3 (5. d4 {Italian Game: Deutz Gambit} exd4 6. e5) (5. c3 {Italian Game: Classical Variation, Albin Gambit}) 5... d6 (5... O-O 6. c3 d5 {Italian Game: Classical Variation, Giuoco Pianissimo}) (5... a5 6. c3 {Italian Game: Classical Variation, Giuoco Pianissimo, with a5}) (5... h6 6. c3 {Italian Game: Classical Variation, Giuoco Pianissimo}) 6. c3 {Italian Game: Classical Variation, Giuoco Pianissimo} O-O {Italian Game: Classical Variation, Giuoco Pianissimo}) (4. d3 {Italian Game: Giuoco Pianissimo} Nf6 (4... f5 {Italian Game: Giuoco Pianissimo, Lucchini Gambit} 5. Ng5 f4 {Italian Game: Giuoco Pianissimo, Dubois Variation}) 5. Nc3 {Italian Game: Giuoco Pianissimo, Italian Four Knights Variation} d6 6. Bg5 {Italian Game: Giuoco Pianissimo, Canal Variation}) (4. Nc3 Nf6 {Four Knights Game: Italian Variation} 5. O-O O-O {Italian Game: Giuoco Pianissimo} 6. d3 {Italian Game: Giuoco Pianissimo}) (4. Bxf7+ {Italian Game: Jerome Gambit}) (4. d4 {Italian Game: Rosentreter Gambit}) 4... Nf6 {Italian Game: Classical Variation} (4... Qe7 {Italian Game: Classical Variation, Closed Variation} 5. d4 Bb6 {Italian Game: Classical Variation, Center Holding Variation} 6. Bg5 {Italian Game: Classical Variation, Mestel Variation} (6. d5) (6. O-O)) (4... d6 5. d4 exd4 6. cxd4) 5. d3 {Italian Game: Classical Variation, Giuoco Pianissimo} (5. d4 {Italian Game: Classical Variation, Center Attack} exd4 6. b4 {Italian Game: Classical Variation, Greco Gambit, Dubov Italian} (6. cxd4 {Italian Game: Classical Variation, Greco Gambit, Traditional Line}) (6. e5 {Italian Game: Classical Variation, Greco Gambit, Modern Line}) (6. O-O {Italian Game: Scotch Gambit, Walbrodt-Baird Gambit})) (5. b4 {Italian Game: Bird's Attack}) 5... d6 {Italian Game: Classical Variation, Giuoco Pianissimo} (5... a6 {Italian Game: Classical Variation, Giuoco Pianissimo, with a6}) (5... d5 {Italian Game: Classical Variation, with d5}) 6. O-O (6. b4 {Italian Game: Classical Variation, Giuoco Pianissimo, Albin Variation}) (6. Nbd2) *\n",
+  "name": {
+    "de": "Italienisch",
+    "en": "Italian Game"
+  },
+  "summary": {
+    "de": "Der Laeufer zielt sofort auf f7, dem schwaechsten Punkt in Schwarz’ Stellung. Die moderne Behandlung mit c3 und d3 baut in Ruhe ein Bauernzentrum auf, statt sofort zu stuermen.",
+    "en": "The bishop eyes f7, the weakest point in Black’s camp. The modern treatment with c3 and d3 builds a pawn centre calmly instead of storming immediately."
+  },
+  "plans": {
+    "de": [
+      "Mit c3 und d3 das Zentrum stuetzen und spaeter d3–d4 durchsetzen.",
+      "Den Springer ueber b1–d2–f1–g3 an den Koenigsfluegel bringen.",
+      "Auf a4 den Laeufer vor Schwarz’ b7–b5 in Sicherheit bringen."
+    ],
+    "en": [
+      "Support the centre with c3 and d3, then push d3–d4 later.",
+      "Reroute the knight via b1–d2–f1–g3 towards the kingside.",
+      "Retreat the bishop to a4 before Black plays b7–b5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d4",
+      "why": {
+        "de": "Zu frueh: nach exd4 verliert Weiss das Zentrum und Schwarz steht bequem.",
+        "en": "Too early: after exd4 White loses the centre and Black is comfortable."
+      }
+    },
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5",
+      "why": {
+        "de": "Der Zwei-Springer-Abzug ist eine Falle: 6. Nxf7 Kxf7 kostet Material fuer wenig Angriff.",
+        "en": "The Two Knights fork trick: 6. Nxf7 Kxf7 gives up material for little attack."
+      }
+    }
+  ]
+}

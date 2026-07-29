@@ -1,0 +1,54 @@
+{
+  "id": "scandinavian-black",
+  "eco": "B01",
+  "side": "black",
+  "seed": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5",
+  "tags": [
+    "theoryLight",
+    "solid",
+    "beginnerFriendly"
+  ],
+  "difficulty": 2,
+  "popularity": 42,
+  "namedLines": 9,
+  "nodeCount": 31,
+  "lineCount": 6,
+  "maxDepth": 16,
+  "pgn": "[Event \"Skandinavische Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"B01\"]\n[Opening \"Scandinavian Defence\"]\n[Result \"*\"]\n\n1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 {Skandinavische Verteidigung} 4. d4 (4. b4 {Scandinavian Defense: Main Line, Leonhardt Gambit}) 4... Nf6 {Scandinavian Defense: Main Line, Mieses Variation} (4... e5 {Scandinavian Defense: Anderssen Counterattack} 5. dxe5 (5. Nf3 {Scandinavian Defense: Anderssen Counterattack, Goteborg System} Bg4 {Scandinavian Defense: Anderssen Counterattack, Collijn Variation}) 5... Nc6 6. Nf3 Bb4 7. Bd2 {Scandinavian Defense: Anderssen Counterattack, Orthodox Attack}) 5. Nf3 c6 (5... Bf5 {Scandinavian Defense: Classical Variation} 6. Ne5 c6 7. g4 {Scandinavian Defense: Grünfeld Variation}) (5... Bg4 6. h3 {Scandinavian Defense: Lasker Variation}) 6. Bc4 Bf5 7. Bd2 e6 8. Nd5 Qd8 *\n",
+  "name": {
+    "de": "Skandinavische Verteidigung",
+    "en": "Scandinavian Defence"
+  },
+  "summary": {
+    "de": "Schwarz tauscht sofort im Zentrum und holt den Bauern mit der Dame zurueck. Wenig Theorie, immer dieselbe Struktur — ideal fuer den Einstieg gegen 1.e4.",
+    "en": "Black trades in the centre at once and recaptures with the queen. Little theory, always the same structure — an ideal first answer to 1.e4."
+  },
+  "plans": {
+    "de": [
+      "Mit c6 und Bf5 ein Caro-Kann-aehnliches Bild aufbauen.",
+      "Die Dame auf a5 oder d6 sicher parken und dann normal entwickeln.",
+      "Lang rochieren und auf der d-Linie kontern."
+    ],
+    "en": [
+      "Build a Caro-Kann-like picture with c6 and Bf5.",
+      "Park the queen safely on a5 or d6, then develop normally.",
+      "Castle long and counter on the d-file."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qe5+",
+      "why": {
+        "de": "Das Schach bringt nichts und stellt die Dame auf ein Feld, von dem sie vertrieben wird.",
+        "en": "The check achieves nothing and puts the queen on a square she will be chased from."
+      }
+    },
+    {
+      "line": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 c6 5. Nf3 Bg4 6. Bf4 e6 7. h3 Bxf3 8. Qxf3 Qb6 9. Bxb8",
+      "why": {
+        "de": "Der Doppelangriff auf b2 und d4 uebersieht, dass der Springer b8 haengt.",
+        "en": "The double attack on b2 and d4 overlooks that the b8 knight hangs."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "benko-gambit",
+  "eco": "A57",
+  "side": "black",
+  "seed": "1. d4 Nf6 2. c4 c5 3. d5 b5",
+  "tags": [
+    "gambit",
+    "positional",
+    "attacking"
+  ],
+  "difficulty": 3,
+  "popularity": 30,
+  "namedLines": 23,
+  "nodeCount": 60,
+  "lineCount": 19,
+  "maxDepth": 20,
+  "pgn": "[Event \"Benko-Gambit\"]\n[Site \"MasterOpening\"]\n[ECO \"A57\"]\n[Opening \"Benko Gambit\"]\n[Result \"*\"]\n\n1. d4 Nf6 2. c4 c5 3. d5 b5 {Benko-Gambit} 4. cxb5 (4. a4 {Benko Gambit Declined: Sosonko Variation}) (4. Bg5 {Benko Gambit Declined: Bishop Attack}) (4. e4 {Benko Gambit Declined: Hjørring Countergambit}) (4. f3 {Benko Gambit Declined: Pseudo-Sämisch}) (4. g4 {Benko Gambit: Mutkin Countergambit}) (4. Nd2 {Benko Gambit Declined: Quiet Line}) (4. Nf3 {Benko Gambit Declined: Main Line}) 4... a6 {Benko Gambit Accepted} 5. bxa6 {Benko Gambit Accepted: Fully Accepted Variation} (5. Nc3 {Benko Gambit: Zaitsev System} axb5 6. e4 b4 7. Nb5 {Benko Gambit: Zaitsev Variation, Nescafe Frappe Attack} d6 8. Bc4 {Benko Gambit: Nescafe Frappe Attack}) (5. b6 {Benko Gambit Accepted: Pawn Return Variation}) (5. e3 {Benko Gambit Accepted: Modern Variation}) (5. f3 {Benko Gambit Accepted: Dlugy Variation}) 5... Bxa6 (5... g6 6. Nc3 Bxa6 7. Nf3 (7. e4 Bxf1 8. Kxf1 d6 9. g3 {Benko Gambit} (9. Nge2 {Benko Gambit Accepted: Yugoslav})) (7. g3 d6 8. Bg2 Bg7 9. Nf3 {Benko Gambit Accepted: Fianchetto Variation}) (7. f4 {Benko Gambit Accepted: Central Storming Variation}) 7... d6 8. e4 Bxf1 9. Kxf1 Bg7 10. g3 O-O) 6. Nc3 d6 7. e4 {Benko Gambit Accepted: Yugoslav} (7. Nf3 g6 8. g3 {Benko Gambit: Fianchetto Variation} (8. Nd2 {Benko Gambit: Nd2 Variation})) 7... Bxf1 8. Kxf1 g6 *\n",
+  "name": {
+    "de": "Benko-Gambit",
+    "en": "Benko Gambit"
+  },
+  "summary": {
+    "de": "Ein Bauer fuer dauerhaften Druck auf der a- und b-Linie. Das seltene Gambit, das auch im Endspiel noch Kompensation gibt.",
+    "en": "A pawn for lasting pressure on the a- and b-files. The rare gambit whose compensation survives into the endgame."
+  },
+  "plans": {
+    "de": [
+      "Die Tuerme auf a8 und b8 aufstellen und die offenen Linien besetzen.",
+      "Den Laeufer nach g7 fianchettieren und auf d4 druecken.",
+      "Den Bauernvorstoss a6–a5–a4 vorbereiten."
+    ],
+    "en": [
+      "Line the rooks up on a8 and b8 and take the open files.",
+      "Fianchetto to g7 and press on d4.",
+      "Prepare the pawn push a6–a5–a4."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. b6",
+      "why": {
+        "de": "Den Bauern zurueckzugeben nimmt Schwarz die Linien — die Ablehnung ist unangenehmer als die Annahme.",
+        "en": "Returning the pawn denies Black the files — declining is more annoying than accepting."
+      }
+    },
+    {
+      "line": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 a6 5. bxa6 Bxa6 6. Nc3 d6 7. e4 Bxf1 8. Kxf1 g6 9. g3 Bg7 10. Kg2 O-O 11. Nf3 Nbd7 12. Re1 Qa5 13. Re2 Rfb8 14. Rb1 Ne8 15. h3 Nc7 16. Bf4 Rb4",
+      "why": {
+        "de": "Der Turm auf b4 steht ungedeckt; a4 haette den Druck ohne Risiko erhoeht.",
+        "en": "The rook on b4 is undefended; a4 would have increased the pressure risk-free."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "caro-kann-karpov",
+  "eco": "B17",
+  "side": "black",
+  "seed": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7",
+  "tags": [
+    "solid",
+    "positional",
+    "flexible"
+  ],
+  "difficulty": 3,
+  "popularity": 54,
+  "namedLines": 1,
+  "nodeCount": 54,
+  "lineCount": 7,
+  "maxDepth": 18,
+  "pgn": "[Event \"Caro-Kann — Karpow-Variante\"]\n[Site \"MasterOpening\"]\n[ECO \"B17\"]\n[Opening \"Caro-Kann — Karpov Variation\"]\n[Result \"*\"]\n\n1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 {Caro-Kann — Karpow-Variante} 5. Nf3 (5. Bc4 Ngf6 6. Ng5 e6 7. Qe2 Nb6 8. Bd3 h6 9. N5f3 c5 {Der Angriff auf f7}) (5. Ng3 Ngf6 6. Nf3 e6 7. Bd3 c5 8. O-O Be7 {Sg3 statt Abtausch}) 5... Ngf6 6. Nxf6+ (6. Bd3 Nxe4 7. Bxe4 Nf6 8. Bd3 Bg4 {Weiss haelt den Springer}) (6. Ng3 {Caro-Kann Defense: Karpov Variation, Modern Variation, Kasparov Attack}) 6... Nxf6 (6... exf6 7. Bc4 Bd6 8. Qe2+ Qe7 {Mit dem e-Bauern zurueckschlagen}) 7. c3 (7. Ne5 Be6 8. c3 g6 9. Bd3 Bg7 {Springer auf e5}) 7... Bg4 8. Be2 e6 9. O-O Be7 *\n",
+  "name": {
+    "de": "Caro-Kann — Karpow-Variante",
+    "en": "Caro-Kann — Karpov Variation"
+  },
+  "summary": {
+    "de": "Nd7 bereitet Ngf6 vor, ohne dass der Springer auf f6 abgetauscht und die Bauernstruktur zerstoert wird. Karpows Lieblingsaufbau: unauffaellig, zaeh und schwer zu knacken.",
+    "en": "Nd7 prepares Ngf6 without allowing the knight to be traded and the structure wrecked. Karpov’s favourite: unassuming, resilient and hard to crack."
+  },
+  "plans": {
+    "de": [
+      "Mit c6–c5 den weissen Zentrumsbauern angreifen.",
+      "Die Struktur sauber halten und im Endspiel den besseren Bauern zeigen.",
+      "Den Laeufer nach d6 oder e7 entwickeln und schnell rochieren."
+    ],
+    "en": [
+      "Attack White’s centre pawn with c6–c5.",
+      "Keep the structure clean and show the better pawns in the endgame.",
+      "Develop the bishop to d6 or e7 and castle quickly."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Ng5 Ngf6 6. Bd3 e6 7. N1f3 h6 8. Nxe6",
+      "why": {
+        "de": "Das Springeropfer auf e6 ist eine bekannte Falle — nach fxe6 muss Schwarz genau verteidigen.",
+        "en": "The knight sacrifice on e6 is a known trap — after fxe6 Black must defend precisely."
+      }
+    },
+    {
+      "line": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6. Nxf6+ gxf6",
+      "why": {
+        "de": "Mit dem g-Bauern zurueckzuschlagen widerspricht dem Sinn der ganzen Variante.",
+        "en": "Recapturing with the g-pawn defeats the whole point of the variation."
+      }
+    }
+  ]
+}

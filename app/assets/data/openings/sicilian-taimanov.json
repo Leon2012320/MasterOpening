@@ -1,0 +1,54 @@
+{
+  "id": "sicilian-taimanov",
+  "eco": "B46",
+  "side": "black",
+  "seed": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6",
+  "tags": [
+    "flexible",
+    "positional",
+    "open"
+  ],
+  "difficulty": 4,
+  "popularity": 60,
+  "namedLines": 18,
+  "nodeCount": 65,
+  "lineCount": 13,
+  "maxDepth": 20,
+  "pgn": "[Event \"Sizilianisch — Taimanow\"]\n[Site \"MasterOpening\"]\n[ECO \"B46\"]\n[Opening \"Sicilian — Taimanov\"]\n[Result \"*\"]\n\n1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 {Sizilianisch — Taimanow} 5. Nc3 {Sicilian Defense: Taimanov Variation} (5. Nb5 {Sicilian Defense: Taimanov Variation, Szén Variation} d6 6. c4 Nf6 7. N1c3 a6 8. Na3 Be7 (8... d5 {Sicilian Defense: Taimanov Variation, Gary Gambit}) 9. Be2 O-O 10. O-O b6 {Sicilian Defense: Taimanov Variation, Modern Line}) 5... a6 {Sicilian Defense: Taimanov Variation} (5... Qc7 {Sicilian Defense: Taimanov Variation, Bastrikov Variation} 6. Be2 (6. Ndb5 Qb8 7. Be3 a6 8. Bb6 {Sicilian Defense: Taimanov Variation, Bastrikov Variation, Ponomariov Gambit}) (6. Be3 {Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack} a6 7. Be2 {Sicilian Defense: Taimanov Variation, Bastrikov Variation}) 6... a6 7. O-O Nf6 8. Be3 (8. Kh1 Be7 9. f4 d6 10. a4 {Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation}) 8... Be7 (8... d6 9. f4 {Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation}) 9. f4 d6 10. Qe1 O-O {Sicilian Defense: Scheveningen Variation, Classical Main Line}) (5... Nf6 {Sicilian Defense: Four Knights Variation} 6. Ndb5 (6. Nxc6 {Sicilian Defense: Four Knights Variation, Exchange Variation}) 6... Bb4 (6... Bc5 {Sicilian Defense: Four Knights Variation, Cobra Variation}) (6... d6 {Sicilian Defense: Four Knights Variation, Sveshnikov Transfer}) 7. Nd6+ {Sicilian Defense: Four Knights Variation, American Attack}) (5... d6 6. Be2 Nf6 {Sicilian Defense: Scheveningen Variation, Modern Variation}) 6. Be2 Qc7 7. O-O Nf6 8. Be3 Bb4 *\n",
+  "name": {
+    "de": "Sizilianisch — Taimanow",
+    "en": "Sicilian — Taimanov"
+  },
+  "summary": {
+    "de": "Schwarz haelt die Struktur maximal flexibel und entscheidet erst spaet, wo die Bauern hingehen. Weniger Auswendiglernen als im Najdorf, aber viel Verstaendnis noetig.",
+    "en": "Black keeps the structure maximally flexible and decides late where the pawns go. Less memorisation than the Najdorf, but it demands understanding."
+  },
+  "plans": {
+    "de": [
+      "Mit Qc7 und a6 den Damenfluegel vorbereiten, bevor die Bauern ziehen.",
+      "Bei Gelegenheit d7–d5 in einem Zug spielen.",
+      "Den Laeufer nach b4 stellen und den Springer c3 fesseln."
+    ],
+    "en": [
+      "Prepare the queenside with Qc7 and a6 before committing pawns.",
+      "Play d7–d5 in one go when the chance comes.",
+      "Put the bishop on b4 and pin the c3 knight."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be3 Bb4 7. Ndb5",
+      "why": {
+        "de": "Lb4 zu frueh: nach Sdb5 muss die Dame ziehen und Schwarz verliert Zeit.",
+        "en": "Bb4 too early: after Ndb5 the queen must move and Black loses time."
+      }
+    },
+    {
+      "line": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 a6 6. Nd6+",
+      "why": {
+        "de": "a6 zu frueh: Sd6+ ist ein starkes Schach, das die Struktur zerstoert.",
+        "en": "a6 too early: Nd6+ is a strong check that wrecks the structure."
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "french-advance",
+  "eco": "C02",
+  "side": "white",
+  "seed": "1. e4 e6 2. d4 d5 3. e5",
+  "tags": [
+    "closed",
+    "positional",
+    "theoryLight"
+  ],
+  "difficulty": 3,
+  "popularity": 62,
+  "namedLines": 21,
+  "nodeCount": 37,
+  "lineCount": 11,
+  "maxDepth": 17,
+  "pgn": "[Event \"Franzoesisch — Vorstossvariante\"]\n[Site \"MasterOpening\"]\n[ECO \"C02\"]\n[Opening \"French — Advance Variation\"]\n[Result \"*\"]\n\n1. e4 e6 2. d4 d5 3. e5 {Franzoesisch — Vorstossvariante} c5 {French Defense: Advance Variation} (3... Bd7 {French Defense: Advance Variation, Extended Bishop Swap}) 4. c3 {French Defense: Advance Variation} (4. Nf3 {French Defense: Advance Variation, Nimzowitsch System} cxd4 5. Bd3 {French Defense: Advance Variation, Ruisdonk Gambit}) (4. Qg4 {French Defense: Advance Variation, Nimzowitsch Attack} cxd4 5. Nf3 {French Defense: Advance Variation, Nimzowitsch Gambit}) (4. b4 {French Defense: Advance Variation, Frenkel Gambit}) (4. dxc5 {French Defense: Advance Variation, Steinitz Variation}) 4... Nc6 {French Defense: Advance Variation} (4... Qb6 5. Nf3 Bd7 {French Defense: Advance Variation, Wade Variation}) 5. Nf3 {French Defense: Advance Variation, Paulsen Attack} (5. Be3 {French Defense: Advance Variation, Kupreichik Variation}) 5... Qb6 (5... Bd7 {French Defense: Advance Variation, Euwe Variation}) 6. a3 {French Defense: Advance Variation, Main Line} (6. Bd3 {French Defense: Advance Variation, Milner-Barry Gambit} cxd4 7. cxd4 (7. O-O {French Defense: Advance Variation, Milner-Barry Gambit, Hector Variation} Bd7 8. Re1 {French Defense: Advance Variation, Milner-Barry Gambit, Hector Variation}) 7... Bd7 8. O-O {French Defense: Advance Variation, Milner-Barry Gambit, Main Line} Nxd4 9. Ng5 {French Defense: Advance Variation, Milner-Barry Gambit, Sørensen Variation}) 6... Nh6 {French Defense: Advance Variation, Lputian Variation} 7. b4 *\n",
+  "name": {
+    "de": "Franzoesisch — Vorstossvariante",
+    "en": "French — Advance Variation"
+  },
+  "summary": {
+    "de": "Weiss schliesst das Zentrum und gewinnt Raum. Der schwarze Laeufer c8 bleibt in der eigenen Bauernkette eingesperrt — daran arbeitet man die ganze Partie.",
+    "en": "White closes the centre and gains space. Black’s light-squared bishop stays locked behind its own pawns — that is the theme of the whole game."
+  },
+  "plans": {
+    "de": [
+      "Die Kette d4–e5 mit c3 und f4 halten.",
+      "Am Koenigsfluegel mit f4–f5 durchbrechen.",
+      "Den Springer ueber f3–h4 nach f5 oder g6 bringen."
+    ],
+    "en": [
+      "Hold the d4–e5 chain with c3 and f4.",
+      "Break through on the kingside with f4–f5.",
+      "Route the knight via f3–h4 to f5 or g6."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e6 2. d4 d5 3. e5 c5 4. dxc5",
+      "why": {
+        "de": "Der Abtausch gibt das Zentrum auf und Schwarz holt den Bauern mit Bxc5 bequem zurueck.",
+        "en": "The exchange surrenders the centre and Black regains the pawn comfortably with Bxc5."
+      }
+    },
+    {
+      "line": "1. e4 e6 2. d4 d5 3. e5 c5 4. Nf3 Qb6 5. Bd3",
+      "why": {
+        "de": "Ohne c3 haengt d4: nach cxd4 verliert Weiss das Zentrum.",
+        "en": "Without c3 the d4 pawn hangs: after cxd4 White loses the centre."
+      }
+    }
+  ]
+}

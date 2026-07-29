@@ -1,0 +1,54 @@
+{
+  "id": "berlin-defence",
+  "eco": "C65",
+  "side": "black",
+  "seed": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6",
+  "tags": [
+    "solid",
+    "positional",
+    "theoryHeavy"
+  ],
+  "difficulty": 4,
+  "popularity": 66,
+  "namedLines": 36,
+  "nodeCount": 68,
+  "lineCount": 24,
+  "maxDepth": 20,
+  "pgn": "[Event \"Berliner Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"C65\"]\n[Opening \"Berlin Defence\"]\n[Result \"*\"]\n\n1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 {Berliner Verteidigung} 4. O-O {Ruy Lopez: Berlin Defense} (4. d3 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation} d6 (4... Ne7 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Variation} 5. Nxe5 c6 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Mortimer Trap}) (4... Bc5 5. Be3 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Kaufmann Variation}) 5. Bxc6+ {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Anderssen Variation} (5. c4 {Ruy Lopez: Berlin Defense, Anti-Berlin Variation, Duras Variation})) (4. d4 exd4 5. O-O {Ruy Lopez: Berlin Defense, Nyholm Attack}) (4. Nxe5 {Ruy Lopez: Halloween Attack}) 4... Nxe4 {Ruy Lopez: Berlin Defense, Rio Gambit Accepted} (4... d6 {Ruy Lopez: Berlin Defense, Improved Steinitz Defense} 5. d4 Bd7 (5... Nd7 {Ruy Lopez: Closed Berlin Defense, Chigorin Variation}) 6. Nc3 Be7 {Ruy Lopez: Berlin Defense, Hedgehog Variation} (6... exd4 {Ruy Lopez: Berlin Defense, Closed Wolf Variation}) 7. Bg5 {Ruy Lopez: Berlin Defense, Closed Bernstein Variation} (7. Bxc6 {Ruy Lopez: Berlin Defense, Closed Showalter Variation})) (4... Bc5 {Ruy Lopez: Berlin Defense, Beverwijk Variation} 5. c3 {Ruy Lopez: Classical Variation, Zukertort Gambit} O-O 6. d4 Bb6 {Ruy Lopez: Classical Defense, Benelux Variation} 7. Bg5 {Ruy Lopez: Classical Variation, Modern Main Line}) (4... Ng4 {Ruy Lopez: Berlin Defense, Fishing Pole Variation}) 5. d4 Nd6 {Ruy Lopez: Berlin Defense, l'Hermet Variation} (5... Be7 {Ruy Lopez: Berlin Defense, Rio de Janeiro Variation} 6. Qe2 (6. dxe5 {Ruy Lopez: Berlin Defense, Minckwitz Variation}) 6... Nd6 (6... d5 {Ruy Lopez: Berlin Defense, Trifunovic Variation}) 7. Bxc6 bxc6 8. dxe5 Nb7 (8... Nf5 {Ruy Lopez: Berlin Defense, Cordel Variation}) 9. Nc3 (9. b3 {Ruy Lopez: Berlin Defense, Pillsbury Variation}) (9. c4 {Ruy Lopez: Berlin Defense, Zukertort Variation}) (9. Nd4 {Ruy Lopez: Berlin Defense, Winawer Attack}) 9... O-O 10. Re1 Nc5) (5... a6 {Ruy Lopez: Berlin Defense, Rosenthal Variation}) 6. Bxc6 (6. Ba4 {Ruy Lopez: Open Berlin Defense, Showalter Variation}) (6. dxe5 {Ruy Lopez: Open Berlin Defense, l'Hermet Variation}) 6... dxc6 7. dxe5 Nf5 (7... Ne4 {Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line}) 8. Qxd8+ Kxd8 {Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense} 9. Nc3 Bd7 {Ruy Lopez: Berlin Defense, Berlin Wall} *\n",
+  "name": {
+    "de": "Berliner Verteidigung",
+    "en": "Berlin Defence"
+  },
+  "summary": {
+    "de": "Die „Berliner Mauer\": Schwarz geht frueh ins Endspiel, verliert die Rochade und steht trotzdem bombenfest. Kramniks Waffe gegen Kasparow 2000 — seither Standard auf hoechster Ebene.",
+    "en": "The “Berlin Wall”: Black heads for an early endgame, gives up castling and is still rock solid. Kramnik’s weapon against Kasparov in 2000 — a top-level standard ever since."
+  },
+  "plans": {
+    "de": [
+      "Das Laeuferpaar behalten und den Koenig zu Fuss in Sicherheit bringen.",
+      "Die Doppelbauern auf c6 und c7 als Bollwerk nutzen, nicht als Schwaeche sehen.",
+      "Mit Be6, Kc8 und Bd6 in Ruhe konsolidieren."
+    ],
+    "en": [
+      "Keep the bishop pair and walk the king to safety.",
+      "Treat the doubled c-pawns as a bulwark, not a weakness.",
+      "Consolidate calmly with Be6, Kc8 and Bd6."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 exd4",
+      "why": {
+        "de": "Den Bauern zu nehmen laesst Weiss nach Re1 mit grosser Initiative durchbrechen.",
+        "en": "Taking the pawn lets White break through with Re1 and a huge initiative."
+      }
+    },
+    {
+      "line": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6 6. Nxe5 Be7 7. Bf1 Nxe5 8. Rxe5 O-O 9. d4 Bf6 10. Re1 Re8",
+      "why": {
+        "de": "Der Abtausch auf e5 ohne Bf1 abzuwarten kostet einen Bauern.",
+        "en": "Trading on e5 without waiting for Bf1 costs a pawn."
+      }
+    }
+  ]
+}

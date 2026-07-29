@@ -1,0 +1,54 @@
+{
+  "id": "pirc-defence",
+  "eco": "B07",
+  "side": "black",
+  "seed": "1. e4 d6 2. d4 Nf6 3. Nc3 g6",
+  "tags": [
+    "modern",
+    "flexible",
+    "closed"
+  ],
+  "difficulty": 3,
+  "popularity": 38,
+  "namedLines": 23,
+  "nodeCount": 40,
+  "lineCount": 16,
+  "maxDepth": 14,
+  "pgn": "[Event \"Pirc-Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"B07\"]\n[Opening \"Pirc Defence\"]\n[Result \"*\"]\n\n1. e4 d6 2. d4 Nf6 3. Nc3 g6 {Pirc-Verteidigung} 4. Nf3 {Pirc Defense: Classical Variation} (4. f4 {Pirc Defense: Austrian Attack} Bg7 5. Nf3 (5. Bc4 {Pirc Defense: Austrian Attack, Ljubojevic Variation}) 5... O-O {Pirc Defense: Austrian Attack} (5... c5 {Pirc Defense: Austrian Attack, Dragon Formation}) 6. e5 {Pirc Defense: Austrian Attack, Unzicker Attack} (6. Bd3 {Pirc Defense: Austrian Attack, Weiss Variation}) (6. Be3 {Pirc Defense: Austrian Attack, Kurajica Variation}) 6... Nfd7 7. h4 {Pirc Defense: Austrian Attack, Unzicker Attack, Bronstein Variation}) (4. Be3 c6 5. Qd2 {Pirc Defense: 150 Attack} (5. h3 {Pirc Defense: 150 Attack, Sveshnikov-Jansa Attack}) 5... Bg4 {Pirc Defense: 150 Attack, Inner Doll Defense}) (4. Be2 Bg7 5. g4 {Pirc Defense: Chinese Variation} (5. h4 {Pirc Defense: Bayonet Attack})) (4. Bc4 {Pirc Defense: Kholmov System}) (4. Bg5 {Pirc Defense: Byrne Variation}) (4. g3 {Pirc Defense: Sveshnikov System}) 4... Bg7 {Pirc Defense: Classical Variation} 5. Be2 {Pirc Defense: Classical Variation, Quiet System} (5. h3 {Pirc Defense: Classical Variation, Schlechter Variation}) 5... O-O 6. O-O Nc6 {Pirc Defense: Classical Variation, Quiet System, Chigorin Line} (6... Bg4 {Pirc Defense: Classical Variation, Quiet System, Parma Defense}) (6... c6 {Pirc Defense: Classical Variation, Quiet System, Czech Defense}) 7. d5 Nb8 *\n",
+  "name": {
+    "de": "Pirc-Verteidigung",
+    "en": "Pirc Defence"
+  },
+  "summary": {
+    "de": "Schwarz laesst Weiss das Zentrum bauen und greift es spaeter mit Figuren und c5 oder e5 an. Hypermodern: erst entwickeln, dann kontern.",
+    "en": "Black lets White build the centre and attacks it later with pieces plus c5 or e5. Hypermodern: develop first, counter second."
+  },
+  "plans": {
+    "de": [
+      "Mit e7–e5 oder c7–c5 das weisse Zentrum untergraben.",
+      "Den Laeufer g7 auf der langen Diagonale zur Wirkung bringen.",
+      "Den Springer nach c6 oder d7 stellen und den Druck auf d4 erhoehen."
+    ],
+    "en": [
+      "Undermine White’s centre with e7–e5 or c7–c5.",
+      "Bring the g7 bishop to life on the long diagonal.",
+      "Post the knight on c6 or d7 and increase pressure on d4."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Be3 Bg7 5. Qd2 c6 6. f3 b5 7. Nge2 Nbd7 8. Bh6 Bxh6 9. Qxh6",
+      "why": {
+        "de": "Den Laeufer g7 abzutauschen laesst die dunklen Felder um den Koenig ungedeckt.",
+        "en": "Trading the g7 bishop leaves the dark squares around the king undefended."
+      }
+    },
+    {
+      "line": "1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. f4 Bg7 5. Nf3 O-O 6. e5 dxe5 7. fxe5 Nd5 8. Nxd5 Qxd5 9. c4",
+      "why": {
+        "de": "Die Dame nach d5 zu bringen kostet Zeit — hier verliert Schwarz mehrere Tempi.",
+        "en": "Bringing the queen to d5 costs time — Black loses several tempi here."
+      }
+    }
+  ]
+}

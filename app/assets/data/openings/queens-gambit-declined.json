@@ -1,0 +1,54 @@
+{
+  "id": "queens-gambit-declined",
+  "eco": "D30",
+  "side": "black",
+  "seed": "1. d4 d5 2. c4 e6",
+  "tags": [
+    "solid",
+    "classical",
+    "positional"
+  ],
+  "difficulty": 3,
+  "popularity": 82,
+  "namedLines": 118,
+  "nodeCount": 164,
+  "lineCount": 52,
+  "maxDepth": 12,
+  "pgn": "[Event \"Damengambit — Abgelehnt\"]\n[Site \"MasterOpening\"]\n[ECO \"D30\"]\n[Opening \"Queen’s Gambit Declined\"]\n[Result \"*\"]\n\n1. d4 d5 2. c4 e6 {Damengambit — Abgelehnt} 3. Nc3 {Queen's Gambit Declined: Queen's Knight Variation} (3. Nf3 Nf6 (3... c5 {Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch} 4. cxd5 exd5 5. g3 (5. Bg5 {Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch Bishop Attack}) 5... Nc6 6. Bg2 Nf6) (3... c6 4. Nc3 dxc4 5. a4 Bb4 6. e3 b5) 4. Nc3 (4. e3 c6 5. Nbd2 g6 {Queen's Gambit Declined: Spielmann Variation}) 4... dxc4 (4... Be7 5. Bg5 O-O 6. e3) (4... Nc6 5. Bg5 Be7 6. e3) 5. Bg5 {Queen's Gambit Accepted} (5. e4 {Queen's Gambit Accepted}) 5... Be7 {Queen's Gambit Declined} 6. e4 {Queen's Gambit Declined}) 3... Nf6 {Queen's Gambit Declined: Normal Defense} (3... c6 {Semi-Slav Defense: Accelerated Move Order} 4. Nf3 (4. e3 Nf6 (4... f5 {Semi-Slav Defense: Anti-Noteboom, Stonewall Variation} 5. g4 {Semi-Slav Defense: Anti-Noteboom, Stonewall Variation, Portisch Gambit}) 5. Nf3 Nbd7 6. Bd3) (4. e4 {Semi-Slav Defense: Marshall Gambit} dxe4 5. Nxe4 (5. f3 {Semi-Slav Defense: Gunderam Gambit}) 5... Bb4+ 6. Bd2 {Semi-Slav Defense: Marshall Gambit, Main Line} (6. Nc3 {Semi-Slav Defense: Marshall Gambit, Forgotten Variation})) 4... dxc4 {Semi-Slav Defense: Noteboom Variation} (4... Nf6 5. e3 Nbd7 6. b3 (6. Ne5 {Semi-Slav Defense: Rubinstein System})) 5. a4 (5. e3 b5 6. a4) (5. Bg5 {Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Variation} f6 {Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Variation, Belyavsky Line}) (5. g3 {Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Gambit}) 5... Bb4 6. e3) (3... c5 {Tarrasch Defense} 4. cxd5 (4. e3 Nf6 5. Nf3 Nc6 {Tarrasch Defense: Symmetrical Variation}) 4... exd5 {Queen's Gambit Declined: Tarrasch Defense} (4... cxd4 {Tarrasch Defense: Schara Gambit} 5. Qxd4 Nc6 6. Qd1) 5. Nf3 {Tarrasch Defense: Two Knights Variation} (5. dxc5 d4 6. Na4) (5. e4 {Tarrasch Defense: Marshall Gambit}) 5... Nc6 6. Bg5 (6. dxc5) (6. g3 {Tarrasch Defense: Rubinstein System})) (3... Be7 {Queen's Gambit Declined: Charousek Variation} 4. Nf3 (4. e4 dxe4 5. f3 {Queen's Gambit Declined: Charousek Variation, Miladinovic Gambit}) 4... Nf6 5. Bf4 (5. Bg5 h6 6. Bh4) 5... O-O 6. e3) (3... a6 {Queen's Gambit Declined: Janowski Variation}) 4. Bg5 {Queen's Gambit Declined: Modern Variation} (4. Nf3 c5 (4... Be7 5. Bf4 (5. e3 O-O {Queen's Gambit Declined: Three Knights Variation}) 5... O-O 6. e3) 5. e3 (5. cxd5 Nxd5 6. e4) (5. Bg5 {Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation}) 5... Nc6 6. a3 (6. Bd3)) (4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3) (4. e3 Be7 5. cxd5 exd5 6. Bd3) (4. Bf4 {Queen's Gambit Declined: Harrwitz Attack}) 4... Be7 {Queen's Gambit Declined} (4... Nbd7 {Queen's Gambit Declined: Modern Variation, Knight Defense} 5. e3 {Queen's Gambit Declined: Modern Variation, Knight Defense} (5. Nf3 c6 6. e4 {Queen's Gambit Declined: Alekhine Variation} (6. Rc1)) 5... c6 {Queen's Gambit Declined: Modern Variation, Knight Defense} (5... Bb4 {Queen's Gambit Declined: Manhattan Variation}) 6. a3 {Queen's Gambit Declined: Capablanca Variation, Anti-Cambridge Springs Variation} (6. Nf3)) (4... c5 {Queen's Gambit Declined: Been-Koomen Variation} 5. Nf3 (5. cxd5 {Queen's Gambit Declined: Pseudo-Tarrasch Variation} Qb6 {Queen's Gambit Declined: Pseudo-Tarrasch Variation, Canal Variation}) 5... cxd4 6. Nxd4 (6. Qxd4 {Queen's Gambit Declined: Pseudo-Tarrasch Variation, Primitive Pillsbury Variation})) (4... c6 5. Nf3 Be7 6. e3) 5. e3 (5. Nf3 {Queen's Gambit Declined} c6 6. e3) (5. Bxf6 {Queen's Gambit Declined: Modern Variation, Heral Variation}) 5... O-O (5... Nbd7 6. Nf3) 6. Nf3 *\n",
+  "name": {
+    "de": "Damengambit — Abgelehnt",
+    "en": "Queen’s Gambit Declined"
+  },
+  "summary": {
+    "de": "Der klassische Weg: Schwarz stuetzt d5 mit e6 und nimmt eine leicht passive, dafuer bombensichere Stellung. Fast unmoeglich zu ueberrennen.",
+    "en": "The classical route: Black supports d5 with e6 and takes a slightly passive but rock-solid position. Almost impossible to overrun."
+  },
+  "plans": {
+    "de": [
+      "Den Laeufer c8 mit b6 und Bb7 oder ueber d7 entwickeln.",
+      "Mit c7–c5 im richtigen Moment das Zentrum befreien.",
+      "Bei Minoritaetsangriff die c-Linie besetzen und kontern."
+    ],
+    "en": [
+      "Develop the c8 bishop with b6 and Bb7, or via d7.",
+      "Free the position with c7–c5 at the right moment.",
+      "Against the minority attack, occupy the c-file and counter."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 b6 7. cxd5 exd5 8. Bd3 Bb7 9. O-O Nbd7 10. Qc2 c5 11. Rad1 Ne4 12. Bf4",
+      "why": {
+        "de": "b6 zu frueh: der Laeufer auf b7 beisst nach cxd5 exd5 auf Granit.",
+        "en": "b6 too early: after cxd5 exd5 the b7 bishop bites on granite."
+      }
+    },
+    {
+      "line": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 exd5 5. Bg5 c6 6. Qc2 Be7 7. e3 Nbd7 8. Bd3 O-O 9. Nf3 Re8 10. O-O Nf8 11. h3 Ne4 12. Bxe7 Qxe7 13. Bxe4 dxe4 14. Nd2",
+      "why": {
+        "de": "Den Abtausch auf e4 zuzulassen gibt Weiss das bessere Endspiel.",
+        "en": "Allowing the exchange on e4 hands White the better endgame."
+      }
+    }
+  ]
+}

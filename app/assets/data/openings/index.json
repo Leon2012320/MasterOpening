@@ -1,0 +1,1191 @@
+[
+  {
+    "id": "ruy-lopez",
+    "eco": "C60",
+    "side": "white",
+    "seed": "1. e4 e5 2. Nf3 Nc6 3. Bb5",
+    "tags": [
+      "classical",
+      "positional",
+      "open",
+      "theoryHeavy"
+    ],
+    "difficulty": 4,
+    "popularity": 96,
+    "nodeCount": 165,
+    "lineCount": 84,
+    "name": {
+      "de": "Spanische Partie",
+      "en": "Ruy Lopez"
+    },
+    "summary": {
+      "de": "Die am gruendlichsten erforschte offene Eroeffnung. Weiss setzt den Springer c6 unter Druck und spielt langfristig auf einen Raumvorteil am Koenigsfluegel.",
+      "en": "The most thoroughly explored open opening. White pressures the c6 knight and plays for long-term space on the kingside."
+    }
+  },
+  {
+    "id": "sicilian-najdorf",
+    "eco": "B90",
+    "side": "black",
+    "seed": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6",
+    "tags": [
+      "attacking",
+      "tactical",
+      "open",
+      "theoryHeavy"
+    ],
+    "difficulty": 5,
+    "popularity": 94,
+    "nodeCount": 93,
+    "lineCount": 26,
+    "name": {
+      "de": "Sizilianisch — Najdorf",
+      "en": "Sicilian — Najdorf"
+    },
+    "summary": {
+      "de": "Der beruehmteste Sizilianer. a6 nimmt dem weissen Springer und Laeufer das Feld b5 und haelt sich alle Plaene offen. Sehr scharf und sehr theoretisch — dafuer die kaempferischste Antwort auf 1.e4.",
+      "en": "The most famous Sicilian. a6 denies b5 to White’s knight and bishop and keeps every plan available. Very sharp and very theoretical — but the most combative answer to 1.e4."
+    }
+  },
+  {
+    "id": "open-sicilian",
+    "eco": "B50",
+    "side": "white",
+    "seed": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3",
+    "tags": [
+      "open",
+      "tactical",
+      "attacking",
+      "theoryHeavy"
+    ],
+    "difficulty": 5,
+    "popularity": 92,
+    "nodeCount": 169,
+    "lineCount": 55,
+    "name": {
+      "de": "Sizilianisch — Offene Variante",
+      "en": "Sicilian — Open Variation"
+    },
+    "summary": {
+      "de": "Der Hauptweg gegen Sizilianisch: Weiss tauscht auf d4 und spielt auf Entwicklungsvorsprung. Dafuer muss man Najdorf, Drachen und Scheveningen im Griff haben.",
+      "en": "The main road against the Sicilian: White trades on d4 and plays for a development lead. It demands a working knowledge of the Najdorf, Dragon and Scheveningen."
+    }
+  },
+  {
+    "id": "queens-gambit",
+    "eco": "D06",
+    "side": "white",
+    "seed": "1. d4 d5 2. c4",
+    "tags": [
+      "classical",
+      "positional",
+      "theoryHeavy"
+    ],
+    "difficulty": 3,
+    "popularity": 90,
+    "nodeCount": 163,
+    "lineCount": 81,
+    "name": {
+      "de": "Damengambit",
+      "en": "Queen’s Gambit"
+    },
+    "summary": {
+      "de": "Kein echtes Gambit: Weiss bekommt den Bauern zurueck und bekaempft das schwarze Zentrum von der Seite. Die klassische Grundlage jedes 1.d4-Repertoires.",
+      "en": "Not a real gambit: White regains the pawn and fights Black’s centre from the side. The classical foundation of any 1.d4 repertoire."
+    }
+  },
+  {
+    "id": "italian-game",
+    "eco": "C50",
+    "side": "white",
+    "seed": "1. e4 e5 2. Nf3 Nc6 3. Bc4",
+    "tags": [
+      "classical",
+      "positional",
+      "open",
+      "beginnerFriendly"
+    ],
+    "difficulty": 2,
+    "popularity": 88,
+    "nodeCount": 165,
+    "lineCount": 66,
+    "name": {
+      "de": "Italienisch",
+      "en": "Italian Game"
+    },
+    "summary": {
+      "de": "Der Laeufer zielt sofort auf f7, dem schwaechsten Punkt in Schwarz’ Stellung. Die moderne Behandlung mit c3 und d3 baut in Ruhe ein Bauernzentrum auf, statt sofort zu stuermen.",
+      "en": "The bishop eyes f7, the weakest point in Black’s camp. The modern treatment with c3 and d3 builds a pawn centre calmly instead of storming immediately."
+    }
+  },
+  {
+    "id": "nimzo-indian",
+    "eco": "E20",
+    "side": "black",
+    "seed": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4",
+    "tags": [
+      "positional",
+      "solid",
+      "classical",
+      "theoryHeavy"
+    ],
+    "difficulty": 4,
+    "popularity": 86,
+    "nodeCount": 166,
+    "lineCount": 46,
+    "name": {
+      "de": "Nimzoindische Verteidigung",
+      "en": "Nimzo-Indian Defence"
+    },
+    "summary": {
+      "de": "Der Laeufer fesselt den Springer c3 und kaempft um das Feld e4. Die vielleicht beste Antwort auf 1.d4 — solide, flexibel und auf jedem Niveau spielbar.",
+      "en": "The bishop pins the c3 knight and fights for e4. Perhaps the best answer to 1.d4 — solid, flexible and playable at any level."
+    }
+  },
+  {
+    "id": "london-system",
+    "eco": "D02",
+    "side": "white",
+    "seed": "1. d4 d5 2. Nf3 Nf6 3. Bf4",
+    "tags": [
+      "system",
+      "solid",
+      "positional",
+      "beginnerFriendly",
+      "theoryLight"
+    ],
+    "difficulty": 1,
+    "popularity": 84,
+    "nodeCount": 68,
+    "lineCount": 8,
+    "name": {
+      "de": "London-System",
+      "en": "London System"
+    },
+    "summary": {
+      "de": "Immer dieselbe Aufstellung, fast egal was Schwarz spielt: Bf4, e3, c3, Nbd2, Bd3. Ideal fuer alle, die wenig Theorie lernen und trotzdem solide stehen wollen.",
+      "en": "The same setup almost regardless of what Black plays: Bf4, e3, c3, Nbd2, Bd3. Ideal for anyone who wants a solid position without learning much theory."
+    }
+  },
+  {
+    "id": "queens-gambit-declined",
+    "eco": "D30",
+    "side": "black",
+    "seed": "1. d4 d5 2. c4 e6",
+    "tags": [
+      "solid",
+      "classical",
+      "positional"
+    ],
+    "difficulty": 3,
+    "popularity": 82,
+    "nodeCount": 164,
+    "lineCount": 52,
+    "name": {
+      "de": "Damengambit — Abgelehnt",
+      "en": "Queen’s Gambit Declined"
+    },
+    "summary": {
+      "de": "Der klassische Weg: Schwarz stuetzt d5 mit e6 und nimmt eine leicht passive, dafuer bombensichere Stellung. Fast unmoeglich zu ueberrennen.",
+      "en": "The classical route: Black supports d5 with e6 and takes a slightly passive but rock-solid position. Almost impossible to overrun."
+    }
+  },
+  {
+    "id": "slav-defence",
+    "eco": "D10",
+    "side": "black",
+    "seed": "1. d4 d5 2. c4 c6",
+    "tags": [
+      "solid",
+      "positional",
+      "classical"
+    ],
+    "difficulty": 3,
+    "popularity": 80,
+    "nodeCount": 164,
+    "lineCount": 52,
+    "name": {
+      "de": "Slawische Verteidigung",
+      "en": "Slav Defence"
+    },
+    "summary": {
+      "de": "Schwarz stuetzt d5 mit c6 statt e6 und haelt dem Laeufer c8 den Weg frei. Genauso solide wie das abgelehnte Damengambit, aber mit besserem Laeufer.",
+      "en": "Black supports d5 with c6 instead of e6, keeping the c8 bishop’s path clear. Just as solid as the QGD, but with a better bishop."
+    }
+  },
+  {
+    "id": "kings-indian-defence",
+    "eco": "E60",
+    "side": "black",
+    "seed": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7",
+    "tags": [
+      "attacking",
+      "closed",
+      "tactical",
+      "theoryHeavy"
+    ],
+    "difficulty": 4,
+    "popularity": 78,
+    "nodeCount": 166,
+    "lineCount": 51,
+    "name": {
+      "de": "Koenigsindische Verteidigung",
+      "en": "King’s Indian Defence"
+    },
+    "summary": {
+      "de": "Schwarz gibt das Zentrum ab und stuermt spaeter mit f5–f4–g5 am Koenigsfluegel. Eine der kaempferischsten Eroeffnungen ueberhaupt — Remis ist hier selten.",
+      "en": "Black concedes the centre and later storms the kingside with f5–f4–g5. One of the most combative openings there is — draws are rare here."
+    }
+  },
+  {
+    "id": "rossolimo",
+    "eco": "B31",
+    "side": "white",
+    "seed": "1. e4 c5 2. Nf3 Nc6 3. Bb5",
+    "tags": [
+      "positional",
+      "solid",
+      "theoryLight"
+    ],
+    "difficulty": 3,
+    "popularity": 74,
+    "nodeCount": 28,
+    "lineCount": 7,
+    "name": {
+      "de": "Sizilianisch — Rossolimo",
+      "en": "Sicilian — Rossolimo"
+    },
+    "summary": {
+      "de": "Weiss tauscht den Laeufer gegen den Springer c6 und spielt auf die Bauernstruktur. Wenig Theorie, klare Plaene — auf Grossmeisterebene sehr beliebt.",
+      "en": "White trades the bishop for the c6 knight and plays on the pawn structure. Little theory, clear plans — very popular at grandmaster level."
+    }
+  },
+  {
+    "id": "catalan",
+    "eco": "E00",
+    "side": "white",
+    "seed": "1. d4 Nf6 2. c4 e6 3. g3",
+    "tags": [
+      "positional",
+      "solid",
+      "theoryHeavy"
+    ],
+    "difficulty": 4,
+    "popularity": 72,
+    "nodeCount": 105,
+    "lineCount": 20,
+    "name": {
+      "de": "Katalanisch",
+      "en": "Catalan"
+    },
+    "summary": {
+      "de": "Der Laeufer auf g2 druckt die ganze Partie ueber auf die lange Diagonale. Weiss opfert oft zeitweise den c4-Bauern und bekommt dafuer dauerhaften Druck.",
+      "en": "The g2 bishop presses along the long diagonal all game. White often gives up the c4 pawn temporarily and gets lasting pressure in return."
+    }
+  },
+  {
+    "id": "scotch-game",
+    "eco": "C45",
+    "side": "white",
+    "seed": "1. e4 e5 2. Nf3 Nc6 3. d4",
+    "tags": [
+      "open",
+      "tactical",
+      "theoryLight"
+    ],
+    "difficulty": 2,
+    "popularity": 70,
+    "nodeCount": 148,
+    "lineCount": 38,
+    "name": {
+      "de": "Schottische Partie",
+      "en": "Scotch Game"
+    },
+    "summary": {
+      "de": "Weiss oeffnet das Zentrum sofort und tauscht den d-Bauern gegen freie Figurenentwicklung. Ein guter Weg, der riesigen Theorie der Spanischen aus dem Weg zu gehen.",
+      "en": "White opens the centre at once, trading the d-pawn for free piece play. A practical way to sidestep the huge body of Ruy Lopez theory."
+    }
+  },
+  {
+    "id": "caro-kann-classical",
+    "eco": "B18",
+    "side": "black",
+    "seed": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5",
+    "tags": [
+      "solid",
+      "positional",
+      "beginnerFriendly"
+    ],
+    "difficulty": 3,
+    "popularity": 70,
+    "nodeCount": 52,
+    "lineCount": 6,
+    "name": {
+      "de": "Caro-Kann — Klassisch",
+      "en": "Caro-Kann — Classical"
+    },
+    "summary": {
+      "de": "Schwarz entwickelt den Laeufer c8 vor e7–e6 und loest damit das Hauptproblem franzoesischer Stellungen. Sehr solide Struktur ohne Schwaechen.",
+      "en": "Black develops the c8 bishop before e7–e6, solving the main problem of French structures. A very solid structure with no weaknesses."
+    }
+  },
+  {
+    "id": "caro-kann-advance",
+    "eco": "B12",
+    "side": "white",
+    "seed": "1. e4 c6 2. d4 d5 3. e5",
+    "tags": [
+      "positional",
+      "closed",
+      "flexible"
+    ],
+    "difficulty": 3,
+    "popularity": 68,
+    "nodeCount": 51,
+    "lineCount": 10,
+    "name": {
+      "de": "Caro-Kann — Vorstossvariante",
+      "en": "Caro-Kann — Advance Variation"
+    },
+    "summary": {
+      "de": "Weiss nimmt Raum und laesst Schwarz den Laeufer nach f5 entwickeln — den Laeufer, den der Franzose vermisst. Dafuer geraet er dort ins Visier von Nh4 und g4.",
+      "en": "White takes space and lets Black develop the bishop to f5 — the bishop the French player misses. In return it becomes a target for Nh4 and g4."
+    }
+  },
+  {
+    "id": "gruenfeld-defence",
+    "eco": "D80",
+    "side": "black",
+    "seed": "1. d4 Nf6 2. c4 g6 3. Nc3 d5",
+    "tags": [
+      "tactical",
+      "modern",
+      "open",
+      "theoryHeavy"
+    ],
+    "difficulty": 5,
+    "popularity": 68,
+    "nodeCount": 117,
+    "lineCount": 31,
+    "name": {
+      "de": "Gruenfeld-Indisch",
+      "en": "Grünfeld Defence"
+    },
+    "summary": {
+      "de": "Schwarz laesst Weiss ein Riesenzentrum bauen und schiesst es dann mit c5, Bg7 und Nc6 zusammen. Hypermodernes Schach in Reinform.",
+      "en": "Black lets White build a huge centre and then shoots it down with c5, Bg7 and Nc6. Hypermodern chess in its purest form."
+    }
+  },
+  {
+    "id": "alapin-sicilian",
+    "eco": "B22",
+    "side": "white",
+    "seed": "1. e4 c5 2. c3",
+    "tags": [
+      "positional",
+      "solid",
+      "theoryLight",
+      "beginnerFriendly"
+    ],
+    "difficulty": 2,
+    "popularity": 66,
+    "nodeCount": 51,
+    "lineCount": 8,
+    "name": {
+      "de": "Sizilianisch — Alapin",
+      "en": "Sicilian — Alapin"
+    },
+    "summary": {
+      "de": "Weiss bereitet d2–d4 vor und baut ein grosses Bauernzentrum, statt sich auf die Theorieschlacht einzulassen. Der praktischste Weg gegen Sizilianisch fuer alle, die wenig Zeit zum Lernen haben.",
+      "en": "White prepares d2–d4 and builds a big pawn centre instead of entering a theory battle. The most practical anti-Sicilian for anyone short on study time."
+    }
+  },
+  {
+    "id": "berlin-defence",
+    "eco": "C65",
+    "side": "black",
+    "seed": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6",
+    "tags": [
+      "solid",
+      "positional",
+      "theoryHeavy"
+    ],
+    "difficulty": 4,
+    "popularity": 66,
+    "nodeCount": 68,
+    "lineCount": 24,
+    "name": {
+      "de": "Berliner Verteidigung",
+      "en": "Berlin Defence"
+    },
+    "summary": {
+      "de": "Die „Berliner Mauer\": Schwarz geht frueh ins Endspiel, verliert die Rochade und steht trotzdem bombenfest. Kramniks Waffe gegen Kasparow 2000 — seither Standard auf hoechster Ebene.",
+      "en": "The “Berlin Wall”: Black heads for an early endgame, gives up castling and is still rock solid. Kramnik’s weapon against Kasparov in 2000 — a top-level standard ever since."
+    }
+  },
+  {
+    "id": "semi-slav",
+    "eco": "D43",
+    "side": "black",
+    "seed": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6",
+    "tags": [
+      "tactical",
+      "attacking",
+      "theoryHeavy"
+    ],
+    "difficulty": 5,
+    "popularity": 64,
+    "nodeCount": 64,
+    "lineCount": 12,
+    "name": {
+      "de": "Halbslawisch",
+      "en": "Semi-Slav"
+    },
+    "summary": {
+      "de": "Die Kombination aus Slawisch und Damengambit — und der Einstieg in das Botwinnik-System, eine der schaerfsten Varianten des ganzen Schachs.",
+      "en": "The blend of Slav and QGD — and the gateway to the Botvinnik System, one of the sharpest variations in all of chess."
+    }
+  },
+  {
+    "id": "french-advance",
+    "eco": "C02",
+    "side": "white",
+    "seed": "1. e4 e6 2. d4 d5 3. e5",
+    "tags": [
+      "closed",
+      "positional",
+      "theoryLight"
+    ],
+    "difficulty": 3,
+    "popularity": 62,
+    "nodeCount": 37,
+    "lineCount": 11,
+    "name": {
+      "de": "Franzoesisch — Vorstossvariante",
+      "en": "French — Advance Variation"
+    },
+    "summary": {
+      "de": "Weiss schliesst das Zentrum und gewinnt Raum. Der schwarze Laeufer c8 bleibt in der eigenen Bauernkette eingesperrt — daran arbeitet man die ganze Partie.",
+      "en": "White closes the centre and gains space. Black’s light-squared bishop stays locked behind its own pawns — that is the theme of the whole game."
+    }
+  },
+  {
+    "id": "sicilian-dragon",
+    "eco": "B70",
+    "side": "black",
+    "seed": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6",
+    "tags": [
+      "attacking",
+      "tactical",
+      "open",
+      "theoryHeavy"
+    ],
+    "difficulty": 5,
+    "popularity": 62,
+    "nodeCount": 71,
+    "lineCount": 18,
+    "name": {
+      "de": "Sizilianisch — Drachen",
+      "en": "Sicilian — Dragon"
+    },
+    "summary": {
+      "de": "Der Laeufer auf g7 zielt ueber die lange Diagonale bis nach b2. Beide Seiten rochieren auf verschiedene Fluegel und stuermen — wer einen Zug schneller ist, gewinnt.",
+      "en": "The g7 bishop looks all the way down to b2. Both sides castle on opposite wings and storm — whoever is one move faster wins."
+    }
+  },
+  {
+    "id": "queens-gambit-accepted",
+    "eco": "D20",
+    "side": "black",
+    "seed": "1. d4 d5 2. c4 dxc4",
+    "tags": [
+      "open",
+      "flexible",
+      "theoryLight"
+    ],
+    "difficulty": 3,
+    "popularity": 62,
+    "nodeCount": 115,
+    "lineCount": 37,
+    "name": {
+      "de": "Damengambit — Angenommen",
+      "en": "Queen’s Gambit Accepted"
+    },
+    "summary": {
+      "de": "Schwarz nimmt den Bauern, gibt aber das Zentrum ab und holt ihn spaeter nicht zwingend. Dafuer wird der Laeufer c8 frei und die Stellung oeffnet sich schnell.",
+      "en": "Black takes the pawn but concedes the centre and does not necessarily keep the extra pawn. In return the c8 bishop is free and the position opens quickly."
+    }
+  },
+  {
+    "id": "sicilian-taimanov",
+    "eco": "B46",
+    "side": "black",
+    "seed": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6",
+    "tags": [
+      "flexible",
+      "positional",
+      "open"
+    ],
+    "difficulty": 4,
+    "popularity": 60,
+    "nodeCount": 65,
+    "lineCount": 13,
+    "name": {
+      "de": "Sizilianisch — Taimanow",
+      "en": "Sicilian — Taimanov"
+    },
+    "summary": {
+      "de": "Schwarz haelt die Struktur maximal flexibel und entscheidet erst spaet, wo die Bauern hingehen. Weniger Auswendiglernen als im Najdorf, aber viel Verstaendnis noetig.",
+      "en": "Black keeps the structure maximally flexible and decides late where the pawns go. Less memorisation than the Najdorf, but it demands understanding."
+    }
+  },
+  {
+    "id": "french-tarrasch",
+    "eco": "C03",
+    "side": "white",
+    "seed": "1. e4 e6 2. d4 d5 3. Nd2",
+    "tags": [
+      "positional",
+      "solid",
+      "flexible"
+    ],
+    "difficulty": 3,
+    "popularity": 58,
+    "nodeCount": 65,
+    "lineCount": 16,
+    "name": {
+      "de": "Franzoesisch — Tarrasch",
+      "en": "French — Tarrasch"
+    },
+    "summary": {
+      "de": "Der Springer geht nach d2 statt c3 und vermeidet die Fesselung durch Bb4. Weiss behaelt die Struktur flexibel und spielt auf einen kleinen, dauerhaften Vorteil.",
+      "en": "The knight goes to d2 instead of c3, avoiding the pin with Bb4. White keeps the structure flexible and plays for a small, lasting edge."
+    }
+  },
+  {
+    "id": "sicilian-sveshnikov",
+    "eco": "B33",
+    "side": "black",
+    "seed": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5",
+    "tags": [
+      "attacking",
+      "tactical",
+      "open",
+      "theoryHeavy"
+    ],
+    "difficulty": 5,
+    "popularity": 58,
+    "nodeCount": 28,
+    "lineCount": 7,
+    "name": {
+      "de": "Sizilianisch — Sweschnikow",
+      "en": "Sicilian — Sveshnikov"
+    },
+    "summary": {
+      "de": "Schwarz akzeptiert ein Loch auf d5 und einen Rueckstandsbauern, bekommt dafuer aber Figurenspiel und das Laeuferpaar. Eine der modernsten und kaempferischsten Antworten auf 1.e4.",
+      "en": "Black accepts a hole on d5 and a backward pawn in return for piece play and the bishop pair. One of the most modern and combative answers to 1.e4."
+    }
+  },
+  {
+    "id": "queens-indian",
+    "eco": "E12",
+    "side": "black",
+    "seed": "1. d4 Nf6 2. c4 e6 3. Nf3 b6",
+    "tags": [
+      "solid",
+      "positional",
+      "flexible"
+    ],
+    "difficulty": 4,
+    "popularity": 58,
+    "nodeCount": 122,
+    "lineCount": 33,
+    "name": {
+      "de": "Damenindische Verteidigung",
+      "en": "Queen’s Indian Defence"
+    },
+    "summary": {
+      "de": "Der Laeufer geht nach b7 und kaempft mit dem Springer f6 um das Feld e4. Sehr solide, oft Uebergang ins Nimzoindische oder Katalanische.",
+      "en": "The bishop goes to b7 and fights with the f6 knight for the e4 square. Very solid, often transposing to the Nimzo-Indian or Catalan."
+    }
+  },
+  {
+    "id": "english-symmetrical",
+    "eco": "A30",
+    "side": "white",
+    "seed": "1. c4 c5",
+    "tags": [
+      "positional",
+      "flexible",
+      "closed"
+    ],
+    "difficulty": 3,
+    "popularity": 56,
+    "nodeCount": 84,
+    "lineCount": 18,
+    "name": {
+      "de": "Englisch — Symmetrisch",
+      "en": "English — Symmetrical"
+    },
+    "summary": {
+      "de": "Beide Seiten spiegeln sich; Weiss versucht, seinen Zug Vorsprung in einen kleinen Vorteil zu verwandeln. Sehr flexibel, oft geht es in Damengambit- oder Igelstellungen ueber.",
+      "en": "Both sides mirror each other; White tries to convert the extra tempo into a small edge. Very flexible, often transposing into Queen’s Gambit or Hedgehog structures."
+    }
+  },
+  {
+    "id": "french-winawer",
+    "eco": "C18",
+    "side": "black",
+    "seed": "1. e4 e6 2. d4 d5 3. Nc3 Bb4",
+    "tags": [
+      "tactical",
+      "closed",
+      "theoryHeavy"
+    ],
+    "difficulty": 4,
+    "popularity": 56,
+    "nodeCount": 113,
+    "lineCount": 32,
+    "name": {
+      "de": "Franzoesisch — Winawer",
+      "en": "French — Winawer"
+    },
+    "summary": {
+      "de": "Schwarz gibt das Laeuferpaar und bekommt dafuer ein bleibendes Ziel: die weissen Doppelbauern auf c3. Unsymmetrisch, scharf und voller Gift auf beiden Seiten.",
+      "en": "Black gives up the bishop pair for a permanent target: White’s doubled pawns on c3. Unbalanced, sharp and full of poison on both sides."
+    }
+  },
+  {
+    "id": "caro-kann-karpov",
+    "eco": "B17",
+    "side": "black",
+    "seed": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7",
+    "tags": [
+      "solid",
+      "positional",
+      "flexible"
+    ],
+    "difficulty": 3,
+    "popularity": 54,
+    "nodeCount": 54,
+    "lineCount": 7,
+    "name": {
+      "de": "Caro-Kann — Karpow-Variante",
+      "en": "Caro-Kann — Karpov Variation"
+    },
+    "summary": {
+      "de": "Nd7 bereitet Ngf6 vor, ohne dass der Springer auf f6 abgetauscht und die Bauernstruktur zerstoert wird. Karpows Lieblingsaufbau: unauffaellig, zaeh und schwer zu knacken.",
+      "en": "Nd7 prepares Ngf6 without allowing the knight to be traded and the structure wrecked. Karpov’s favourite: unassuming, resilient and hard to crack."
+    }
+  },
+  {
+    "id": "vienna-game",
+    "eco": "C25",
+    "side": "white",
+    "seed": "1. e4 e5 2. Nc3",
+    "tags": [
+      "attacking",
+      "tactical",
+      "open",
+      "theoryLight"
+    ],
+    "difficulty": 3,
+    "popularity": 52,
+    "nodeCount": 133,
+    "lineCount": 34,
+    "name": {
+      "de": "Wiener Partie",
+      "en": "Vienna Game"
+    },
+    "summary": {
+      "de": "Ein Koenigsgambit mit Verspaetung: erst wird Nc3 entwickelt, dann kommt f2–f4. Schwarz muss genau spielen, sonst wird die f-Linie schnell gefaehrlich.",
+      "en": "A King’s Gambit with a delay: develop Nc3 first, then push f2–f4. Black has to be accurate or the f-file becomes dangerous quickly."
+    }
+  },
+  {
+    "id": "french-classical",
+    "eco": "C11",
+    "side": "black",
+    "seed": "1. e4 e6 2. d4 d5 3. Nc3 Nf6",
+    "tags": [
+      "solid",
+      "closed",
+      "positional"
+    ],
+    "difficulty": 3,
+    "popularity": 52,
+    "nodeCount": 100,
+    "lineCount": 30,
+    "name": {
+      "de": "Franzoesisch — Klassisch",
+      "en": "French — Classical"
+    },
+    "summary": {
+      "de": "Der natuerliche Aufbau: Nf6 greift e4 an und zwingt Weiss zu einer Entscheidung. Solide, mit klaren Plaenen gegen die weisse Bauernkette.",
+      "en": "The natural setup: Nf6 hits e4 and forces White to commit. Solid, with clear plans against White’s pawn chain."
+    }
+  },
+  {
+    "id": "english-reversed-sicilian",
+    "eco": "A20",
+    "side": "white",
+    "seed": "1. c4 e5",
+    "tags": [
+      "positional",
+      "flexible",
+      "open"
+    ],
+    "difficulty": 3,
+    "popularity": 50,
+    "nodeCount": 140,
+    "lineCount": 40,
+    "name": {
+      "de": "Englisch — Umgekehrtes Sizilianisch",
+      "en": "English — Reversed Sicilian"
+    },
+    "summary": {
+      "de": "Dieselben Strukturen wie im Sizilianer, nur mit einem Tempo mehr und den Farben vertauscht. Wer Sizilianisch mit Schwarz kennt, findet sich hier sofort zurecht.",
+      "en": "The same structures as the Sicilian, with an extra tempo and colours reversed. If you know the Sicilian as Black, you will feel at home here."
+    }
+  },
+  {
+    "id": "petrov-defence",
+    "eco": "C42",
+    "side": "black",
+    "seed": "1. e4 e5 2. Nf3 Nf6",
+    "tags": [
+      "solid",
+      "positional",
+      "open"
+    ],
+    "difficulty": 3,
+    "popularity": 50,
+    "nodeCount": 109,
+    "lineCount": 32,
+    "name": {
+      "de": "Russische Verteidigung (Petrow)",
+      "en": "Petrov Defence"
+    },
+    "summary": {
+      "de": "Statt den Bauern e5 zu decken, greift Schwarz symmetrisch e4 an. Der Ruf als Remis-Eroeffnung taeuscht: die Stellungen sind ausgeglichen, aber keineswegs leblos.",
+      "en": "Instead of defending e5, Black attacks e4 symmetrically. Its drawish reputation is misleading: the positions are balanced but far from lifeless."
+    }
+  },
+  {
+    "id": "reti-opening",
+    "eco": "A09",
+    "side": "white",
+    "seed": "1. Nf3 d5 2. c4",
+    "tags": [
+      "positional",
+      "flexible",
+      "theoryLight"
+    ],
+    "difficulty": 3,
+    "popularity": 48,
+    "nodeCount": 37,
+    "lineCount": 10,
+    "name": {
+      "de": "Reti-Eroeffnung",
+      "en": "Réti Opening"
+    },
+    "summary": {
+      "de": "Weiss greift das Zentrum von der Flanke an, statt es zu besetzen. Hypermodern und sehr flexibel — der Uebergang in Englisch oder Katalanisch steht immer offen.",
+      "en": "White attacks the centre from the flank instead of occupying it. Hypermodern and very flexible — transposing to the English or Catalan is always available."
+    }
+  },
+  {
+    "id": "sicilian-accelerated-dragon",
+    "eco": "B34",
+    "side": "black",
+    "seed": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6",
+    "tags": [
+      "positional",
+      "open",
+      "flexible"
+    ],
+    "difficulty": 3,
+    "popularity": 48,
+    "nodeCount": 58,
+    "lineCount": 9,
+    "name": {
+      "de": "Sizilianisch — Beschleunigter Drache",
+      "en": "Sicilian — Accelerated Dragon"
+    },
+    "summary": {
+      "de": "Der Drachenlaeufer kommt ohne d6 aufs Brett, was Schwarz spaeter d7–d5 in einem Zug erlaubt. Dafuer muss man den Maroczy-Aufbau mit c4 aushalten.",
+      "en": "The Dragon bishop appears without d6, letting Black play d7–d5 in one go later. The price is having to handle the Maroczy Bind with c4."
+    }
+  },
+  {
+    "id": "jobava-london",
+    "eco": "D00",
+    "side": "white",
+    "seed": "1. d4 Nf6 2. Nc3 d5 3. Bf4",
+    "tags": [
+      "attacking",
+      "theoryLight",
+      "system"
+    ],
+    "difficulty": 2,
+    "popularity": 46,
+    "nodeCount": 60,
+    "lineCount": 7,
+    "name": {
+      "de": "Jobava-London",
+      "en": "Jobava London"
+    },
+    "summary": {
+      "de": "Die scharfe Schwester des London-Systems: Nc3 statt c3, dazu oft schnelles Nb5 und f3–e4. Im Blitz eine der unangenehmsten Waffen gegen 1…d5.",
+      "en": "The sharp sister of the London System: Nc3 instead of c3, often with a quick Nb5 and f3–e4. One of the nastiest blitz weapons against 1…d5."
+    }
+  },
+  {
+    "id": "grand-prix-attack",
+    "eco": "B23",
+    "side": "white",
+    "seed": "1. e4 c5 2. Nc3 Nc6 3. f4",
+    "tags": [
+      "attacking",
+      "tactical",
+      "theoryLight"
+    ],
+    "difficulty": 2,
+    "popularity": 44,
+    "nodeCount": 40,
+    "lineCount": 6,
+    "name": {
+      "de": "Sizilianisch — Grand-Prix-Angriff",
+      "en": "Sicilian — Grand Prix Attack"
+    },
+    "summary": {
+      "de": "Direkter Angriff mit f4 und Bc4 ohne d4-Abtausch. Im Schnellschach gefaehrlich, weil Schwarz sofort konkret verteidigen muss.",
+      "en": "A direct attack with f4 and Bc4 without trading on d4. Dangerous in rapid play because Black has to defend concretely at once."
+    }
+  },
+  {
+    "id": "trompowsky",
+    "eco": "A45",
+    "side": "white",
+    "seed": "1. d4 Nf6 2. Bg5",
+    "tags": [
+      "theoryLight",
+      "flexible",
+      "positional"
+    ],
+    "difficulty": 2,
+    "popularity": 42,
+    "nodeCount": 35,
+    "lineCount": 7,
+    "name": {
+      "de": "Trompowsky-Angriff",
+      "en": "Trompowsky Attack"
+    },
+    "summary": {
+      "de": "Sofort Bg5 — Weiss stellt die Theoriefrage, bevor Schwarz sein Lieblingssystem aufbauen kann. Wenig Varianten, viel eigenes Verstaendnis.",
+      "en": "Bg5 at once — White poses the theoretical question before Black can set up a favourite system. Few variations, a lot of understanding."
+    }
+  },
+  {
+    "id": "scandinavian-black",
+    "eco": "B01",
+    "side": "black",
+    "seed": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5",
+    "tags": [
+      "theoryLight",
+      "solid",
+      "beginnerFriendly"
+    ],
+    "difficulty": 2,
+    "popularity": 42,
+    "nodeCount": 31,
+    "lineCount": 6,
+    "name": {
+      "de": "Skandinavische Verteidigung",
+      "en": "Scandinavian Defence"
+    },
+    "summary": {
+      "de": "Schwarz tauscht sofort im Zentrum und holt den Bauern mit der Dame zurueck. Wenig Theorie, immer dieselbe Struktur — ideal fuer den Einstieg gegen 1.e4.",
+      "en": "Black trades in the centre at once and recaptures with the queen. Little theory, always the same structure — an ideal first answer to 1.e4."
+    }
+  },
+  {
+    "id": "caro-kann-two-knights",
+    "eco": "B11",
+    "side": "white",
+    "seed": "1. e4 c6 2. Nc3 d5 3. Nf3",
+    "tags": [
+      "theoryLight",
+      "flexible",
+      "positional"
+    ],
+    "difficulty": 2,
+    "popularity": 40,
+    "nodeCount": 50,
+    "lineCount": 7,
+    "name": {
+      "de": "Caro-Kann — Zwei Springer",
+      "en": "Caro-Kann — Two Knights"
+    },
+    "summary": {
+      "de": "Weiss entwickelt beide Springer und laesst das Zentrum zunaechst offen. Ein bequemer Weg um die grosse Caro-Kann-Theorie herum.",
+      "en": "White develops both knights and keeps the centre open for now. A comfortable way around the large body of Caro-Kann theory."
+    }
+  },
+  {
+    "id": "kings-indian-attack",
+    "eco": "A07",
+    "side": "white",
+    "seed": "1. Nf3 d5 2. g3",
+    "tags": [
+      "system",
+      "attacking",
+      "theoryLight",
+      "beginnerFriendly"
+    ],
+    "difficulty": 2,
+    "popularity": 40,
+    "nodeCount": 61,
+    "lineCount": 11,
+    "name": {
+      "de": "Koenigsindischer Angriff",
+      "en": "King’s Indian Attack"
+    },
+    "summary": {
+      "de": "Das Koenigsindische Bild mit Weiss und einem Tempo mehr: Nf3, g3, Bg2, d3, Nbd2, e4. Immer derselbe Aufbau, danach ein klarer Angriff am Koenigsfluegel.",
+      "en": "The King’s Indian picture with White and an extra tempo: Nf3, g3, Bg2, d3, Nbd2, e4. Always the same setup, then a clear kingside attack."
+    }
+  },
+  {
+    "id": "benoni-defence",
+    "eco": "A60",
+    "side": "black",
+    "seed": "1. d4 Nf6 2. c4 c5 3. d5 e6",
+    "tags": [
+      "attacking",
+      "tactical",
+      "modern"
+    ],
+    "difficulty": 4,
+    "popularity": 40,
+    "nodeCount": 36,
+    "lineCount": 9,
+    "name": {
+      "de": "Moderne Benoni-Verteidigung",
+      "en": "Modern Benoni"
+    },
+    "summary": {
+      "de": "Schwarz akzeptiert einen Raumnachteil und einen Rueckstandsbauern, bekommt dafuer die halboffene e-Linie und den Bauernvorstoss b5. Alles oder nichts.",
+      "en": "Black accepts less space and a backward pawn in return for the half-open e-file and the b5 break. All or nothing."
+    }
+  },
+  {
+    "id": "austrian-attack",
+    "eco": "B09",
+    "side": "white",
+    "seed": "1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. f4",
+    "tags": [
+      "attacking",
+      "open",
+      "tactical"
+    ],
+    "difficulty": 3,
+    "popularity": 38,
+    "nodeCount": 54,
+    "lineCount": 9,
+    "name": {
+      "de": "Pirc — Oesterreichischer Angriff",
+      "en": "Pirc — Austrian Attack"
+    },
+    "summary": {
+      "de": "Die schaerfste Antwort auf Pirc: Weiss baut ein Bauerndreieck e4–d4–f4 und stuermt. Schwarz muss schnell im Zentrum gegenschlagen, sonst wird er ueberrollt.",
+      "en": "The sharpest answer to the Pirc: White builds the e4–d4–f4 pawn triangle and storms. Black must strike back in the centre quickly or be overrun."
+    }
+  },
+  {
+    "id": "pirc-defence",
+    "eco": "B07",
+    "side": "black",
+    "seed": "1. e4 d6 2. d4 Nf6 3. Nc3 g6",
+    "tags": [
+      "modern",
+      "flexible",
+      "closed"
+    ],
+    "difficulty": 3,
+    "popularity": 38,
+    "nodeCount": 40,
+    "lineCount": 16,
+    "name": {
+      "de": "Pirc-Verteidigung",
+      "en": "Pirc Defence"
+    },
+    "summary": {
+      "de": "Schwarz laesst Weiss das Zentrum bauen und greift es spaeter mit Figuren und c5 oder e5 an. Hypermodern: erst entwickeln, dann kontern.",
+      "en": "Black lets White build the centre and attacks it later with pieces plus c5 or e5. Hypermodern: develop first, counter second."
+    }
+  },
+  {
+    "id": "scandinavian-white",
+    "eco": "B01",
+    "side": "white",
+    "seed": "1. e4 d5 2. exd5",
+    "tags": [
+      "open",
+      "theoryLight",
+      "beginnerFriendly"
+    ],
+    "difficulty": 2,
+    "popularity": 36,
+    "nodeCount": 84,
+    "lineCount": 29,
+    "name": {
+      "de": "Skandinavisch (aus Weiss’ Sicht)",
+      "en": "Scandinavian (White’s side)"
+    },
+    "summary": {
+      "de": "Schwarz holt den Bauern mit der Dame zurueck und verliert dabei Zeit. Weiss entwickelt mit Tempo und steht nach wenigen Zuegen bequem.",
+      "en": "Black recaptures with the queen and loses time doing so. White develops with tempo and is comfortable within a few moves."
+    }
+  },
+  {
+    "id": "kings-gambit",
+    "eco": "C30",
+    "side": "white",
+    "seed": "1. e4 e5 2. f4",
+    "tags": [
+      "gambit",
+      "attacking",
+      "tactical",
+      "open"
+    ],
+    "difficulty": 4,
+    "popularity": 34,
+    "nodeCount": 163,
+    "lineCount": 84,
+    "name": {
+      "de": "Koenigsgambit",
+      "en": "King’s Gambit"
+    },
+    "summary": {
+      "de": "Weiss gibt einen Bauern fuer das Zentrum und die offene f-Linie. Romantisches Schach: wer beide Seiten kennt, gewinnt hier viele Blitzpartien.",
+      "en": "White gives a pawn for the centre and the open f-file. Romantic chess: knowing both sides wins a lot of blitz games."
+    }
+  },
+  {
+    "id": "dutch-defence",
+    "eco": "A80",
+    "side": "black",
+    "seed": "1. d4 f5",
+    "tags": [
+      "attacking",
+      "closed",
+      "tactical"
+    ],
+    "difficulty": 4,
+    "popularity": 34,
+    "nodeCount": 139,
+    "lineCount": 44,
+    "name": {
+      "de": "Hollaendische Verteidigung",
+      "en": "Dutch Defence"
+    },
+    "summary": {
+      "de": "Schwarz nimmt sofort Raum am Koenigsfluegel und spielt auf Angriff. Unsymmetrisch und kaempferisch, aber die Diagonale a2–g8 bleibt dauerhaft empfindlich.",
+      "en": "Black grabs kingside space at once and plays for attack. Unbalanced and combative, but the a2–g8 diagonal stays permanently sensitive."
+    }
+  },
+  {
+    "id": "colle-system",
+    "eco": "D04",
+    "side": "white",
+    "seed": "1. d4 d5 2. Nf3 Nf6 3. e3",
+    "tags": [
+      "system",
+      "solid",
+      "beginnerFriendly",
+      "theoryLight"
+    ],
+    "difficulty": 1,
+    "popularity": 30,
+    "nodeCount": 31,
+    "lineCount": 6,
+    "name": {
+      "de": "Colle-System",
+      "en": "Colle System"
+    },
+    "summary": {
+      "de": "Ein ruhiger Aufbau mit e3, Bd3, c3 und Nbd2, der auf den Durchbruch e3–e4 zielt. Sehr leicht zu lernen, weil Weiss fast immer dieselben Zuege macht.",
+      "en": "A quiet setup with e3, Bd3, c3 and Nbd2 aiming at the e3–e4 break. Very easy to learn because White plays almost the same moves every time."
+    }
+  },
+  {
+    "id": "benko-gambit",
+    "eco": "A57",
+    "side": "black",
+    "seed": "1. d4 Nf6 2. c4 c5 3. d5 b5",
+    "tags": [
+      "gambit",
+      "positional",
+      "attacking"
+    ],
+    "difficulty": 3,
+    "popularity": 30,
+    "nodeCount": 60,
+    "lineCount": 19,
+    "name": {
+      "de": "Benko-Gambit",
+      "en": "Benko Gambit"
+    },
+    "summary": {
+      "de": "Ein Bauer fuer dauerhaften Druck auf der a- und b-Linie. Das seltene Gambit, das auch im Endspiel noch Kompensation gibt.",
+      "en": "A pawn for lasting pressure on the a- and b-files. The rare gambit whose compensation survives into the endgame."
+    }
+  },
+  {
+    "id": "alekhine-white",
+    "eco": "B03",
+    "side": "white",
+    "seed": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4",
+    "tags": [
+      "open",
+      "positional",
+      "theoryLight"
+    ],
+    "difficulty": 3,
+    "popularity": 26,
+    "nodeCount": 64,
+    "lineCount": 11,
+    "name": {
+      "de": "Aljechin-Verteidigung (aus Weiss’ Sicht)",
+      "en": "Alekhine Defence (White’s side)"
+    },
+    "summary": {
+      "de": "Schwarz laedt die weissen Bauern ein, vorzuruecken, um sie spaeter anzugreifen. Weiss nimmt den Raum — muss ihn dann aber auch halten koennen.",
+      "en": "Black invites White’s pawns forward in order to attack them later. White takes the space — but then has to be able to hold it."
+    }
+  },
+  {
+    "id": "bird-opening",
+    "eco": "A02",
+    "side": "white",
+    "seed": "1. f4",
+    "tags": [
+      "attacking",
+      "theoryLight",
+      "closed"
+    ],
+    "difficulty": 2,
+    "popularity": 18,
+    "nodeCount": 65,
+    "lineCount": 23,
+    "name": {
+      "de": "Bird-Eroeffnung",
+      "en": "Bird’s Opening"
+    },
+    "summary": {
+      "de": "Ein Hollaendisch mit Weiss und einem Tempo mehr. Selten gespielt, deshalb sitzt der Gegner oft schon nach fuenf Zuegen ohne Vorbereitung da.",
+      "en": "A Dutch with White and an extra tempo. Rarely played, so the opponent is often out of preparation within five moves."
+    }
+  }
+]

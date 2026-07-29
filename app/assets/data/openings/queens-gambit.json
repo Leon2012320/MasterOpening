@@ -1,0 +1,54 @@
+{
+  "id": "queens-gambit",
+  "eco": "D06",
+  "side": "white",
+  "seed": "1. d4 d5 2. c4",
+  "tags": [
+    "classical",
+    "positional",
+    "theoryHeavy"
+  ],
+  "difficulty": 3,
+  "popularity": 90,
+  "namedLines": 321,
+  "nodeCount": 163,
+  "lineCount": 81,
+  "maxDepth": 8,
+  "pgn": "[Event \"Damengambit\"]\n[Site \"MasterOpening\"]\n[ECO \"D06\"]\n[Opening \"Queen’s Gambit\"]\n[Result \"*\"]\n\n1. d4 d5 2. c4 {Damengambit} e6 {Queen's Gambit Declined} (2... dxc4 {Queen's Gambit Accepted} 3. Nf3 {Queen's Gambit Accepted: Normal Variation} (3. e4 {Queen's Gambit Accepted: Saduleto Variation} c5 {Queen's Gambit Accepted: Central Variation, Rubinstein Defense} (3... e5 {Queen's Gambit Accepted: Central Variation, McDonnell Defense} 4. Bxc4 {Queen's Gambit Accepted: Central Variation, McDonnell Defense, Somov Gambit}) (3... b5 {Queen's Gambit Accepted: Central Variation, Greco Variation}) (3... f5 {Queen's Gambit Accepted: Schwartz Defense}) (3... Nc6 {Queen's Gambit Accepted: Central Variation, Modern Defense}) (3... Nf6 {Queen's Gambit Accepted: Central Variation, Alekhine System}) 4. d5 b5 {Queen's Gambit Accepted: Central Variation, Rubinstein Defense, Yefimov Gambit} (4... Nf6)) (3. e3 {Queen's Gambit Accepted: Old Variation} e5 (3... Nf6 4. Bxc4 e6) 4. Bxc4 exd4) (3. Qa4+ {Queen's Gambit Accepted: Accelerated Mannheim Variation}) 3... Nf6 {Queen's Gambit Accepted} (3... a6 {Queen's Gambit Accepted: Alekhine Defense} 4. e3 (4. e4 {Queen's Gambit Accepted: Alekhine Defense, Borisenko-Furman Variation}) 4... b5 {Queen's Gambit Accepted: Alekhine Defense, Haberditz Variation} (4... Bg4)) (3... e6 {Queen's Gambit Accepted: Rosenthal Variation} 4. e3 Nf6) (3... b5 {Queen's Gambit Accepted: Slav Gambit}) (3... c5 {Queen's Gambit Accepted: Gunsberg Defense}) (3... Nd7 {Queen's Gambit Accepted: Godes Variation}) 4. e3 {Queen's Gambit Accepted: Normal Variation} (4. Nc3 {Queen's Gambit Accepted: Showalter Variation} a6 (4... c5)) (4. Qa4+ {Queen's Gambit Accepted: Mannheim Variation}) 4... Be6 {Queen's Gambit Accepted: Winawer Defense} (4... Bg4 {Queen's Gambit Accepted: Janowski-Larsen Variation}) (4... e6 {Queen's Gambit Accepted: Normal Variation, Traditional System}) (4... g6 {Queen's Gambit Accepted: Smyslov Variation})) (2... c6 {Slav Defense} 3. Nf3 {Slav Defense: Modern Line} (3. Nc3 {Slav Defense} Nf6 (3... dxc4 {Slav Defense} 4. e4 {Slav Defense: Slav Gambit, Alekhine Attack}) (3... e5 {Slav Defense: Winawer Countergambit} 4. e4 {Slav Defense: Winawer Countergambit, Anti-Winawer Gambit}) 4. e3 (4. Nf3 e6) 4... e6 (4... g6)) (3. cxd5 {Slav Defense: Exchange Variation} cxd5 4. Nc3 Nf6) (3. e4 {Slav Defense: Diemer Gambit}) 3... Nf6 (3... e6 4. e3 Nf6) 4. Nc3 {Slav Defense: Three Knights Variation} (4. e3 {Slav Defense: Quiet Variation} Bf5 {Slav Defense: Quiet Variation, Schallopp Defense} (4... Bg4 {Slav Defense: Quiet Variation, Pin Defense}) (4... e6)) (4. g3 Bg4 (4... dxc4)) (4. cxd5 cxd5 {Slav Defense: Exchange Variation}) (4. Qc2 e6) (4. Bg5 {Slav Defense: Bonet Gambit}) (4. Nbd2 {Slav Defense: Breyer Variation}) 4... a6 {Slav Defense: Chebanenko Variation} (4... dxc4 {Slav Defense: Two Knights Attack}) (4... e6 {Semi-Slav Defense}) (4... g6 {Slav Defense: Schlechter Variation}) (4... Qb6 {Slav Defense: Süchting Variation})) (2... Nc6 {Queen's Gambit Declined: Chigorin Defense} 3. Nc3 {Queen's Gambit Declined: Chigorin Defense} (3. cxd5 Qxd5 {Queen's Gambit Declined: Chigorin Defense, Exchange Variation} 4. e3 e5) (3. Nf3 Bg4 {Queen's Gambit Declined: Chigorin Defense, Main Line} (3... e5 {Queen's Gambit Declined: Chigorin Defense, Lazard Gambit}) 4. Qa4 {Queen's Gambit Declined: Chigorin Defense, Main Line, Alekhine Variation}) 3... dxc4 {Queen's Gambit Declined: Chigorin Defense} (3... e5 {Queen's Gambit Declined: Chigorin Defense, Tartakower Gambit}) 4. Nf3 {Queen's Gambit Declined: Chigorin Defense, Janowski Variation} Nf6 {Queen's Gambit Declined: Chigorin Defense, Modern Gambit}) (2... Bf5 {Queen's Gambit Declined: Baltic Defense} 3. Nc3 (3. cxd5 Bxb1 4. Qa4+ c6) (3. Qb3 {Queen's Gambit Declined: Baltic Defense, Queen Attack}) 3... e6 4. Nf3 (4. Qb3 {Queen's Gambit Declined: Baltic Defense, Queen Attack Deferred}) 4... Nc6 {Queen's Gambit Declined: Baltic Defense, Pseudo-Chigorin}) (2... c5 {Queen's Gambit Declined: Austrian Defense} 3. cxd5 (3. Nf3 Nf6 4. Nc3 e6) (3. dxc5 d4 {Queen's Gambit Declined: Austrian Attack, Salvio Countergambit}) 3... Nf6 {Queen's Gambit Declined: Austrian Defense, Gusev Countergambit} 4. e4 Nxe4) (2... e5 {Queen's Gambit Declined: Albin Countergambit} 3. dxe5 d4 4. Nf3 {Queen's Gambit Declined: Albin Countergambit, Normal Line} (4. e3 Bb4+) (4. e4 {Queen's Gambit Declined: Albin Countergambit, Spassky Variation}) 4... c5 {Queen's Gambit Declined: Albin Countergambit, Tartakower Defense} (4... Nc6)) (2... Nf6 {Queen's Gambit Declined: Marshall Defense} 3. cxd5 c6 {Queen's Gambit Declined: Marshall Defense, Tan Gambit}) (2... b5 {Queen's Gambit Declined: Zilbermints Gambit}) 3. Nc3 {Queen's Gambit Declined: Queen's Knight Variation} (3. Nf3 c6 (3... Nf6 4. e3 (4. Nc3)) (3... c5 {Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch} 4. cxd5) 4. Nc3 dxc4) 3... Nf6 {Queen's Gambit Declined: Normal Defense} (3... c6 {Semi-Slav Defense: Accelerated Move Order} 4. e3 (4. e4 {Semi-Slav Defense: Marshall Gambit}) (4. Nf3)) (3... Be7 {Queen's Gambit Declined: Charousek Variation} 4. e4 (4. Nf3)) (3... c5 {Tarrasch Defense} 4. cxd5 (4. e3)) (3... a6 {Queen's Gambit Declined: Janowski Variation}) 4. Bg5 {Queen's Gambit Declined: Modern Variation} (4. Bf4 {Queen's Gambit Declined: Harrwitz Attack}) (4. cxd5) (4. e3) (4. Nf3) *\n",
+  "name": {
+    "de": "Damengambit",
+    "en": "Queen’s Gambit"
+  },
+  "summary": {
+    "de": "Kein echtes Gambit: Weiss bekommt den Bauern zurueck und bekaempft das schwarze Zentrum von der Seite. Die klassische Grundlage jedes 1.d4-Repertoires.",
+    "en": "Not a real gambit: White regains the pawn and fights Black’s centre from the side. The classical foundation of any 1.d4 repertoire."
+  },
+  "plans": {
+    "de": [
+      "Den Druck auf d5 halten und Schwarz zum Nachgeben zwingen.",
+      "Den Minoritaetsangriff mit b4–b5 auf der Damenseite vorbereiten.",
+      "Nach cxd5 exd5 auf der halboffenen c-Linie spielen."
+    ],
+    "en": [
+      "Keep the pressure on d5 and make Black concede.",
+      "Prepare the minority attack with b4–b5 on the queenside.",
+      "After cxd5 exd5, play on the half-open c-file."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 d5 2. c4 dxc4 3. e3 b5 4. a4 c6 5. axb5 cxb5 6. Qf3",
+      "why": {
+        "de": "Den Bauern c4 halten zu wollen kostet Schwarz die Stellung — Weiss holt ihn ohnehin zurueck.",
+        "en": "Trying to hold the c4 pawn wrecks Black’s position — White regains it anyway."
+      }
+    },
+    {
+      "line": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 5. cxd5 exd5 6. Nxd5 Nxd5 7. Bxd8 Bb4+",
+      "why": {
+        "de": "Die beruehmte Falle: der Bauer d5 ist vergiftet, Schwarz gewinnt die Figur mit Bb4+ zurueck.",
+        "en": "The famous trap: the d5 pawn is poisoned, Black wins the piece back with Bb4+."
+      }
+    }
+  ]
+}

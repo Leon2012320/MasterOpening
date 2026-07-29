@@ -1,0 +1,54 @@
+{
+  "id": "dutch-defence",
+  "eco": "A80",
+  "side": "black",
+  "seed": "1. d4 f5",
+  "tags": [
+    "attacking",
+    "closed",
+    "tactical"
+  ],
+  "difficulty": 4,
+  "popularity": 34,
+  "namedLines": 69,
+  "nodeCount": 139,
+  "lineCount": 44,
+  "maxDepth": 16,
+  "pgn": "[Event \"Hollaendische Verteidigung\"]\n[Site \"MasterOpening\"]\n[ECO \"A80\"]\n[Opening \"Dutch Defence\"]\n[Result \"*\"]\n\n1. d4 f5 {Hollaendische Verteidigung} 2. g3 {Dutch Defense: Fianchetto Attack} (2. c4 {Dutch Defense} Nf6 {Dutch Defense: Normal Variation} (2... e6 {Dutch Defense: Classical Variation} 3. Nf3 (3. e4 {Dutch Defense: Bellon Gambit}) (3. Nc3 {Dutch Defense: Rubinstein Variation}) 3... Nf6 4. g3 c6 5. Bg2 d5 6. O-O Bd6 {Dutch Defense: Stonewall Variation, Modern Variation}) (2... g6 3. Nc3 Nh6 {Dutch Defense: Bladel Variation}) 3. g3 {Dutch Defense: Fianchetto Variation} (3. Nc3 {Dutch Defense: Queen's Knight Variation} d6 4. Nf3 Nc6 {Dutch Defense: Krause Variation}) 3... e6 (3... d6 4. Bg2 c6 5. Nc3 Qc7 {Dutch Defense: Hort-Antoshin System}) (3... g6 {Dutch Defense: Leningrad Variation} 4. Bg2 Bg7 5. Nf3 {Dutch Defense: Leningrad Variation}) 4. Bg2 {Dutch Defense: Classical Variation} Be7 {Dutch Defense: Classical Variation} (4... Bb4+ {Dutch Defense: Nimzo-Dutch Variation} 5. Bd2 Be7 {Dutch Defense: Nimzo-Dutch Variation, Alekhine Variation}) (4... d5 5. Nf3 {Dutch Defense: Classical Variation}) 5. Nf3 (5. Nh3 {Dutch Defense: Classical Variation, Blackburne Attack}) 5... O-O {Dutch Defense: Classical Variation} 6. O-O d5 {Dutch Defense: Stonewall Variation} (6... d6 {Dutch Defense: Classical Variation} 7. Nc3 Qe8 {Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation} (7... a5 {Dutch Defense: Classical Variation, Buenos Aires Variation}) (7... Ne4 {Dutch Defense: Classical Variation, Huisl Variation}) 8. b3 {Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Modern Main Line} (8. Qc2 {Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Alatortsev-Lisitsyn Line}) (8. Re1 {Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Winter Variation})) (6... Ne4 {Dutch Defense: Alekhine Variation}) 7. Nc3 {Dutch Defense: Stonewall Variation} (7. b3 {Dutch Defense: Stonewall Variation, Botvinnik Variation} c6 8. Ba3 {Dutch Defense: Stonewall Variation}) 7... c6 {Dutch Defense: Stonewall Variation} 8. Qc2 Qe8) (2. e4 {Dutch Defense: Staunton Gambit} fxe4 {Dutch Defense: Staunton Gambit Accepted} 3. Nc3 (3. Nd2 {Dutch Defense: Staunton Gambit, American Attack}) 3... Nf6 4. Bg5 {Dutch Defense: Staunton Gambit} (4. f3 {Dutch Defense: Blackmar's Second Gambit}) (4. g4 {Dutch Defense: Staunton Gambit, Tartakower Variation}) 4... g6 (4... b6 {Dutch Defense: Staunton Gambit, Nimzowitsch Variation}) (4... c6 {Dutch Defense: Staunton Gambit, Chigorin Variation}) 5. f3 {Dutch Defense: Staunton Gambit, Lasker Variation} (5. h4 {Dutch Defense: Staunton Gambit, Alekhine Variation})) (2. Qd3 {Dutch Defense: Alapin Variation} d5 (2... d6 3. g4 {Dutch Defense: Manhattan Gambit, Anti-Modern}) (2... e6 3. g4 {Dutch Defense: Manhattan Gambit, Anti-Classical Line}) (2... g6 3. g4 {Dutch Defense: Manhattan Gambit, Anti-Leningrad}) 3. g4 {Dutch Defense: Manhattan Gambit, Anti-Stonewall}) (2. g4 {Dutch Defense: Krejcik Gambit} fxg4 (2... e5 {Dutch Defense: Hevendehl Gambit}) 3. e4 d5 4. Nc3 {Dutch Defense: Krejcik Gambit, Tate Gambit}) (2. Nc3 {Dutch Defense: Raphael Variation} d5 {Queen's Pawn Game: Veresov Attack, Dutch System} (2... Nf6 3. g4 {Dutch Defense: Spielmann Gambit}) 3. e4 {Dutch Defense: Kingfisher Gambit}) (2. Nf3 Nf6 (2... e5 {Dutch Defense: Omega-Isis Gambit}) 3. c3 {Dutch Defense: Barcza Variation}) (2. Bf4 e6 3. g4 {Dutch Defense: Senechaud Gambit}) (2. h3 {Dutch Defense: Korchnoi Attack} Nf6 3. g4 {Dutch Defense: Janzen-Korchnoi Gambit}) (2. Bg5 {Dutch Defense: Hopton Attack}) 2... Nf6 (2... c6 3. Bg2 g6 4. Nf3 Bg7 5. O-O Nh6 {Dutch Defense: Leningrad, Basman System}) (2... g6 3. Bg2 Bg7 4. Nh3 {Dutch Defense: Leningrad Variation, Carlsbad Variation}) 3. Bg2 e6 (3... g6 {Dutch Defense: Semi-Leningrad Variation} 4. Nf3 Bg7 5. O-O O-O 6. c4 d6 7. Nc3 c6 {Dutch Defense: Leningrad Variation, Warsaw Variation} (7... Nc6 {Dutch Defense: Leningrad Variation, Matulovic Variation})) 4. Nf3 (4. Nh3 {Dutch Defense: Blackburne Variation}) 4... Be7 5. O-O O-O 6. c4 d6 7. Nc3 Qe8 *\n",
+  "name": {
+    "de": "Hollaendische Verteidigung",
+    "en": "Dutch Defence"
+  },
+  "summary": {
+    "de": "Schwarz nimmt sofort Raum am Koenigsfluegel und spielt auf Angriff. Unsymmetrisch und kaempferisch, aber die Diagonale a2–g8 bleibt dauerhaft empfindlich.",
+    "en": "Black grabs kingside space at once and plays for attack. Unbalanced and combative, but the a2–g8 diagonal stays permanently sensitive."
+  },
+  "plans": {
+    "de": [
+      "Im Leningrader Aufbau mit g6, Bg7 und e5 im Zentrum durchbrechen.",
+      "Im Klassischen Aufbau die Dame ueber e8 nach h5 fuehren.",
+      "Den Springer nach e4 bringen und dort verankern."
+    ],
+    "en": [
+      "In the Leningrad setup, break with g6, Bg7 and e5.",
+      "In the Classical setup, lift the queen via e8 to h5.",
+      "Post a knight on e4 and anchor it there."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5 e6",
+      "why": {
+        "de": "Das Staunton-Gambit anzunehmen und dann passiv zu spielen fuehrt schnell in Schwierigkeiten.",
+        "en": "Accepting the Staunton Gambit and then playing passively leads to trouble fast."
+      }
+    },
+    {
+      "line": "1. d4 f5 2. Bg5 h6 3. Bh4 g5 4. e4 Rh7",
+      "why": {
+        "de": "Die Bauern vor dem eigenen Koenig zu bewegen, bevor er in Sicherheit ist, ist der klassische Hollaender-Fehler.",
+        "en": "Moving the pawns in front of your own king before it is safe is the classic Dutch mistake."
+      }
+    }
+  ]
+}

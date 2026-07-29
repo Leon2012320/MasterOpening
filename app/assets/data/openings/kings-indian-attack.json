@@ -1,0 +1,55 @@
+{
+  "id": "kings-indian-attack",
+  "eco": "A07",
+  "side": "white",
+  "seed": "1. Nf3 d5 2. g3",
+  "tags": [
+    "system",
+    "attacking",
+    "theoryLight",
+    "beginnerFriendly"
+  ],
+  "difficulty": 2,
+  "popularity": 40,
+  "namedLines": 20,
+  "nodeCount": 61,
+  "lineCount": 11,
+  "maxDepth": 16,
+  "pgn": "[Event \"Koenigsindischer Angriff\"]\n[Site \"MasterOpening\"]\n[ECO \"A07\"]\n[Opening \"King’s Indian Attack\"]\n[Result \"*\"]\n\n1. Nf3 d5 2. g3 {Koenigsindischer Angriff} Nf6 (2... c6 3. Bg2 Bg4 (3... Nf6 4. O-O Bg4 5. d4 e6 {Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan}) 4. O-O Nd7 {King's Indian Attack: Keres Variation} 5. d4 Ngf6 6. c4 e6 7. cxd5 exd5 8. Nc3 Bd6 {King's Indian Attack: Keres Variation}) (2... c5 {King's Indian Attack: Sicilian Variation} 3. Bg2 {King's Indian Attack: Sicilian Variation} Nc6 {King's Indian Attack: French Variation} (3... Nf6 4. O-O e6 5. d3 {King's Indian Attack: Sicilian Variation}) 4. d4 {Zukertort Opening: Reversed Grünfeld} e6 (4... Nf6 {Zukertort Opening: Reversed Grünfeld} 5. O-O {Zukertort Opening: Reversed Grünfeld}) 5. O-O {Zukertort Opening: Reversed Grünfeld}) (2... g6 {King's Indian Attack: Double Fianchetto} 3. Bg2 Bg7 4. O-O e5 5. d3 Ne7 {King's Indian Attack: Pachman System}) (2... Bg4 {King's Indian Attack: Keres Variation} 3. Bg2 Nd7 {King's Indian Attack: Keres Variation}) (2... e5 {King's Indian Attack: Omega-Delta Gambit}) 3. Bg2 e6 4. O-O Be7 5. d3 (5. c4 O-O 6. b3 c5 {English Opening: Agincourt Defense, Neo-Catalan Declined} 7. e3 {English Opening: Agincourt Defense, Neo-Catalan Declined} d4 {English Opening: Agincourt Defense, Neo-Catalan Declined} (7... Nc6 {English Opening: Agincourt Defense, Neo-Catalan Declined})) 5... O-O 6. Nbd2 c5 7. e4 *\n",
+  "name": {
+    "de": "Koenigsindischer Angriff",
+    "en": "King’s Indian Attack"
+  },
+  "summary": {
+    "de": "Das Koenigsindische Bild mit Weiss und einem Tempo mehr: Nf3, g3, Bg2, d3, Nbd2, e4. Immer derselbe Aufbau, danach ein klarer Angriff am Koenigsfluegel.",
+    "en": "The King’s Indian picture with White and an extra tempo: Nf3, g3, Bg2, d3, Nbd2, e4. Always the same setup, then a clear kingside attack."
+  },
+  "plans": {
+    "de": [
+      "Den Aufbau vervollstaendigen und dann e4–e5 vorstossen.",
+      "Den Springer ueber f1 nach h2 oder g5 bringen.",
+      "Mit h4–h5 die Bauern gegen den schwarzen Koenig werfen."
+    ],
+    "en": [
+      "Complete the setup, then push e4–e5.",
+      "Route the knight via f1 to h2 or g5.",
+      "Throw the h-pawn at the black king with h4–h5."
+    ]
+  },
+  "mistakes": [
+    {
+      "line": "1. Nf3 d5 2. g3 c5 3. Bg2 Nc6 4. O-O e5 5. d3 Nf6 6. Nbd2 Be7 7. e4 O-O 8. exd5 Nxd5",
+      "why": {
+        "de": "Der Abtausch auf d5 loest genau die Spannung auf, aus der der Angriff lebt.",
+        "en": "Trading on d5 releases exactly the tension the attack lives on."
+      }
+    },
+    {
+      "line": "1. Nf3 d5 2. g3 Nf6 3. Bg2 c6 4. O-O Bg4 5. d3 Nbd7 6. Nbd2 e5 7. e4 dxe4 8. dxe4 Bc5 9. Qe2 O-O 10. h3 Bxf3 11. Nxf3 Qb6 12. Kh2",
+      "why": {
+        "de": "Den Koenig nach h2 zu stellen, bevor der Angriff laeuft, verliert nur Zeit.",
+        "en": "Tucking the king on h2 before the attack is running only loses time."
+      }
+    }
+  ]
+}
