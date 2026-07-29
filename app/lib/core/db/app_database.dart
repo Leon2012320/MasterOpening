@@ -56,16 +56,15 @@ class AppDatabase extends _$AppDatabase {
     },
   );
 
-  /// Native: eine Datei im Dokumentenverzeichnis, auf einem eigenen Isolate.
-  /// Web (nur Entwicklungsvorschau): OPFS oder IndexedDB über den
-  /// drift-Worker, dessen Dateien unter `web/` liegen.
+  /// Eine Datei im Dokumentenverzeichnis, geöffnet auf einem eigenen Isolate.
+  ///
+  /// Für das Web gibt es bewusst keine Konfiguration: `dartchess` rechnet mit
+  /// 64-Bit-Bitboards, die JavaScript nicht darstellen kann, und deklariert
+  /// entsprechend kein Web als Zielplattform. Ohne Schachlogik gibt es keine
+  /// App, die im Browser laufen könnte.
   static QueryExecutor openConnection() {
     return driftDatabase(
       name: 'masteropening',
-      web: DriftWebOptions(
-        sqlite3Wasm: Uri.parse('sqlite3.wasm'),
-        driftWorker: Uri.parse('drift_worker.js'),
-      ),
       native: const DriftNativeOptions(shareAcrossIsolates: true),
     );
   }

@@ -1,0 +1,42 @@
+name: Projektseite
+
+# Veroeffentlicht docs/ als GitHub Pages. Die App selbst laesst sich nicht
+# fuer das Web bauen — dartchess rechnet mit 64-Bit-Bitboards, die JavaScript
+# nicht darstellen kann, und deklariert kein Web als Zielplattform.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Eine Veroeffentlichung zur Zeit; laufende Deployments werden nicht
+# abgebrochen, damit keine halb uebertragene Seite live geht.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

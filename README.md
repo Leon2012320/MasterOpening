@@ -10,7 +10,16 @@ schließen, die im eigenen Repertoire fehlen.
 app/        Flutter-App (Dart)         → das Produkt
 backend/    Fastify + Prisma (Node/TS) → Konten und Cloud-Sync
 tools/      Node-Skripte               → generiert die Eröffnungsbibliothek
+docs/       Projektseite               → wird als GitHub Pages veröffentlicht
 ```
+
+## Keine Web-Version
+
+Die App läuft nicht im Browser. `dartchess` rechnet mit 64-Bit-Bitboards, die
+JavaScript nicht exakt darstellen kann, und deklariert deshalb ausdrücklich kein
+Web als Zielplattform. Flutter erzeugt bei `build web` immer auch ein
+JavaScript-Fallback, `--wasm` allein hilft also nicht. `docs/` enthält
+stattdessen eine Projektseite; die App selbst erscheint im Play Store.
 
 ## Voraussetzungen
 

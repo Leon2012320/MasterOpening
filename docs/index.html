@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MasterOpening — Schach-Eröffnungstrainer</title>
+<meta name="description" content="Ein Eröffnungstrainer für Android: eigenes Repertoire, Spaced Repetition, fünf Trainingsmodi und Lichess-Anbindung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Die Farben stammen aus dem Nocturne-System der App, damit Projektseite
+     und Anwendung dasselbe Gesicht haben. */
+  :root {
+    --bg: #161826;
+    --surface: #232532;
+    --text: #e9e9ed;
+    --accent: #968ae0;
+    --hairline: #3f424d;
+    --divider: rgba(233, 233, 237, 0.16);
+    --sq-l: #484a5e;
+    --sq-d: #282a3a;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #eceefa;
+      --surface: #f9fafe;
+      --text: #23252f;
+      --accent: #5d5294;
+      --hairline: #d3d6e8;
+      --divider: rgba(35, 37, 47, 0.14);
+      --sq-l: #dcdeee;
+      --sq-d: #9d9fb8;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 {
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(32px, 6vw, 46px); }
+  h2 { font-size: clamp(22px, 4vw, 28px); }
+  h3 { font-size: 17px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .lead { font-size: 17px; opacity: 0.75; max-width: 62ch; }
+
+  header { padding: 72px 0 40px; }
+
+  /* Trennlinien laufen an den Enden aus — die Signatur des Design-Systems. */
+  .rule {
+    height: 1px;
+    border: 0;
+    margin: 48px 0;
+    background: linear-gradient(to right,
+      transparent, var(--divider) 48px,
+      var(--divider) calc(100% - 48px), transparent);
+  }
+
+  .board {
+    width: 168px;
+    height: 168px;
+    flex: none;
+    border-radius: 8px;
+    background-image: repeating-conic-gradient(var(--sq-l) 0% 25%, var(--sq-d) 0% 50%);
+    background-size: 25% 25%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    font-size: 19px;
+    line-height: 1;
+    box-shadow: 0 0 0 1px var(--hairline);
+  }
+  .board div { display: grid; place-items: center; }
+  .hero { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 0 0 1px var(--hairline);
+  }
+  .card p { font-size: 14px; opacity: 0.75; margin: 0; }
+
+  .stats { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 0; }
+  .stat {
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 0 0 1px var(--hairline);
+    min-width: 108px;
+  }
+  .stat b {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat span { font-size: 11px; opacity: 0.6; }
+
+  /* Akzent als Kontur, nie als Fläche. */
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    margin: 0 6px 6px 0;
+  }
+
+  ol.phases { list-style: none; padding: 0; margin: 0; }
+  ol.phases li {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--divider);
+    font-size: 15px;
+  }
+  ol.phases li:last-child { border-bottom: 0; }
+  .state { font-size: 11px; opacity: 0.55; margin-left: auto; white-space: nowrap; }
+  .done { color: var(--accent); opacity: 1; }
+
+  footer {
+    padding: 40px 0 64px;
+    font-size: 13px;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="hero">
+      <div class="board" aria-label="Stellung nach 1. e4 e5 2. Sf3 Sc6 3. Lb5">
+        <div>♜</div><div></div><div>♝</div><div>♛</div><div>♚</div><div>♝</div><div></div><div>♜</div>
+        <div>♟</div><div>♟</div><div>♟</div><div>♟</div><div></div><div>♟</div><div>♟</div><div>♟</div>
+        <div></div><div></div><div>♞</div><div></div><div></div><div>♞</div><div></div><div></div>
+        <div></div><div>♗</div><div></div><div></div><div>♟</div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div>♙</div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div>♘</div><div></div><div></div>
+        <div>♙</div><div>♙</div><div>♙</div><div>♙</div><div></div><div>♙</div><div>♙</div><div>♙</div>
+        <div>♖</div><div>♘</div><div>♗</div><div>♕</div><div>♔</div><div></div><div></div><div>♖</div>
+      </div>
+      <div style="flex:1; min-width:280px">
+        <div class="kicker">Android · Flutter · in Arbeit</div>
+        <h1>MasterOpening</h1>
+        <p class="lead">
+          Ein Eröffnungstrainer, der das eigene Repertoire ernst nimmt: verteiltes
+          Wiederholen statt stumpfem Durchklicken, fünf Trainingsmodi und ein
+          Abgleich mit den Partien, die man wirklich spielt.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>51</b><span>Eröffnungen</span></div>
+      <div class="stat"><b>4 510</b><span>Züge in der Bibliothek</span></div>
+      <div class="stat"><b>2</b><span>Sprachen</span></div>
+      <div class="stat"><b>153</b><span>Tests</span></div>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <h2>Was die App kann</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Eigenes Repertoire</h3>
+      <p>Eröffnungen aus der Bibliothek übernehmen, ein PGN einfügen oder Züge
+         selbst auf dem Brett ergänzen. Der Lernfortschritt hängt an der
+         Zugfolge, nicht an einer Datenbankzeile — Umbauen kostet ihn nicht.</p>
+    </div>
+    <div class="card">
+      <h3>Bibliothek</h3>
+      <p>51 Eröffnungen mit echten Variantenbäumen aus der freien ECO-Datenbank
+         von Lichess, dazu Beschreibung, Pläne und typische Fehler auf Deutsch
+         und Englisch.</p>
+    </div>
+    <div class="card">
+      <h3>Lern-Modus</h3>
+      <p>Durchsehen wie eine Lichess-Studie: eingerückter Variantenbaum,
+         Kommentare, Autoplay, Wischen — und Züge lassen sich direkt auf dem
+         Brett ziehen.</p>
+    </div>
+    <div class="card">
+      <h3>Training</h3>
+      <p>Smart nach Fälligkeit und Fehlerquote, Blitz mit drei Sekunden pro Zug,
+         Puzzle aus einer Zufallsstellung, Verteidigen gegen Eröffnungsfallen
+         und gezieltes Üben einer Variante.</p>
+    </div>
+    <div class="card">
+      <h3>Lichess-Anbindung</h3>
+      <p>Partien importieren, sehen welche Eröffnungen man wirklich spielt und
+         wo man vom Repertoire abweicht — inklusive Vorschlägen für die Lücken,
+         die am meisten Punkte kosten.</p>
+    </div>
+    <div class="card">
+      <h3>Offline-first</h3>
+      <p>Alles liegt lokal in einer SQLite-Datenbank. Kein Bildschirm wartet auf
+         eine Netzantwort; das Konto ist eine Sync-Schicht darüber, kein
+         Türsteher.</p>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <h2>Stand</h2>
+  <p class="lead" style="margin-bottom:22px">
+    Das Projekt entsteht in Stufen. Sieben sind fertig und getestet, neun folgen.
+  </p>
+  <ol class="phases">
+    <li>Fundament, Lints, CI <span class="state done">fertig</span></li>
+    <li>Design-System, Themes, Navigation, Lokalisierung <span class="state done">fertig</span></li>
+    <li>Schach-Kern und Datenbank <span class="state done">fertig</span></li>
+    <li>Lern-Modus <span class="state done">fertig</span></li>
+    <li>51 Bibliothekseröffnungen <span class="state done">fertig</span></li>
+    <li>Bibliothek-Tab <span class="state done">fertig</span></li>
+    <li>Start-Tab und Repertoire-Verwaltung <span class="state done">fertig</span></li>
+    <li>Spaced Repetition und Trainings-Kern <span class="state">offen</span></li>
+    <li>Die fünf Trainingsmodi <span class="state">offen</span></li>
+    <li>Gamification <span class="state">offen</span></li>
+    <li>Lichess-Tab <span class="state">offen</span></li>
+    <li>Backend und Cloud-Sync <span class="state">offen</span></li>
+    <li>Repertoire-Analyse <span class="state">offen</span></li>
+    <li>Engine, Anti-Vorbereitung, Spielstil <span class="state">offen</span></li>
+    <li>Einstellungen und Erinnerungen <span class="state">offen</span></li>
+    <li>Politur und Release <span class="state">offen</span></li>
+  </ol>
+
+  <hr class="rule">
+
+  <h2>Technik</h2>
+  <p>
+    <span class="tag">Flutter</span><span class="tag">Dart 3</span>
+    <span class="tag">Riverpod</span><span class="tag">Drift / SQLite</span>
+    <span class="tag">dartchess</span><span class="tag">chessground</span>
+    <span class="tag">go_router</span><span class="tag">Node · Fastify</span>
+  </p>
+  <p style="font-size:14px; opacity:0.7">
+    Die App läuft nicht im Browser: <code>dartchess</code> rechnet mit
+    64-Bit-Bitboards, die JavaScript nicht darstellen kann, und unterstützt
+    deshalb ausdrücklich kein Web. Diese Seite ist die Projektseite; die App
+    selbst erscheint im Play Store.
+  </p>
+
+  <footer>
+    Eröffnungsdaten aus <a href="https://github.com/lichess-org/chess-openings">lichess-org/chess-openings</a> (CC0).
+    Figurensymbole und Brett-Widget aus <a href="https://github.com/lichess-org/flutter-chessground">chessground</a>.
+  </footer>
+</div>
+
+</body>
+</html>
