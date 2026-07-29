@@ -3,7 +3,7 @@
 
   "appName": "MasterOpening",
   "@appName": {
-    "description": "Produktname, wird nicht übersetzt."
+    "description": "Produktname. Wird nicht übersetzt."
   },
 
   "tabHome": "Start",
@@ -21,5 +21,100 @@
   "tabSettings": "Einstellungen",
   "@tabSettings": {
     "description": "Vierter Tab."
-  }
+  },
+
+  "greetingMorning": "Guten Morgen",
+  "@greetingMorning": {
+    "description": "Begrüßung auf dem Start-Tab, 5–11 Uhr."
+  },
+  "greetingDay": "Hallo",
+  "@greetingDay": {
+    "description": "Begrüßung auf dem Start-Tab, 11–17 Uhr."
+  },
+  "greetingEvening": "Guten Abend",
+  "@greetingEvening": {
+    "description": "Begrüßung auf dem Start-Tab, 17–23 Uhr."
+  },
+  "greetingNight": "Noch wach",
+  "@greetingNight": {
+    "description": "Begrüßung auf dem Start-Tab, 23–5 Uhr."
+  },
+
+  "homeEmptyTitle": "Noch kein Repertoire",
+  "@homeEmptyTitle": {
+    "description": "Leerer Start-Tab, bevor eine Eröffnung hinzugefügt wurde."
+  },
+  "homeEmptyMessage": "Füge deine erste Eröffnung aus der Bibliothek hinzu oder importiere ein PGN.",
+  "homeEmptyAction": "Eröffnung hinzufügen",
+
+  "libraryEmptyTitle": "Bibliothek wird vorbereitet",
+  "libraryEmptyMessage": "Rund 50 Eröffnungen mit Varianten, Plänen und Meisterpartien kommen in einem der nächsten Schritte.",
+  "librarySearchHint": "Eröffnung oder ECO-Code",
+  "libraryFilterWhite": "Weiß",
+  "libraryFilterBlack": "Schwarz",
+  "libraryFilterAll": "Alle",
+
+  "lichessNotConnectedTitle": "Lichess noch nicht verbunden",
+  "lichessNotConnectedMessage": "Verbinde dein Lichess-Konto, um Partien zu importieren und dein Repertoire mit deiner echten Praxis zu vergleichen.",
+  "lichessConnect": "Mit Lichess verbinden",
+
+  "settingsSectionAppearance": "Darstellung",
+  "settingsSectionTraining": "Training",
+  "settingsSectionReminders": "Erinnerungen",
+  "settingsSectionAccount": "Konto",
+  "settingsSectionData": "Daten",
+  "settingsSectionAbout": "Über",
+
+  "settingsTheme": "Erscheinungsbild",
+  "themeLight": "Hell",
+  "themeDark": "Dunkel",
+  "themeBlack": "Schwarz",
+  "@themeBlack": {
+    "description": "AMOLED-Variante mit echtem Schwarz."
+  },
+  "themeSystem": "System",
+
+  "settingsBoardStyle": "Brett-Stil",
+  "boardStyleNocturne": "Nocturne",
+  "boardStyleWood": "Holz",
+  "boardStyleGreen": "Grün",
+  "boardStyleBlue": "Blau",
+  "boardStylePaper": "Papier",
+
+  "settingsShowCoordinates": "Koordinaten anzeigen",
+  "settingsBoardAnimations": "Brettanimationen",
+  "settingsHaptics": "Haptisches Feedback",
+
+  "settingsLanguage": "Sprache",
+  "languageSystem": "Systemsprache",
+  "languageGerman": "Deutsch",
+  "languageEnglish": "Englisch",
+
+  "settingsVersion": "Version {version}",
+  "@settingsVersion": {
+    "description": "Fußzeile im Einstellungen-Tab.",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "1.0.0"
+      }
+    }
+  },
+
+  "commonCancel": "Abbrechen",
+  "commonSave": "Speichern",
+  "commonDelete": "Löschen",
+  "commonBack": "Zurück",
+  "commonRetry": "Erneut versuchen",
+  "commonSeeAll": "Alle ansehen",
+  "commonComingSoon": "Kommt in Kürze",
+
+  "statAccuracy": "Genauigkeit",
+  "statMovesTrained": "Züge geübt",
+  "statRepertoires": "Repertoire",
+  "statStreak": "Serie",
+
+  "actionTrain": "Trainieren",
+  "actionLearn": "Lernen",
+  "actionEdit": "Bearbeiten"
 }

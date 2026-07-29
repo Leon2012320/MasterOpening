@@ -39,7 +39,10 @@ dependencies:
   # ── UI ────────────────────────────────────────────────────────────────────
   flutter_animate: ^4.5.2
   fl_chart: ^1.2.0
-  phosphor_flutter: ^2.1.0 # the icon set used in the design draft
+  # phosphor_flutter ist bewusst nicht als Abhängigkeit eingebunden: sein
+  # PhosphorIconData leitet von IconData ab, das seit Flutter 3.44 `final` ist.
+  # Schrift und Codepunkte liegen stattdessen unter assets/fonts/, erzeugt von
+  # tools/generate-icons.mjs nach lib/core/theme/ph_icons.dart.
 
   # ── Platform ──────────────────────────────────────────────────────────────
   flutter_local_notifications: ^22.2.0
@@ -65,6 +68,7 @@ dev_dependencies:
   json_serializable: ^6.14.0
   very_good_analysis: ^10.3.0
   mocktail: ^1.0.5
+  shared_preferences_platform_interface: ^2.4.2
 
 flutter:
   uses-material-design: true
@@ -80,3 +84,11 @@ flutter:
     - family: Inter
       fonts:
         - asset: assets/fonts/Inter-Variable.ttf
+
+    # Phosphor Icons (MIT) — the icon set the design draft uses.
+    - family: PhosphorRegular
+      fonts:
+        - asset: assets/fonts/Phosphor-Regular.ttf
+    - family: PhosphorFill
+      fonts:
+        - asset: assets/fonts/Phosphor-Fill.ttf

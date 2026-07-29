@@ -2,8 +2,77 @@
   "@@locale": "en",
 
   "appName": "MasterOpening",
+
   "tabHome": "Home",
   "tabLibrary": "Library",
   "tabLichess": "Lichess",
-  "tabSettings": "Settings"
+  "tabSettings": "Settings",
+
+  "greetingMorning": "Good morning",
+  "greetingDay": "Hello",
+  "greetingEvening": "Good evening",
+  "greetingNight": "Still up",
+
+  "homeEmptyTitle": "No repertoire yet",
+  "homeEmptyMessage": "Add your first opening from the library, or import a PGN.",
+  "homeEmptyAction": "Add opening",
+
+  "libraryEmptyTitle": "Library is being prepared",
+  "libraryEmptyMessage": "Around 50 openings with variations, plans and master games are coming in one of the next steps.",
+  "librarySearchHint": "Opening or ECO code",
+  "libraryFilterWhite": "White",
+  "libraryFilterBlack": "Black",
+  "libraryFilterAll": "All",
+
+  "lichessNotConnectedTitle": "Lichess not connected",
+  "lichessNotConnectedMessage": "Connect your Lichess account to import games and compare your repertoire against how you actually play.",
+  "lichessConnect": "Connect with Lichess",
+
+  "settingsSectionAppearance": "Appearance",
+  "settingsSectionTraining": "Training",
+  "settingsSectionReminders": "Reminders",
+  "settingsSectionAccount": "Account",
+  "settingsSectionData": "Data",
+  "settingsSectionAbout": "About",
+
+  "settingsTheme": "Theme",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeBlack": "Black",
+  "themeSystem": "System",
+
+  "settingsBoardStyle": "Board style",
+  "boardStyleNocturne": "Nocturne",
+  "boardStyleWood": "Wood",
+  "boardStyleGreen": "Green",
+  "boardStyleBlue": "Blue",
+  "boardStylePaper": "Paper",
+
+  "settingsShowCoordinates": "Show coordinates",
+  "settingsBoardAnimations": "Board animations",
+  "settingsHaptics": "Haptic feedback",
+
+  "settingsLanguage": "Language",
+  "languageSystem": "System language",
+  "languageGerman": "German",
+  "languageEnglish": "English",
+
+  "settingsVersion": "Version {version}",
+
+  "commonCancel": "Cancel",
+  "commonSave": "Save",
+  "commonDelete": "Delete",
+  "commonBack": "Back",
+  "commonRetry": "Try again",
+  "commonSeeAll": "See all",
+  "commonComingSoon": "Coming soon",
+
+  "statAccuracy": "Accuracy",
+  "statMovesTrained": "Moves trained",
+  "statRepertoires": "Repertoires",
+  "statStreak": "Streak",
+
+  "actionTrain": "Train",
+  "actionLearn": "Learn",
+  "actionEdit": "Edit"
 }
