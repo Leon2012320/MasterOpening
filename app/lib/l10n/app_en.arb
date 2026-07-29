@@ -73,5 +73,24 @@
 
   "actionTrain": "Train",
   "actionLearn": "Learn",
-  "actionEdit": "Edit"
+  "actionEdit": "Edit",
+
+  "learnTitle": "Learn",
+  "learnEmptyTitle": "No moves yet",
+  "learnEmptyMessage": "This repertoire has no lines yet. Add them in edit mode.",
+  "learnMoves": "Moves",
+  "learnFlipBoard": "Flip board",
+  "learnAutoplay": "Auto-play",
+  "learnAutoplayStop": "Stop auto-play",
+  "learnToStart": "To the start",
+  "learnPrevious": "Previous move",
+  "learnNext": "Next move",
+  "learnToEnd": "To the end",
+  "learnBranchHint": "{count} continuations from here",
+  "learnLineEnd": "End of the line",
+  "learnStartPosition": "Starting position",
+  "learnPositionOf": "Ply {ply} of {total}",
+  "learnNotInRepertoire": "That move is not in the repertoire.",
+  "learnNextVariation": "Next variation",
+  "learnLoadError": "The repertoire could not be loaded."
 }

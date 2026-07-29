@@ -112,5 +112,44 @@
 
   "actionTrain": "Trainieren",
   "actionLearn": "Lernen",
-  "actionEdit": "Bearbeiten"
+  "actionEdit": "Bearbeiten",
+
+  "learnTitle": "Lernen",
+  "learnEmptyTitle": "Noch keine Züge",
+  "learnEmptyMessage": "Dieses Repertoire enthält noch keine Varianten. Ergänze sie im Bearbeitungsmodus.",
+  "learnMoves": "Züge",
+  "learnFlipBoard": "Brett drehen",
+  "learnAutoplay": "Automatisch abspielen",
+  "learnAutoplayStop": "Abspielen anhalten",
+  "learnToStart": "An den Anfang",
+  "learnPrevious": "Zug zurück",
+  "learnNext": "Zug vor",
+  "learnToEnd": "Ans Ende",
+  "learnBranchHint": "Hier geht es auf {count} Wegen weiter",
+  "@learnBranchHint": {
+    "description": "Hinweis an einer Verzweigung im Variantenbaum.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "learnLineEnd": "Ende der Variante",
+  "learnStartPosition": "Grundstellung",
+  "learnPositionOf": "Halbzug {ply} von {total}",
+  "@learnPositionOf": {
+    "description": "Fortschritt innerhalb der aktuellen Variante.",
+    "placeholders": {
+      "ply": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnNotInRepertoire": "Dieser Zug steht nicht im Repertoire.",
+  "learnNextVariation": "Nächste Variante",
+  "learnLoadError": "Das Repertoire konnte nicht geladen werden."
 }

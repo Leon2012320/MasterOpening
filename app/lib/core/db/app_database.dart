@@ -1,13 +1,13 @@
-﻿// `Side` und die Aufzählungen aus `enums.dart` werden vom erzeugten Teil
+// `Side` und die Aufzählungen aus `enums.dart` werden vom erzeugten Teil
 // dieser Datei gebraucht — `part`-Dateien nutzen die Importe des Hauptteils.
 import 'package:dartchess/dartchess.dart' show Side;
 import 'package:drift/drift.dart';
 import 'package:drift_flutter/drift_flutter.dart';
-import 'package:masteropening/core/db/enums.dart';
 import 'package:masteropening/core/db/daos/activity_dao.dart';
 import 'package:masteropening/core/db/daos/key_value_dao.dart';
 import 'package:masteropening/core/db/daos/progress_dao.dart';
 import 'package:masteropening/core/db/daos/repertoire_dao.dart';
+import 'package:masteropening/core/db/enums.dart';
 import 'package:masteropening/core/db/tables.dart';
 
 part 'app_database.g.dart';

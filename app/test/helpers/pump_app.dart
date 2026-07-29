@@ -64,6 +64,40 @@ Future<void> pumpWidgetInApp(
   }
 }
 
+/// Pumpt in kleinen Schritten, bis [condition] zutrifft.
+///
+/// Für Bildschirme, die auf eine Datenbankabfrage warten: `pumpAndSettle`
+/// kommt dort nie zur Ruhe, weil der Ladespinner endlos weiteranimiert und
+/// damit immer den nächsten Frame anfordert.
+Future<void> pumpUntil(
+  WidgetTester tester,
+  bool Function() condition, {
+  Duration timeout = const Duration(seconds: 10),
+  String? reason,
+}) async {
+  final deadline = DateTime.now().add(timeout);
+  while (!condition()) {
+    if (DateTime.now().isAfter(deadline)) {
+      fail(reason ?? 'Bedingung wurde innerhalb von $timeout nicht erfüllt.');
+    }
+    await tester.pump(const Duration(milliseconds: 20));
+  }
+}
+
+/// Wartet, bis ein Widget aufgetaucht ist.
+Future<void> pumpUntilFound(
+  WidgetTester tester,
+  Finder finder, {
+  Duration timeout = const Duration(seconds: 10),
+}) {
+  return pumpUntil(
+    tester,
+    () => finder.evaluate().isNotEmpty,
+    timeout: timeout,
+    reason: 'Nicht gefunden: ${finder.describeMatch(Plurality.one)}',
+  );
+}
+
 /// Die Tokens, mit denen der Bildschirm gerade gemalt wird.
 AppTokens tokensOf(WidgetTester tester, Finder finder) {
   final context = tester.element(finder);

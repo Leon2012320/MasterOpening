@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:masteropening/core/router/app_routes.dart';
 import 'package:masteropening/core/router/app_shell.dart';
 import 'package:masteropening/features/home/presentation/home_screen.dart';
+import 'package:masteropening/features/learn/presentation/study_screen.dart';
 import 'package:masteropening/features/library/presentation/library_screen.dart';
 import 'package:masteropening/features/lichess/presentation/lichess_screen.dart';
 import 'package:masteropening/features/settings/presentation/settings_screen.dart';
@@ -23,6 +24,24 @@ final routerProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: Routes.home,
                 builder: (context, state) => const HomeScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'repertoire/:id/learn',
+                    name: Routes.repertoireLearnName,
+                    // Ausserhalb der Shell: der Lern-Modus füllt den ganzen
+                    // Bildschirm, die Tab-Leiste würde nur Platz kosten.
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) {
+                      final id = int.tryParse(
+                        state.pathParameters['id'] ?? '',
+                      );
+                      if (id == null) {
+                        return const _RouteErrorScreen();
+                      }
+                      return StudyScreen(repertoireId: id);
+                    },
+                  ),
+                ],
               ),
             ],
           ),
