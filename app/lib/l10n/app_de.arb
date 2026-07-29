@@ -47,6 +47,94 @@
   "homeEmptyMessage": "Füge deine erste Eröffnung aus der Bibliothek hinzu oder importiere ein PGN.",
   "homeEmptyAction": "Eröffnung hinzufügen",
 
+  "homeSectionRepertoire": "Dein Repertoire",
+  "homeDueToday": "Fällig heute",
+  "homeNothingDueTitle": "Alles wiederholt",
+  "homeNothingDueMessage": "Für heute ist nichts mehr fällig. Du kannst trotzdem jederzeit eine Variante üben.",
+  "homeDueMoves": "{count, plural, =0{Nichts fällig} =1{1 Zug fällig} other{{count} Züge fällig}}",
+  "@homeDueMoves": {
+    "description": "Fällige Züge eines Repertoires.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeContinueTraining": "Training fortsetzen",
+  "homeMovesTotal": "{count} Züge",
+  "@homeMovesTotal": {
+    "description": "Umfang eines Repertoires auf der Karte.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeLevel": "Level {level}",
+  "@homeLevel": {
+    "description": "Spielerstufe im Kopf der Startseite.",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+
+  "addRepertoireTitle": "Eröffnung hinzufügen",
+  "addFromLibrary": "Aus der Bibliothek",
+  "addFromLibraryHint": "Vorbereitete Eröffnungen mit Varianten und Plänen",
+  "addFromPgn": "PGN einfügen",
+  "addFromPgnHint": "Eine Studie oder Partie als Text einfügen",
+  "addFromLichess": "Lichess-Studie",
+  "addFromLichessHint": "Braucht ein verbundenes Lichess-Konto",
+
+  "importTitle": "PGN importieren",
+  "importPaste": "PGN hier einfügen",
+  "importName": "Name",
+  "importSide": "Farbe",
+  "importAction": "Importieren",
+  "importEmpty": "In diesem Text stehen noch keine lesbaren Züge.",
+  "importMovesFound": "{moves} Züge, {lines} Varianten erkannt",
+  "@importMovesFound": {
+    "description": "Umfang des erkannten Baums in der Import-Vorschau.",
+    "placeholders": {
+      "moves": {
+        "type": "int"
+      },
+      "lines": {
+        "type": "int"
+      }
+    }
+  },
+  "importWarnings": "{count, plural, =1{1 Zug wurde übersprungen} other{{count} Züge wurden übersprungen}}",
+  "@importWarnings": {
+    "description": "Hinweis auf nicht legale Züge im importierten PGN.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "repertoireRename": "Umbenennen",
+  "repertoireDelete": "Löschen",
+  "repertoireDeleteConfirm": "Dieses Repertoire mit allem Lernfortschritt löschen?",
+  "repertoireDeleted": "Gelöscht.",
+  "repertoireReorderHint": "Halten und ziehen, um die Reihenfolge zu ändern",
+  "repertoireEditTree": "Züge bearbeiten",
+  "repertoireResetProgress": "Lernfortschritt zurücksetzen",
+  "repertoireResetProgressDone": "Der Lernfortschritt wurde zurückgesetzt.",
+  "repertoireEditDone": "Fertig",
+
+  "treeEditTitle": "Züge bearbeiten",
+  "treeEditHint": "Zieh einen Zug auf dem Brett, um ihn zu ergänzen.",
+  "treeEditAdded": "Zug ergänzt.",
+  "treeEditDelete": "Zug löschen",
+  "treeEditDeleteConfirm": "Diesen Zug und alles, was daran hängt, löschen?",
+  "treeEditPromote": "Zur Hauptvariante machen",
+  "treeEditComment": "Kommentar",
+  "treeEditCommentHint": "Notiz zu diesem Zug",
+
   "libraryTitle": "Bibliothek",
   "librarySearchHint": "Eröffnung oder ECO-Code",
   "libraryFilterWhite": "Weiß",

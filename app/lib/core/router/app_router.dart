@@ -8,6 +8,8 @@ import 'package:masteropening/features/learn/presentation/study_screen.dart';
 import 'package:masteropening/features/library/presentation/library_screen.dart';
 import 'package:masteropening/features/library/presentation/opening_detail_screen.dart';
 import 'package:masteropening/features/lichess/presentation/lichess_screen.dart';
+import 'package:masteropening/features/repertoire/presentation/import_pgn_screen.dart';
+import 'package:masteropening/features/repertoire/presentation/repertoire_edit_screen.dart';
 import 'package:masteropening/features/settings/presentation/settings_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -26,6 +28,22 @@ final routerProvider = Provider<GoRouter>((ref) {
                 path: Routes.home,
                 builder: (context, state) => const HomeScreen(),
                 routes: [
+                  GoRoute(
+                    path: 'import',
+                    name: Routes.repertoireImportName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const ImportPgnScreen(),
+                  ),
+                  GoRoute(
+                    path: 'repertoire/:id/edit',
+                    name: Routes.repertoireEditName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) {
+                      final id = int.tryParse(state.pathParameters['id'] ?? '');
+                      if (id == null) return const _RouteErrorScreen();
+                      return RepertoireEditScreen(repertoireId: id);
+                    },
+                  ),
                   GoRoute(
                     path: 'repertoire/:id/learn',
                     name: Routes.repertoireLearnName,

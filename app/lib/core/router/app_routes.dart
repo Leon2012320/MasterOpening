@@ -13,6 +13,9 @@ abstract final class Routes {
   static String libraryDetail(String openingId) => '$library/$openingId';
 
   // ── Repertoire ────────────────────────────────────────────────────────────
+  static const repertoireImportName = 'repertoireImport';
+  static const repertoireImport = '$home/import';
+
   static const repertoireLearnName = 'repertoireLearn';
   static String repertoireLearn(int repertoireId) =>
       '$home/repertoire/$repertoireId/learn';
