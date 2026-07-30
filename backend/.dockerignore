@@ -1,0 +1,15 @@
+node_modules
+dist
+test
+coverage
+.env
+.env.*
+!.env.example
+*.db
+*.db-journal
+prisma/dev.db*
+.git
+.gitignore
+*.md
+vitest.config.ts
+eslint.config.mjs

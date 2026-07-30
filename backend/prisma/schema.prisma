@@ -1,0 +1,163 @@
+// Datenmodell des Servers.
+//
+// Der Server ist kein zweites Gehirn, sondern ein Briefkasten: er hält je
+// Nutzer den letzten bekannten Stand und gibt ihn an andere Geräte weiter.
+// Die Logik — FSRS, Baumaufbau, Statistik — bleibt in der App. Deshalb liegen
+// Repertoires hier als PGN-Dokument und der Lernstand als Zeile je `pathHash`,
+// genau wie lokal.
+//
+// SQLite als Anbieter: der Dienst trägt eine Datei je Installation und läuft
+// damit auf einer einzelnen Maschine ohne weiteren Prozess. Der Wechsel auf
+// PostgreSQL ist eine Zeile — siehe README, „Auf PostgreSQL wechseln".
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(cuid())
+
+  /// Die Kennung bei Lichess — die einzige Identität, die es gibt.
+  lichessId String  @unique
+  username  String
+  email     String?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  /// Gesetzt, sobald das Konto gelöscht wurde; die Zeile selbst verschwindet
+  /// mitsamt allen Daten, das Feld dient nur dem Übergang.
+  deletedAt DateTime?
+
+  refreshTokens RefreshToken[]
+  devices       Device[]
+  repertoires   Repertoire[]
+  progress      NodeProgress[]
+  profile       Profile?
+
+  @@index([deletedAt])
+}
+
+/// Ein ausgegebenes Erneuerungs-Token.
+///
+/// Gespeichert wird nur der Hash: wer die Datenbank liest, kann sich damit
+/// nicht anmelden. Jede Erneuerung gibt ein neues Token aus und entwertet das
+/// alte (Rotation). Taucht ein bereits entwertetes Token wieder auf, wurde es
+/// gestohlen — dann fällt die ganze Familie.
+model RefreshToken {
+  id        String @id @default(cuid())
+  userId    String
+  tokenHash String @unique
+
+  /// Alle Token, die auseinander hervorgegangen sind.
+  familyId String
+
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([familyId])
+}
+
+/// Ein Gerät des Nutzers. Der Push-Token ist vorbereitet, aber ungenutzt:
+/// Erinnerungen laufen lokal, solange die App ohne Firebase auskommt.
+model Device {
+  id             String @id @default(cuid())
+  userId         String
+  installationId String
+
+  platform  String
+  appVersion String?
+  pushToken String?
+
+  lastSeenAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, installationId])
+  @@index([userId])
+}
+
+/// Ein Repertoire als Dokument — dieselbe Form wie in der App.
+model Repertoire {
+  userId String
+  uuid   String
+
+  name      String
+  side      String
+  pgn       String
+  startFen  String
+  ecoCodes  String  @default("")
+  source    String
+  sourceRef String?
+
+  sortOrder  Int     @default(0)
+  isArchived Boolean @default(false)
+  nodeCount  Int     @default(0)
+  lineCount  Int     @default(0)
+
+  revision  Int       @default(0)
+  updatedAt DateTime
+  deletedAt DateTime?
+
+  /// Wann der Server die Zeile zuletzt angefasst hat. `updatedAt` gehört dem
+  /// Gerät; für „was ist seit meinem letzten Abgleich passiert" braucht es
+  /// eine Uhr, die niemand sonst stellt.
+  syncedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, uuid])
+  @@index([userId, syncedAt])
+}
+
+/// Der Lernstand je Zug, angehängt an den `pathHash` statt an eine Zeilen-ID.
+model NodeProgress {
+  userId         String
+  repertoireUuid String
+  pathHash       String
+
+  state      String
+  stability  Float @default(0)
+  difficulty Float @default(0)
+
+  due        DateTime
+  lastReview DateTime?
+
+  reps         Int @default(0)
+  lapses       Int @default(0)
+  correctCount Int @default(0)
+  wrongCount   Int @default(0)
+
+  updatedAt DateTime
+  syncedAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, repertoireUuid, pathHash])
+  @@index([userId, syncedAt])
+}
+
+/// Punkte, Level und Serie — eine Zeile je Nutzer.
+model Profile {
+  userId String @id
+
+  totalXp       Int     @default(0)
+  streakCurrent Int     @default(0)
+  streakBest    Int     @default(0)
+  streakFreezes Int     @default(2)
+  lastActiveDay String?
+
+  updatedAt DateTime
+  syncedAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
