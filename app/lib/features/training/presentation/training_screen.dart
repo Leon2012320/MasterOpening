@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 
 import 'package:chessground/chessground.dart' show PlayerSide;
 import 'package:dartchess/dartchess.dart' show Move;
@@ -22,15 +22,27 @@ import 'package:masteropening/l10n/generated/app_localizations.dart';
 
 /// Lädt den Plan und startet die Einheit.
 class TrainingScreen extends ConsumerWidget {
-  const TrainingScreen({required this.mode, this.repertoireId, super.key});
+  const TrainingScreen({
+    required this.mode,
+    this.repertoireId,
+    this.pathHash,
+    super.key,
+  });
 
   final TrainingMode mode;
   final int? repertoireId;
 
+  /// Nur im Modus „bestimmte Variante": welcher Zug gemeint ist.
+  final String? pathHash;
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppL10n.of(context);
-    final request = TrainingRequest(mode: mode, repertoireId: repertoireId);
+    final request = TrainingRequest(
+      mode: mode,
+      repertoireId: repertoireId,
+      pathHash: pathHash,
+    );
 
     return ref
         .watch(trainingPlanProvider(request))
@@ -79,11 +91,27 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
   late DateTime _askedAt;
 
   Timer? _advanceTimer;
+
+  /// Läuft nur im Blitz-Modus: tickt die Bedenkzeit herunter.
+  Timer? _clockTimer;
+
+  /// Verbleibende Bedenkzeit in Millisekunden, `null` ausserhalb des
+  /// Blitz-Modus.
+  int? _remainingMillis;
+
   bool _saved = false;
 
   /// Wie lange die Rückmeldung stehen bleibt, bevor es weitergeht.
   static const _correctPause = Duration(milliseconds: 550);
   static const _wrongPause = Duration(milliseconds: 1600);
+
+  /// Takt der Blitz-Uhr. Fein genug für einen flüssigen Ring, grob genug,
+  /// um nicht jeden Frame neu zu bauen.
+  static const _tick = Duration(milliseconds: 50);
+
+  bool get _isBlitz => widget.mode == TrainingMode.blitz;
+
+  int get _blitzMillis => ref.read(settingsProvider).blitzSecondsPerMove * 1000;
 
   @override
   void initState() {
@@ -94,12 +122,51 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
       now: DateTime.now(),
     );
     _askedAt = DateTime.now();
+    if (_isBlitz) _startClock();
   }
 
   @override
   void dispose() {
     _advanceTimer?.cancel();
+    _clockTimer?.cancel();
     super.dispose();
+  }
+
+  void _startClock() {
+    _clockTimer?.cancel();
+    if (!_isBlitz || _session.phase != TrainingPhase.awaitingMove) return;
+
+    final total = _blitzMillis;
+    setState(() => _remainingMillis = total);
+
+    _clockTimer = Timer.periodic(_tick, (timer) {
+      if (!mounted) return;
+      final left = total - DateTime.now().difference(_askedAt).inMilliseconds;
+
+      if (left <= 0) {
+        timer.cancel();
+        setState(() => _remainingMillis = 0);
+        _onTimeOut(total);
+        return;
+      }
+      setState(() => _remainingMillis = left);
+    });
+  }
+
+  void _stopClock() {
+    _clockTimer?.cancel();
+    _clockTimer = null;
+  }
+
+  void _onTimeOut(int millis) {
+    if (_session.phase != TrainingPhase.awaitingMove) return;
+
+    final settings = ref.read(settingsProvider);
+    if (settings.hapticFeedback) unawaited(HapticFeedback.heavyImpact());
+
+    setState(() => _session = _session.timeOut(millis: millis));
+    _advanceTimer?.cancel();
+    _advanceTimer = Timer(_wrongPause, _advance);
   }
 
   void _onMove(Move move) {
@@ -108,6 +175,8 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
     final millis = DateTime.now().difference(_askedAt).inMilliseconds;
     final next = _session.submitMove(move, millis: millis);
     if (next == _session) return;
+
+    _stopClock();
 
     final settings = ref.read(settingsProvider);
     if (settings.hapticFeedback) {
@@ -135,6 +204,8 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
     });
     if (_session.phase == TrainingPhase.lineComplete) {
       _advanceTimer = Timer(_correctPause, _nextLine);
+    } else {
+      _startClock();
     }
   }
 
@@ -144,7 +215,12 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
       _session = _session.nextLine();
       _askedAt = DateTime.now();
     });
-    if (_session.isFinished) unawaited(_finish());
+    if (_session.isFinished) {
+      _stopClock();
+      unawaited(_finish());
+    } else {
+      _startClock();
+    }
   }
 
   Future<void> _finish() async {
@@ -251,7 +327,65 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
                 );
               },
             ),
+            if (_isBlitz)
+              _BlitzClock(
+                remainingMillis: _remainingMillis,
+                totalMillis: _blitzMillis,
+              ),
             Expanded(child: _Feedback(session: _session)),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Der Countdown im Blitz-Modus: ein Ring, der sich leert, mit der
+/// verbleibenden Zeit in der Mitte.
+///
+/// Bewusst kein Balken: ein Ring lässt sich mit dem Blick am Brett
+/// mitverfolgen, weil die Restmenge als Winkel und nicht als Länge zu lesen
+/// ist.
+class _BlitzClock extends StatelessWidget {
+  const _BlitzClock({required this.remainingMillis, required this.totalMillis});
+
+  final int? remainingMillis;
+  final int totalMillis;
+
+  @override
+  Widget build(BuildContext context) {
+    final tokens = context.tokens;
+    final left = remainingMillis ?? totalMillis;
+    final fraction = (left / totalMillis).clamp(0.0, 1.0);
+
+    // Unter einem Viertel wird der Ring rot — die letzte Sekunde soll man
+    // sehen, ohne hinzuschauen.
+    final color = fraction < 0.25 ? tokens.danger : tokens.accent;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: AppSpacing.lg),
+      child: SizedBox(
+        width: 56,
+        height: 56,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            SizedBox.expand(
+              child: CircularProgressIndicator(
+                value: fraction,
+                strokeWidth: 4,
+                strokeCap: StrokeCap.round,
+                backgroundColor: tokens.textAlpha(0.1),
+                valueColor: AlwaysStoppedAnimation(color),
+              ),
+            ),
+            Text(
+              (left / 1000).ceil().toString(),
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                color: color,
+                fontFeatures: const [FontFeature.tabularFigures()],
+              ),
+            ),
           ],
         ),
       ),
@@ -315,6 +449,19 @@ class _Feedback extends StatelessWidget {
       ),
       child: Column(
         children: [
+          // Im Fallen-Modus steht über der Rückmeldung, welche Falle gerade
+          // gestellt wurde — ohne den Namen wüsste man nicht, was man gelernt
+          // hat.
+          if (session.currentLine?.trapName case final trap?) ...[
+            Text(
+              l10n.trapNameLabel(trap),
+              textAlign: TextAlign.center,
+              style: theme.textTheme.labelSmall?.copyWith(
+                color: tokens.textAlpha(0.5),
+              ),
+            ),
+            const SizedBox(height: AppSpacing.sm),
+          ],
           Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -337,6 +484,20 @@ class _Feedback extends StatelessWidget {
               .fadeIn(
                 duration: AppDurations.fast,
               ),
+          // Nach einer widerlegten Falle die Erklärung — der Moment, in dem
+          // sie hängen bleibt.
+          if (session.phase == TrainingPhase.lineComplete)
+            if (session.currentLine?.trapExplanation case final why?) ...[
+              const SizedBox(height: AppSpacing.lg),
+              Text(
+                why,
+                textAlign: TextAlign.center,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: tokens.textAlpha(0.7),
+                  height: 1.4,
+                ),
+              ),
+            ],
           const Spacer(),
           Text(
             l10n.trainingLineOf(

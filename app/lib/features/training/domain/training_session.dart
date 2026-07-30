@@ -257,9 +257,13 @@ class TrainingSessionState {
     return next._skipOpponentMoves();
   }
 
-  /// Spielt die Züge des Gegners vor und erkennt, wenn die Variante zu Ende
-  /// ist. Die Antworten des Gegners gibt das Repertoire vor — sie abzufragen
-  /// hätte keinen Sinn.
+  /// Spielt vor, was nicht gefragt wird, und erkennt, wenn die Variante zu
+  /// Ende ist.
+  ///
+  /// Vorgespielt werden zwei Dinge: die Antworten des Gegners — sie gibt das
+  /// Repertoire vor, sie abzufragen hätte keinen Sinn — und im Puzzle-Modus
+  /// alles vor [TrainingLine.askFromPly], damit die Aufgabe mitten in der
+  /// Variante beginnt.
   TrainingSessionState _skipOpponentMoves() {
     var cursor = this;
 
@@ -271,7 +275,10 @@ class TrainingSessionState {
       if (cursor.ply >= line.length) {
         return cursor._copyWith(phase: TrainingPhase.lineComplete);
       }
-      if (line.line.nodes[cursor.ply].movedBy == line.side) {
+
+      final node = line.line.nodes[cursor.ply];
+      final isOwn = node.movedBy == line.side;
+      if (isOwn && node.ply > line.askFromPly) {
         return cursor._copyWith(phase: TrainingPhase.awaitingMove);
       }
       cursor = cursor._copyWith(ply: cursor.ply + 1);

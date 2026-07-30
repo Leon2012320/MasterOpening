@@ -22,10 +22,19 @@ class TrainingLine {
     required this.startFen,
     required this.line,
     required this.weight,
+    this.askFromPly = 0,
+    this.trapName,
+    this.trapExplanation,
   });
+
+  /// Kennung für Aufgaben, die zu keinem Repertoire gehören — Eröffnungsfallen.
+  /// Für Züge, die nicht im Repertoire stehen, gibt es keinen Lernstand.
+  static const noRepertoire = -1;
 
   final int repertoireId;
   final String repertoireName;
+
+  bool get hasProgress => repertoireId != noRepertoire;
 
   /// Die Farbe, die der Nutzer spielt — ihre Züge werden abgefragt, die des
   /// Gegners spielt die App vor.
@@ -37,12 +46,39 @@ class TrainingLine {
   /// Wie dringend diese Variante ist. Der Planer sortiert danach.
   final double weight;
 
+  /// Ab welchem Halbzug gefragt wird. Alles davor spielt die App vor.
+  ///
+  /// Im Puzzle-Modus steht die Stellung damit schon mitten in der Variante,
+  /// und gesucht ist nur der eine Zug, der jetzt kommt.
+  final int askFromPly;
+
+  /// Bei einer Eröffnungsfalle: wie sie heisst und warum sie funktioniert.
+  final String? trapName;
+  final String? trapExplanation;
+
+  bool get isTrap => trapName != null;
+
   /// Die Züge, die der Nutzer finden muss.
-  List<RepertoireNode> get ownMoves => line.ownMoves(side);
+  List<RepertoireNode> get ownMoves => [
+    for (final node in line.ownMoves(side))
+      if (node.ply > askFromPly) node,
+  ];
 
   int get length => line.length;
 
-  String get id => line.id;
+  String get id => '${line.id}:$askFromPly';
+
+  TrainingLine copyWith({int? askFromPly, double? weight}) => TrainingLine(
+    repertoireId: repertoireId,
+    repertoireName: repertoireName,
+    side: side,
+    startFen: startFen,
+    line: line,
+    weight: weight ?? this.weight,
+    askFromPly: askFromPly ?? this.askFromPly,
+    trapName: trapName,
+    trapExplanation: trapExplanation,
+  );
 }
 
 /// Nach welchem Maßstab der Planer auswählt.
@@ -118,13 +154,67 @@ abstract final class TrainingPlanner {
     });
 
     if (options.mode == TrainingMode.puzzle) {
-      // Im Puzzle-Modus soll die Auswahl nicht jeden Tag dieselbe sein.
-      final pool = candidates.take(options.maxLines * 3).toList()
-        ..shuffle(options.random ?? Random());
-      return pool.take(options.maxLines).toList();
+      return _asPuzzles(candidates, options);
     }
 
     return candidates.take(options.maxLines).toList();
+  }
+
+  /// Macht aus Varianten Einzelaufgaben.
+  ///
+  /// Im Puzzle-Modus steht eine Zufallsstellung aus dem Repertoire auf dem
+  /// Brett und gesucht ist genau der Zug, der jetzt fällt — nicht die ganze
+  /// Variante von vorn. Das trainiert das Wiedererkennen einer Stellung, und
+  /// darauf kommt es am Brett an.
+  static List<TrainingLine> _asPuzzles(
+    List<TrainingLine> candidates,
+    PlannerOptions options,
+  ) {
+    final random = options.random ?? Random();
+    // Aus einem grösseren Vorrat ziehen, damit nicht jeden Tag dieselben
+    // Stellungen kommen.
+    final pool = candidates.take(options.maxLines * 3).toList()
+      ..shuffle(random);
+
+    final puzzles = <TrainingLine>[];
+    for (final line in pool) {
+      final own = line.line.ownMoves(line.side);
+      // Der erste eigene Zug wäre kein Puzzle, sondern die Eröffnung selbst.
+      final askable = own.where((n) => n.ply > 1).toList();
+      if (askable.isEmpty) continue;
+
+      final target = askable[random.nextInt(askable.length)];
+      puzzles.add(line.copyWith(askFromPly: target.ply - 1));
+      if (puzzles.length >= options.maxLines) break;
+    }
+    return puzzles;
+  }
+
+  /// Eine einzelne Variante gezielt üben — der Weg vom Lern-Modus ins
+  /// Training.
+  static List<TrainingLine> single({
+    required TrainingSource source,
+    required String pathHash,
+  }) {
+    final lines = source.tree.lines().where(
+      (line) => line.nodes.any((node) => node.pathHash == pathHash),
+    );
+    if (lines.isEmpty) return const [];
+
+    // Die kürzeste Variante, die durch diesen Zug läuft — sie ist am
+    // dichtesten an dem, was der Nutzer gerade angesehen hat.
+    final chosen = lines.reduce((a, b) => a.length <= b.length ? a : b);
+
+    return [
+      TrainingLine(
+        repertoireId: source.repertoireId,
+        repertoireName: source.name,
+        side: source.side,
+        startFen: source.tree.startFen,
+        line: chosen,
+        weight: 1,
+      ),
+    ];
   }
 
   /// Das Gewicht einer Variante — 0 heißt „nichts davon ist fällig".

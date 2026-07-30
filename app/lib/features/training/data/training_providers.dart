@@ -4,6 +4,7 @@ import 'package:masteropening/core/db/enums.dart';
 import 'package:masteropening/core/settings/settings_controller.dart';
 import 'package:masteropening/features/repertoire/data/repertoire_providers.dart';
 import 'package:masteropening/features/training/data/training_repository.dart';
+import 'package:masteropening/features/training/data/trap_repository.dart';
 import 'package:masteropening/features/training/domain/training_plan.dart';
 import 'package:meta/meta.dart';
 
@@ -14,21 +15,29 @@ final trainingRepositoryProvider = Provider<TrainingRepository>(
 /// Womit eine Einheit gestartet wird.
 @immutable
 class TrainingRequest {
-  const TrainingRequest({required this.mode, this.repertoireId});
+  const TrainingRequest({
+    required this.mode,
+    this.repertoireId,
+    this.pathHash,
+  });
 
   final TrainingMode mode;
 
   /// `null` heisst: über alle Repertoires hinweg.
   final int? repertoireId;
 
+  /// Nur im Modus „bestimmte Variante": welcher Zug gemeint ist.
+  final String? pathHash;
+
   @override
   bool operator ==(Object other) =>
       other is TrainingRequest &&
       other.mode == mode &&
-      other.repertoireId == repertoireId;
+      other.repertoireId == repertoireId &&
+      other.pathHash == pathHash;
 
   @override
-  int get hashCode => Object.hash(mode, repertoireId);
+  int get hashCode => Object.hash(mode, repertoireId, pathHash);
 }
 
 /// Stellt den Plan für eine Einheit zusammen.
@@ -41,6 +50,9 @@ final trainingPlanProvider =
       ref,
       request,
     ) async {
+      final settings = ref.watch(settingsProvider);
+      final maxLines = _linesFor(settings.dailyReviewLimit);
+
       final sources = await ref
           .watch(trainingRepositoryProvider)
           .loadSources(
@@ -48,12 +60,31 @@ final trainingPlanProvider =
             repertoireId: request.repertoireId,
           );
 
+      // Der Fallen-Modus schöpft nicht aus dem Repertoire, sondern aus den
+      // mitgelieferten Fallen — passend zu den Farben, die man spielt.
+      if (request.mode == TrainingMode.trap) {
+        return ref
+            .watch(trapRepositoryProvider)
+            .asTrainingLines(
+              sides: sources.map((s) => s.side).toSet(),
+              languageCode: settings.languageCode ?? 'de',
+              maxLines: maxLines,
+            );
+      }
+
+      // Eine einzelne Variante gezielt üben.
+      final pathHash = request.pathHash;
+      if (request.mode == TrainingMode.variation && pathHash != null) {
+        if (sources.isEmpty) return const [];
+        return TrainingPlanner.single(
+          source: sources.first,
+          pathHash: pathHash,
+        );
+      }
+
       return TrainingPlanner.build(
         sources: sources,
-        options: PlannerOptions(
-          mode: request.mode,
-          maxLines: _linesFor(ref.watch(settingsProvider).dailyReviewLimit),
-        ),
+        options: PlannerOptions(mode: request.mode, maxLines: maxLines),
       );
     });
 

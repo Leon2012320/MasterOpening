@@ -214,6 +214,35 @@
   "reportAgain": "Noch eine Runde",
   "reportDone": "Fertig",
 
+  "modePickTitle": "Wie möchtest du üben?",
+  "modeSmart": "Smart",
+  "modeSmartHint": "Fängt mit dem an, was fällig ist und wo du Fehler gemacht hast",
+  "modeBlitz": "Blitz",
+  "modeBlitzHint": "{seconds} Sekunden pro Zug — ohne Nachdenken",
+  "@modeBlitzHint": {
+    "description": "Erklärung des Blitz-Modus in der Auswahl.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "modePuzzle": "Puzzle",
+  "modePuzzleHint": "Eine Zufallsstellung aus dem Repertoire — finde den Zug",
+  "modeTrap": "Eröffnungsfallen",
+  "modeTrapHint": "Verteidige gegen bekannte Fallen, die nicht im Repertoire stehen",
+  "modeVariation": "Diese Variante",
+  "modeVariationHint": "Nur die Variante, die du gerade ansiehst",
+  "trapNameLabel": "Falle: {name}",
+  "@trapNameLabel": {
+    "description": "Überschrift im Fallen-Modus.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
   "libraryTitle": "Bibliothek",
   "librarySearchHint": "Eröffnung oder ECO-Code",
   "libraryFilterWhite": "Weiß",

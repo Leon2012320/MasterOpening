@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 
 import 'package:chessground/chessground.dart' show PlayerSide;
 import 'package:dartchess/dartchess.dart' show Move, Side;
@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:masteropening/chess/repertoire_tree.dart';
 import 'package:masteropening/chess/san_notation.dart';
+import 'package:masteropening/core/db/enums.dart';
 import 'package:masteropening/core/settings/settings_controller.dart';
 import 'package:masteropening/core/theme/app_dimens.dart';
 import 'package:masteropening/core/theme/app_tokens.dart';
@@ -19,6 +20,7 @@ import 'package:masteropening/features/learn/domain/study_state.dart';
 import 'package:masteropening/features/learn/presentation/widgets/move_list_view.dart';
 import 'package:masteropening/features/learn/presentation/widgets/study_controls.dart';
 import 'package:masteropening/features/repertoire/data/repertoire_providers.dart';
+import 'package:masteropening/features/training/presentation/training_screen.dart';
 import 'package:masteropening/l10n/generated/app_localizations.dart';
 
 /// Lädt das Repertoire und übergibt es an [StudyView].
@@ -59,6 +61,7 @@ class StudyScreen extends ConsumerWidget {
               );
             }
             return StudyView(
+              repertoireId: repertoireId,
               title: loaded.row.name,
               tree: loaded.tree,
               side: loaded.row.side,
@@ -76,12 +79,14 @@ class StudyScreen extends ConsumerWidget {
 /// direkt anspringen.
 class StudyView extends ConsumerStatefulWidget {
   const StudyView({
+    required this.repertoireId,
     required this.title,
     required this.tree,
     required this.side,
     super.key,
   });
 
+  final int repertoireId;
   final String title;
   final RepertoireTree tree;
 
@@ -233,6 +238,27 @@ class _StudyViewState extends ConsumerState<StudyView> {
       appBar: AppBar(
         title: Text(widget.title, overflow: TextOverflow.ellipsis),
         actions: [
+          // Aus dem Ansehen direkt ins Üben: der Zug, auf dem man steht,
+          // bestimmt die Variante.
+          if (state.current case final node?)
+            IconButton(
+              icon: const Icon(PhIcons.play),
+              tooltip: l10n.modeVariation,
+              onPressed: () {
+                _stopAutoplay();
+                unawaited(
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (context) => TrainingScreen(
+                        mode: TrainingMode.variation,
+                        repertoireId: widget.repertoireId,
+                        pathHash: node.pathHash,
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
           IconButton(
             icon: const Icon(PhIcons.arrowsClockwise),
             tooltip: l10n.learnFlipBoard,

@@ -58,8 +58,14 @@ class TrainingRepository {
   }) async {
     if (report.movesTotal == 0) return;
 
+    // Fallen gehören zu keinem Repertoire; ihre Versuche zählen für Statistik
+    // und Tageswert, bekommen aber keinen Lernstand.
+    final tracked = session.attempts
+        .where((a) => a.repertoireId != TrainingLine.noRepertoire)
+        .toList();
+
     await _db.transaction(() async {
-      await _applyProgress(session.attempts, now, blitzSecondsPerMove);
+      await _applyProgress(tracked, now, blitzSecondsPerMove);
 
       final sessionId = await _db.trainingDao.insertSession(
         uuid: RepertoireRepository.newUuid(),
@@ -88,7 +94,7 @@ class TrainingRepository {
           ),
       ]);
 
-      for (final id in session.attempts.map((a) => a.repertoireId).toSet()) {
+      for (final id in tracked.map((a) => a.repertoireId).toSet()) {
         await _db.repertoireDao.markTrained(id, now: now);
       }
 
@@ -193,7 +199,10 @@ class TrainingRepository {
 
   /// Die Repertoire-ID, wenn die Einheit nur eines betraf — sonst `null`.
   static int? _singleRepertoire(TrainingSessionState session) {
-    final ids = session.attempts.map((a) => a.repertoireId).toSet();
+    final ids = session.attempts
+        .map((a) => a.repertoireId)
+        .where((id) => id != TrainingLine.noRepertoire)
+        .toSet();
     return ids.length == 1 ? ids.single : null;
   }
 }

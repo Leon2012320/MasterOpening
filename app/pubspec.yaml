@@ -78,6 +78,7 @@ flutter:
   assets:
     - assets/data/
     - assets/data/openings/
+    - assets/data/traps.json
 
   fonts:
     # Inter is a variable font: Flutter maps TextStyle.fontWeight onto the

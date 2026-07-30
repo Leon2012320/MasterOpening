@@ -46,6 +46,7 @@ void main() {
           supportedLocales: AppL10n.supportedLocales,
           locale: const Locale('de'),
           home: StudyView(
+            repertoireId: 1,
             title: title,
             tree: tree ?? _spanish(),
             side: side,
