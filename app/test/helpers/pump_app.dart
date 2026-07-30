@@ -10,6 +10,7 @@ import 'package:masteropening/core/theme/app_theme.dart';
 import 'package:masteropening/core/theme/app_tokens.dart';
 import 'package:masteropening/features/library/data/library_repository.dart';
 import 'package:masteropening/features/library/domain/library_opening.dart';
+import 'package:masteropening/features/lichess/data/lichess_providers.dart';
 import 'package:masteropening/features/repertoire/data/repertoire_providers.dart';
 import 'package:masteropening/l10n/generated/app_localizations.dart';
 
@@ -37,6 +38,11 @@ Future<InMemorySettingsStore> pumpApp(
         // `pumpAndSettle` würde sonst am Ladekringel hängen bleiben.
         libraryIndexProvider.overrideWithValue(AsyncValue.data(library)),
         repertoiresProvider.overrideWithValue(AsyncValue.data(repertoires)),
+        // Der Lichess-Tab hinge sonst an Schlüsselbund und Datenbank.
+        lichessProvider.overrideWith(_StubLichessController.new),
+        lichessGamesProvider.overrideWithValue(
+          const AsyncValue.data([]),
+        ),
       ],
       child: const MasterOpeningApp(),
     ),
@@ -44,6 +50,12 @@ Future<InMemorySettingsStore> pumpApp(
   await tester.pumpAndSettle();
 
   return store;
+}
+
+/// Ein Lichess-Tab ohne Konto und ohne Datenzugriff.
+class _StubLichessController extends LichessController {
+  @override
+  Future<LichessState> build() async => const LichessState();
 }
 
 /// Rahmen für Einzelwidget-Tests: Theme, Lokalisierung und ein Scaffold, aber

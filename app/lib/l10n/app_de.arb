@@ -395,6 +395,92 @@
   "lichessNotConnectedTitle": "Lichess noch nicht verbunden",
   "lichessNotConnectedMessage": "Verbinde dein Lichess-Konto, um Partien zu importieren und dein Repertoire mit deiner echten Praxis zu vergleichen.",
   "lichessConnect": "Mit Lichess verbinden",
+  "lichessConnecting": "Verbinde …",
+  "lichessDisconnect": "Konto trennen",
+  "lichessDisconnectConfirm": "Konto trennen? Die importierten Partien werden dabei entfernt; dein Repertoire und dein Lernstand bleiben.",
+  "lichessDisconnected": "Konto getrennt.",
+
+  "lichessProfileGames": "{count} Partien",
+  "@lichessProfileGames": {
+    "description": "Partienzahl im Lichess-Profil.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lichessMemberSince": "Dabei seit {date}",
+  "@lichessMemberSince": {
+    "description": "Registrierungsdatum des Lichess-Kontos.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+
+  "lichessImport": "Partien importieren",
+  "lichessImporting": "Importiere …",
+  "lichessImported": "{count, plural, =0{Keine neuen Partien} =1{1 neue Partie importiert} other{{count} neue Partien importiert}}",
+  "@lichessImported": {
+    "description": "Rückmeldung nach dem Import.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lichessGamesStored": "{count, plural, =0{Noch keine Partien} =1{1 Partie gespeichert} other{{count} Partien gespeichert}}",
+  "@lichessGamesStored": {
+    "description": "Wie viele Partien lokal liegen.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "lichessSectionOpenings": "Deine Eröffnungen",
+  "lichessSectionGames": "Letzte Partien",
+  "lichessInRepertoire": "im Repertoire",
+  "lichessMissing": "fehlt",
+  "lichessRecord": "{wins}/{draws}/{losses}",
+  "@lichessRecord": {
+    "description": "Bilanz als Siege/Remis/Niederlagen.",
+    "placeholders": {
+      "wins": {
+        "type": "int"
+      },
+      "draws": {
+        "type": "int"
+      },
+      "losses": {
+        "type": "int"
+      }
+    }
+  },
+  "lichessScore": "{percent} %",
+  "@lichessScore": {
+    "description": "Punkteausbeute in Prozent.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "lichessNoGamesTitle": "Noch keine Partien",
+  "lichessNoGamesMessage": "Importiere deine Partien, um zu sehen, welche Eröffnungen du wirklich spielst.",
+  "lichessNoOpeningsMessage": "Sobald ein paar Partien in derselben Eröffnung zusammenkommen, erscheint hier die Auswertung.",
+  "lichessFailed": "Das hat nicht geklappt: {reason}",
+  "@lichessFailed": {
+    "description": "Fehlermeldung bei Anmeldung oder Import.",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "lichessScopeHint": "MasterOpening liest nur dein Profil und deine Partien. Es spielt nichts und ändert nichts an deinem Konto.",
 
   "settingsSectionAppearance": "Darstellung",
   "settingsSectionTraining": "Training",

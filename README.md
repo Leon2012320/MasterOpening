@@ -66,6 +66,21 @@ und die geteilten Widgets; `lib/chess/` kapselt Schachlogik und PGN;
 `lib/features/<feature>/` enthält je Feature `data/`, `domain/` und
 `presentation/`.
 
+## Lichess-Anbindung
+
+Die Anmeldung läuft über OAuth 2.0 mit PKCE (S256) — ohne Client-Geheimnis, weil
+eine mobile App keines bewahren kann. Die Rückleitung geht an
+`masteropening://oauth/lichess`; das passende Intent-Filter steht im
+`AndroidManifest.xml`. Angefordert werden nur `preference:read` und `study:read`:
+lesender Zugriff, kein Spielen, keine Änderung am Konto.
+
+Das Zugriffstoken liegt im Keystore beziehungsweise Keychain
+(`flutter_secure_storage`), das Profil als JSON in der Datenbank — damit der Tab
+auch ohne Netz etwas anzeigt. Partien kommen als NDJSON-Strom herein und werden
+laufend verbucht; der Import merkt sich den Zeitpunkt der jüngsten Partie und
+holt beim nächsten Mal nur das, was seitdem dazugekommen ist. Er ist idempotent,
+eine doppelt gelieferte Partie bleibt eine Zeile.
+
 ## Lizenzhinweise
 
 Die Eröffnungsbibliothek wird aus der frei lizenzierten Lichess-Masters-Datenbank

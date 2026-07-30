@@ -5,6 +5,7 @@ import 'package:drift/drift.dart';
 import 'package:drift_flutter/drift_flutter.dart';
 import 'package:masteropening/core/db/daos/activity_dao.dart';
 import 'package:masteropening/core/db/daos/key_value_dao.dart';
+import 'package:masteropening/core/db/daos/lichess_dao.dart';
 import 'package:masteropening/core/db/daos/progress_dao.dart';
 import 'package:masteropening/core/db/daos/repertoire_dao.dart';
 import 'package:masteropening/core/db/daos/training_dao.dart';
@@ -34,6 +35,7 @@ part 'app_database.g.dart';
     ActivityDao,
     KeyValueDao,
     TrainingDao,
+    LichessDao,
   ],
 )
 class AppDatabase extends _$AppDatabase {

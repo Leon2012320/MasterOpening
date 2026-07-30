@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lichess-Anbindung und Bibliotheksdaten. Der Debug-Build ergänzt die
+         Berechtigung ohnehin, der Release-Build nicht — sie gehört hierher. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:label="MasterOpening"
         android:name="${applicationName}"
@@ -25,6 +29,19 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Nimmt die OAuth-Rückleitung von Lichess entgegen:
+             masteropening://oauth/lichess -->
+        <activity
+            android:name="com.linusu.flutter_web_auth_2.CallbackActivity"
+            android:exported="true">
+            <intent-filter android:label="flutter_web_auth_2">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="masteropening"/>
+            </intent-filter>
+        </activity>
+
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
