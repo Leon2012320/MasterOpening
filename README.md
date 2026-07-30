@@ -81,6 +81,19 @@ laufend verbucht; der Import merkt sich den Zeitpunkt der jüngsten Partie und
 holt beim nächsten Mal nur das, was seitdem dazugekommen ist. Er ist idempotent,
 eine doppelt gelieferte Partie bleibt eine Zeile.
 
+## Cloud-Sync
+
+Der Abgleich ist optional und standardmäßig aus. Die Serveradresse steht beim
+Bauen fest:
+
+```bash
+flutter build apk --dart-define=API_BASE_URL=https://api.example.org
+```
+
+Ohne diesen Wert bietet die App keinen Abgleich an — ein Knopf, der nur
+scheitern kann, wäre schlimmer als keiner. Details zum Protokoll stehen in
+[`backend/README.md`](backend/README.md).
+
 ## Lizenzhinweise
 
 Die Eröffnungsbibliothek wird aus der frei lizenzierten Lichess-Masters-Datenbank
