@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:masteropening/core/db/enums.dart';
 import 'package:masteropening/core/router/app_routes.dart';
 import 'package:masteropening/core/router/app_shell.dart';
 import 'package:masteropening/features/home/presentation/home_screen.dart';
@@ -11,6 +12,7 @@ import 'package:masteropening/features/lichess/presentation/lichess_screen.dart'
 import 'package:masteropening/features/repertoire/presentation/import_pgn_screen.dart';
 import 'package:masteropening/features/repertoire/presentation/repertoire_edit_screen.dart';
 import 'package:masteropening/features/settings/presentation/settings_screen.dart';
+import 'package:masteropening/features/training/presentation/training_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 
@@ -42,6 +44,19 @@ final routerProvider = Provider<GoRouter>((ref) {
                       final id = int.tryParse(state.pathParameters['id'] ?? '');
                       if (id == null) return const _RouteErrorScreen();
                       return RepertoireEditScreen(repertoireId: id);
+                    },
+                  ),
+                  GoRoute(
+                    path: 'repertoire/:id/train',
+                    name: Routes.trainingSetupName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) {
+                      final id = int.tryParse(state.pathParameters['id'] ?? '');
+                      if (id == null) return const _RouteErrorScreen();
+                      return TrainingScreen(
+                        mode: TrainingMode.smart,
+                        repertoireId: id,
+                      );
                     },
                   ),
                   GoRoute(

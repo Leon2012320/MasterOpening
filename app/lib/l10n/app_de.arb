@@ -135,6 +135,85 @@
   "treeEditComment": "Kommentar",
   "treeEditCommentHint": "Notiz zu diesem Zug",
 
+  "trainingTitle": "Training",
+  "trainingYourMove": "Du bist am Zug",
+  "trainingCorrect": "Richtig",
+  "trainingWrong": "Richtig wäre {san} gewesen",
+  "@trainingWrong": {
+    "description": "Rückmeldung nach einem falschen Zug.",
+    "placeholders": {
+      "san": {
+        "type": "String"
+      }
+    }
+  },
+  "trainingTimeUp": "Zeit abgelaufen — richtig wäre {san}",
+  "@trainingTimeUp": {
+    "description": "Rückmeldung im Blitz-Modus, wenn nichts gezogen wurde.",
+    "placeholders": {
+      "san": {
+        "type": "String"
+      }
+    }
+  },
+  "trainingLineDone": "Variante geschafft",
+  "trainingNextLine": "Nächste Variante",
+  "trainingLineOf": "Variante {current} von {total}",
+  "@trainingLineOf": {
+    "description": "Fortschritt über die Einheit.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trainingNothingDueTitle": "Nichts zu üben",
+  "trainingNothingDueMessage": "Dieses Repertoire hat noch keine Züge, die du trainieren könntest. Ergänze zuerst ein paar Varianten.",
+  "trainingAbort": "Training beenden",
+  "trainingAbortConfirm": "Die Einheit jetzt beenden? Was du bisher gespielt hast, wird gewertet.",
+
+  "reportTitle": "Geschafft",
+  "reportAccuracy": "Genauigkeit",
+  "reportLearned": "Gelernt",
+  "reportMastered": "Gemeistert",
+  "reportMoves": "{correct} von {total} Zügen richtig",
+  "@reportMoves": {
+    "description": "Zeile unter der Genauigkeit im Report.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "reportXp": "+{xp} XP",
+  "@reportXp": {
+    "description": "Erfahrungspunkte im Report.",
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "reportDuration": "{minutes} Min.",
+  "@reportDuration": {
+    "description": "Dauer der Einheit im Report.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "reportWeakest": "Da hakt es noch",
+  "reportAllPerfect": "Kein einziger Fehler — sauber gespielt.",
+  "reportAgain": "Noch eine Runde",
+  "reportDone": "Fertig",
+
   "libraryTitle": "Bibliothek",
   "librarySearchHint": "Eröffnung oder ECO-Code",
   "libraryFilterWhite": "Weiß",

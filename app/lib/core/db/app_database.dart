@@ -7,6 +7,7 @@ import 'package:masteropening/core/db/daos/activity_dao.dart';
 import 'package:masteropening/core/db/daos/key_value_dao.dart';
 import 'package:masteropening/core/db/daos/progress_dao.dart';
 import 'package:masteropening/core/db/daos/repertoire_dao.dart';
+import 'package:masteropening/core/db/daos/training_dao.dart';
 import 'package:masteropening/core/db/enums.dart';
 import 'package:masteropening/core/db/tables.dart';
 
@@ -27,7 +28,13 @@ part 'app_database.g.dart';
     OpponentScouts,
     KeyValues,
   ],
-  daos: [RepertoireDao, ProgressDao, ActivityDao, KeyValueDao],
+  daos: [
+    RepertoireDao,
+    ProgressDao,
+    ActivityDao,
+    KeyValueDao,
+    TrainingDao,
+  ],
 )
 class AppDatabase extends _$AppDatabase {
   /// Öffnet die Datenbank der laufenden App.

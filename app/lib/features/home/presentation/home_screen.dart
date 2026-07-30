@@ -116,13 +116,9 @@ class HomeScreen extends ConsumerWidget {
               return ScreenPadding(
                 child: RepertoireCard(
                   overview: overview,
-                  // Der Trainingsablauf kommt in der nächsten Stufe; bis
-                  // dahin sagt der Knopf das offen, statt ins Leere zu führen.
-                  onTrain: () => ScaffoldMessenger.of(context)
-                    ..clearSnackBars()
-                    ..showSnackBar(
-                      SnackBar(content: Text(l10n.commonComingSoon)),
-                    ),
+                  onTrain: () => unawaited(
+                    context.push(Routes.trainingSetup(overview.id)),
+                  ),
                   onLearn: () =>
                       context.push(Routes.repertoireLearn(overview.id)),
                   onEdit: () =>
