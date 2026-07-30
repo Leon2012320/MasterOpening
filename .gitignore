@@ -110,3 +110,6 @@ desktop.ini
 
 # Claude Code local state
 .claude/settings.local.json
+
+# Die urspruengliche Aufgabenbeschreibung bleibt lokal.
+promt.txt
