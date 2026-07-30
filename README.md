@@ -4,6 +4,8 @@ Ein Schach-Eröffnungstrainer für Android: eigenes Repertoire aufbauen, mit Spa
 Repetition trainieren, echte Partien von Lichess analysieren und die Lücken
 schließen, die im eigenen Repertoire fehlen.
 
+**Projektseite:** <https://leon2012320.github.io/MasterOpening/>
+
 ## Aufbau
 
 ```
