@@ -12,6 +12,7 @@ import 'package:masteropening/core/theme/app_tokens.dart';
 import 'package:masteropening/core/theme/ph_icons.dart';
 import 'package:masteropening/core/utils/greeting.dart';
 import 'package:masteropening/core/widgets/widgets.dart';
+import 'package:masteropening/features/gamification/domain/level_system.dart';
 import 'package:masteropening/features/home/presentation/widgets/repertoire_card.dart';
 import 'package:masteropening/features/repertoire/data/repertoire_providers.dart';
 import 'package:masteropening/features/repertoire/presentation/add_repertoire_sheet.dart';
@@ -57,6 +58,10 @@ class HomeScreen extends ConsumerWidget {
             kicker: DateFormat('EEEE, d. MMMM', locale).format(now),
             trailing: _StreakPill(days: profile?.streakCurrent ?? 0),
           ),
+        ),
+        SliverBox(
+          bottom: AppSpacing.screen,
+          child: _LevelStrip(totalXp: profile?.totalXp ?? 0),
         ),
         SliverBox(
           bottom: AppSpacing.screen,
@@ -251,6 +256,61 @@ class HomeScreen extends ConsumerWidget {
 
     await ref.read(repertoireRepositoryProvider).delete(overview.id);
     messenger.showSnackBar(SnackBar(content: Text(l10n.repertoireDeleted)));
+  }
+}
+
+/// Die Levelleiste im Kopf: Rang, Füllstand und der Weg zur Statistik.
+///
+/// Sie ist die einzige Stelle, an der der Punktestand ständig sichtbar ist —
+/// deshalb hängt hier auch der Einstieg in alles Weitere.
+class _LevelStrip extends StatelessWidget {
+  const _LevelStrip({required this.totalXp});
+
+  final int totalXp;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppL10n.of(context);
+    final tokens = context.tokens;
+    final theme = Theme.of(context);
+    final progress = LevelSystem.progressFor(totalXp);
+
+    return AppCard(
+      onTap: () => unawaited(context.push(Routes.stats)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Text(
+                l10n.homeLevel(progress.level),
+                style: theme.textTheme.titleSmall,
+              ),
+              const Spacer(),
+              Text(
+                progress.isMaxLevel
+                    ? l10n.statsMaxLevel
+                    : l10n.statsXpToNext(
+                        progress.xpRemaining,
+                        progress.level + 1,
+                      ),
+                style: theme.textTheme.labelSmall?.copyWith(
+                  color: tokens.textAlpha(0.5),
+                ),
+              ),
+              const SizedBox(width: AppSpacing.xs),
+              Icon(
+                PhIcons.caretRight,
+                size: 13,
+                color: tokens.textAlpha(0.4),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpacing.md),
+          AppProgressBar(value: progress.fraction),
+        ],
+      ),
+    );
   }
 }
 

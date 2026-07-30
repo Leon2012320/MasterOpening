@@ -33,7 +33,10 @@ abstract final class Routes {
   static const trainingReportName = 'trainingReport';
 
   // ── Statistik & Gamification ──────────────────────────────────────────────
+  static const statsName = 'stats';
   static const stats = '$home/stats';
+
+  static const achievementsName = 'achievements';
   static const achievements = '$home/achievements';
 
   // ── Lichess ───────────────────────────────────────────────────────────────

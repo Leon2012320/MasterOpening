@@ -1,10 +1,16 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:masteropening/chess/san_notation.dart';
 import 'package:masteropening/core/theme/app_dimens.dart';
 import 'package:masteropening/core/theme/app_tokens.dart';
 import 'package:masteropening/core/theme/ph_icons.dart';
 import 'package:masteropening/core/widgets/widgets.dart';
+import 'package:masteropening/features/gamification/data/gamification_providers.dart';
+import 'package:masteropening/features/gamification/data/gamification_repository.dart';
+import 'package:masteropening/features/gamification/presentation/widgets/celebration_overlay.dart';
 import 'package:masteropening/features/training/domain/training_plan.dart';
 import 'package:masteropening/l10n/generated/app_localizations.dart';
 
@@ -13,13 +19,46 @@ import 'package:masteropening/l10n/generated/app_localizations.dart';
 /// Die Genauigkeit zählt in Zügen, nicht in Varianten — eine Variante, in der
 /// nur der letzte Zug danebenging, ist nicht dasselbe wie eine, die von vorn
 /// nicht saß.
-class TrainingReportScreen extends StatelessWidget {
-  const TrainingReportScreen({required this.report, super.key});
+class TrainingReportScreen extends ConsumerStatefulWidget {
+  const TrainingReportScreen({required this.report, this.outcome, super.key});
 
   final TrainingReport report;
 
+  /// Was die Einheit an Punkten, Erfolgen und erledigten Aufgaben eingebracht
+  /// hat. `null`, wenn der Bildschirm ohne Gamification geprüft wird.
+  final GamificationOutcome? outcome;
+
+  @override
+  ConsumerState<TrainingReportScreen> createState() =>
+      _TrainingReportScreenState();
+}
+
+class _TrainingReportScreenState extends ConsumerState<TrainingReportScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Die Feier kommt nach dem Ergebnis, nicht darüber: erst die Zahlen lesen
+    // lassen, dann loben.
+    WidgetsBinding.instance.addPostFrameCallback(
+      (_) => unawaited(_celebrate()),
+    );
+  }
+
+  Future<void> _celebrate() async {
+    final outcome = widget.outcome;
+    if (outcome == null || !outcome.hasSomethingToCelebrate || !mounted) return;
+
+    await showCelebration(context, outcome);
+
+    // Ein einmal gezeigter Erfolg feiert nicht noch einmal.
+    await ref
+        .read(gamificationRepositoryProvider)
+        .markSeen(outcome.unlockedAchievements.map((a) => a.id));
+  }
+
   @override
   Widget build(BuildContext context) {
+    final report = widget.report;
     final l10n = AppL10n.of(context);
     final tokens = context.tokens;
     final theme = Theme.of(context);

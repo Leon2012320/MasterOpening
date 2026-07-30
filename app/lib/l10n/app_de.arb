@@ -234,6 +234,86 @@
   "modeVariation": "Diese Variante",
   "modeVariationHint": "Nur die Variante, die du gerade ansiehst",
   "trapNameLabel": "Falle: {name}",
+
+  "statsTitle": "Statistik",
+  "statsLevel": "Level {level}",
+  "@statsLevel": {
+    "description": "Levelanzeige im Statistik-Bildschirm.",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "statsXpToNext": "noch {xp} XP bis Level {level}",
+  "@statsXpToNext": {
+    "description": "Fortschritt zum nächsten Level.",
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      },
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "statsMaxLevel": "Höchstes Level erreicht",
+  "statsSectionActivity": "Aktivität",
+  "statsSectionAccuracy": "Genauigkeit",
+  "statsSectionChallenges": "Aufgaben",
+  "statsStreakCurrent": "Serie",
+  "statsStreakBest": "Bestwert",
+  "statsFreezes": "Schutztage",
+  "statsStudyTime": "Lernzeit",
+  "statsHours": "{hours} h {minutes} min",
+  "@statsHours": {
+    "description": "Gesamte Lernzeit.",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "statsNoDataTitle": "Noch keine Zahlen",
+  "statsNoDataMessage": "Sobald du die erste Einheit trainiert hast, findest du hier deinen Verlauf.",
+  "statsDaily": "Heute",
+  "statsWeekly": "Diese Woche",
+
+  "achievementsTitle": "Erfolge",
+  "achievementsUnlockedOf": "{unlocked} von {total} freigeschaltet",
+  "@achievementsUnlockedOf": {
+    "description": "Zähler oben im Erfolge-Bildschirm.",
+    "placeholders": {
+      "unlocked": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementCategoryVolume": "Umfang",
+  "achievementCategoryAccuracy": "Genauigkeit",
+  "achievementCategoryStreak": "Serie",
+  "achievementCategoryRepertoire": "Repertoire",
+  "achievementCategoryModes": "Modi",
+  "achievementCategoryLichess": "Lichess",
+  "achievementUnlocked": "Erfolg freigeschaltet",
+  "levelUp": "Level {level} erreicht",
+  "@levelUp": {
+    "description": "Meldung beim Aufstieg.",
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "challengeDone": "Aufgabe erledigt",
+  "celebrationTitle": "Gut gemacht",
+  "celebrationContinue": "Weiter",
   "@trapNameLabel": {
     "description": "Überschrift im Fallen-Modus.",
     "placeholders": {

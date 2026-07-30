@@ -14,6 +14,7 @@ import 'package:masteropening/core/theme/app_tokens.dart';
 import 'package:masteropening/core/theme/ph_icons.dart';
 import 'package:masteropening/core/widgets/chess_board.dart';
 import 'package:masteropening/core/widgets/widgets.dart';
+import 'package:masteropening/features/gamification/data/gamification_providers.dart';
 import 'package:masteropening/features/training/data/training_providers.dart';
 import 'package:masteropening/features/training/domain/training_plan.dart';
 import 'package:masteropening/features/training/domain/training_session.dart';
@@ -235,10 +236,16 @@ class _TrainingRunnerState extends ConsumerState<TrainingRunner> {
         .read(trainingRepositoryProvider)
         .saveSession(session: _session, report: report, now: now);
 
+    // Erst danach: die Belohnungen rechnen mit den eben verbuchten Tageswerten.
+    final outcome = await ref
+        .read(gamificationRepositoryProvider)
+        .applySession(xpFromSession: report.xpEarned, now: now);
+
     if (!mounted) return;
     await navigator.pushReplacement(
       MaterialPageRoute<void>(
-        builder: (context) => TrainingReportScreen(report: report),
+        builder: (context) =>
+            TrainingReportScreen(report: report, outcome: outcome),
       ),
     );
   }

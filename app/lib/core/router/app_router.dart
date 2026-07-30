@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:masteropening/core/router/app_routes.dart';
 import 'package:masteropening/core/router/app_shell.dart';
+import 'package:masteropening/features/gamification/presentation/achievements_screen.dart';
+import 'package:masteropening/features/gamification/presentation/stats_screen.dart';
 import 'package:masteropening/features/home/presentation/home_screen.dart';
 import 'package:masteropening/features/learn/presentation/study_screen.dart';
 import 'package:masteropening/features/library/presentation/library_screen.dart';
@@ -54,6 +56,18 @@ final routerProvider = Provider<GoRouter>((ref) {
                       if (id == null) return const _RouteErrorScreen();
                       return ModePickerScreen(repertoireId: id);
                     },
+                  ),
+                  GoRoute(
+                    path: 'stats',
+                    name: Routes.statsName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const StatsScreen(),
+                  ),
+                  GoRoute(
+                    path: 'achievements',
+                    name: Routes.achievementsName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const AchievementsScreen(),
                   ),
                   GoRoute(
                     path: 'repertoire/:id/learn',
