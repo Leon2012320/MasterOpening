@@ -678,6 +678,54 @@
   "languageGerman": "Deutsch",
   "languageEnglish": "Englisch",
 
+  "settingsDailyReviewLimit": "Wiederholungen pro Tag",
+  "settingsAutoPlay": "Gegnerzüge automatisch",
+  "settingsShowEngineEval": "Engine-Bewertung anzeigen",
+  "settingsBlitzSeconds": "Blitz: Sekunden pro Zug",
+  "settingsEngineElo": "Spielstärke der Engine",
+  "settingsEngineMissing": "Auf diesem Gerät liegt keine Engine bei.",
+
+  "settingsDailyReminder": "Tägliche Erinnerung",
+  "settingsReminderTime": "Uhrzeit",
+  "settingsStreakRisk": "Warnen, wenn die Serie reißt",
+  "settingsRemindersDenied": "Das System lässt keine Benachrichtigungen zu. Du kannst sie in den Systemeinstellungen erlauben.",
+  "reminderDailyTitle": "Zeit für ein paar Züge",
+  "reminderDailyBody": "Deine fälligen Wiederholungen warten.",
+  "reminderStreakTitle": "Deine Serie steht auf dem Spiel",
+  "reminderStreakBody": "Ein paar Minuten reichen, um sie zu halten.",
+
+  "settingsLichessConnected": "Verbunden als {name}",
+  "@settingsLichessConnected": {
+    "description": "Status der Lichess-Anbindung.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLichessDisconnected": "Nicht verbunden",
+  "settingsSyncNever": "Noch nie abgeglichen",
+  "settingsSyncAt": "Zuletzt abgeglichen: {date}",
+  "@settingsSyncAt": {
+    "description": "Zeitpunkt des letzten Abgleichs.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSyncNow": "Jetzt abgleichen",
+  "settingsSyncUnavailable": "Der Abgleich ist in dieser Ausgabe nicht eingerichtet.",
+  "settingsDeleteAccount": "Konto löschen",
+  "settingsDeleteAccountConfirm": "Dein Konto und alle Daten auf dem Server werden gelöscht. Repertoire und Lernstand auf diesem Gerät bleiben. Das lässt sich nicht rückgängig machen.",
+  "settingsDeleteAccountDone": "Konto gelöscht.",
+
+  "settingsExport": "Repertoires als PGN teilen",
+  "settingsExportEmpty": "Es gibt noch kein Repertoire zum Teilen.",
+  "settingsImport": "PGN importieren",
+
+  "settingsPrivacy": "Datenschutz",
+  "settingsLicences": "Lizenzen",
   "settingsVersion": "Version {version}",
   "@settingsVersion": {
     "description": "Fußzeile im Einstellungen-Tab.",

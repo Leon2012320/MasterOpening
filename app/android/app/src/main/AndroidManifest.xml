@@ -3,6 +3,12 @@
          Berechtigung ohnehin, der Release-Build nicht — sie gehört hierher. -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <!-- Lernerinnerungen als lokale Benachrichtigungen. Bewusst ohne
+         SCHEDULE_EXACT_ALARM: eine Erinnerung darf zehn Minuten spaeter
+         kommen, und die genaue Weckfunktion legt Google eng aus. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <application
         android:label="MasterOpening"
         android:name="${applicationName}"
@@ -29,6 +35,20 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Stellt die geplanten Erinnerungen nach einem Neustart wieder her. -->
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+            android:exported="false"/>
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+
         <!-- Nimmt die OAuth-Rückleitung von Lichess entgegen:
              masteropening://oauth/lichess -->
         <activity

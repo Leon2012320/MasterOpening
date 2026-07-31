@@ -289,6 +289,38 @@
   "languageGerman": "German",
   "languageEnglish": "English",
 
+  "settingsDailyReviewLimit": "Reviews per day",
+  "settingsAutoPlay": "Auto-play opponent moves",
+  "settingsShowEngineEval": "Show engine evaluation",
+  "settingsBlitzSeconds": "Blitz: seconds per move",
+  "settingsEngineElo": "Engine strength",
+  "settingsEngineMissing": "This device ships without an engine.",
+
+  "settingsDailyReminder": "Daily reminder",
+  "settingsReminderTime": "Time",
+  "settingsStreakRisk": "Warn when the streak is at risk",
+  "settingsRemindersDenied": "The system does not allow notifications. You can enable them in the system settings.",
+  "reminderDailyTitle": "Time for a few moves",
+  "reminderDailyBody": "Your reviews are waiting.",
+  "reminderStreakTitle": "Your streak is at risk",
+  "reminderStreakBody": "A few minutes are enough to keep it.",
+
+  "settingsLichessConnected": "Connected as {name}",
+  "settingsLichessDisconnected": "Not connected",
+  "settingsSyncNever": "Never synced",
+  "settingsSyncAt": "Last synced: {date}",
+  "settingsSyncNow": "Sync now",
+  "settingsSyncUnavailable": "Sync is not set up in this build.",
+  "settingsDeleteAccount": "Delete account",
+  "settingsDeleteAccountConfirm": "Your account and all server data will be deleted. Repertoire and progress on this device stay. This cannot be undone.",
+  "settingsDeleteAccountDone": "Account deleted.",
+
+  "settingsExport": "Share repertoires as PGN",
+  "settingsExportEmpty": "There is no repertoire to share yet.",
+  "settingsImport": "Import PGN",
+
+  "settingsPrivacy": "Privacy",
+  "settingsLicences": "Licences",
   "settingsVersion": "Version {version}",
 
   "commonCancel": "Cancel",
