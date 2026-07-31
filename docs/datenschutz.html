@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz — MasterOpening</title>
+<meta name="description" content="Was MasterOpening speichert, wohin es geht und wie man es wieder loswird.">
+<style>
+  :root {
+    --bg: #161826; --surface: #232532; --text: #e9e9ed;
+    --accent: #968ae0; --divider: rgba(233,233,237,.16);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #eceefa; --surface: #f9fafe; --text: #23252f;
+      --accent: #5d5294; --divider: rgba(35,37,47,.14);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+  h1, h2 { font-weight: 500; letter-spacing: -.015em; line-height: 1.2; margin: 0 0 12px; }
+  h1 { font-size: 34px; }
+  h2 { font-size: 21px; margin-top: 40px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .lead { opacity: .75; }
+  .updated { font-size: 13px; opacity: .5; margin-top: 40px; }
+  hr {
+    height: 1px; border: 0; margin: 40px 0;
+    background: linear-gradient(to right, transparent, var(--divider) 48px,
+      var(--divider) calc(100% - 48px), transparent);
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  td, th { text-align: left; padding: 8px 0; border-bottom: 1px solid var(--divider); vertical-align: top; }
+  th { font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Datenschutz</h1>
+<p class="lead">
+  MasterOpening ist ein Eröffnungstrainer für Android. Diese Seite beschreibt,
+  welche Daten die App verarbeitet, wo sie liegen und wie man sie wieder
+  loswird. Kurz gefasst: Fast alles bleibt auf dem Gerät, und ohne
+  Lichess-Anmeldung verlässt es das Gerät gar nicht.
+</p>
+
+<hr>
+
+<h2>Was auf dem Gerät bleibt</h2>
+<p>
+  Repertoires, Lernfortschritt, Trainingsverlauf, Punkte und Einstellungen
+  liegen in einer Datenbank auf dem Gerät. Die App funktioniert vollständig
+  ohne Netzverbindung. Diese Daten werden nicht ausgewertet, nicht an Dritte
+  weitergegeben und nicht für Werbung verwendet.
+</p>
+<p>
+  Es gibt keine Werbung, kein Tracking, keine Analyse-Bibliotheken und keine
+  Absturzberichte an Dritte.
+</p>
+
+<h2>Lichess-Anmeldung (freiwillig)</h2>
+<p>
+  Wer sein Lichess-Konto verbindet, meldet sich über das Standardverfahren
+  OAuth 2.0 direkt bei Lichess an. MasterOpening sieht dabei kein Passwort.
+  Angefordert wird ausschließlich Lesezugriff
+  (<code>preference:read</code>, <code>study:read</code>); die App spielt
+  nichts und ändert nichts am Lichess-Konto.
+</p>
+<p>
+  Verarbeitet werden dann: öffentlicher Benutzername, Wertungszahlen und die
+  eigenen Partien. Sie werden auf dem Gerät gespeichert, um auszuwerten,
+  welche Eröffnungen tatsächlich gespielt werden. Das Zugriffstoken liegt im
+  verschlüsselten Schlüsselspeicher des Betriebssystems.
+</p>
+<p>
+  Beim Trennen des Kontos wird das Token bei Lichess zurückgezogen und lokal
+  gelöscht; die importierten Partien werden dabei entfernt.
+</p>
+
+<h2>Gegner ausspähen</h2>
+<p>
+  Wird ein Lichess-Benutzername für die Anti-Vorbereitung eingegeben, ruft die
+  App dessen <em>öffentliche</em> Wertungspartien über die Lichess-API ab und
+  wertet sie auf dem Gerät aus. Es werden dabei keine Daten an MasterOpening
+  oder Dritte übermittelt, und der Betroffene erfährt nichts davon — dieselbe
+  Information ist auf lichess.org für jeden einsehbar.
+</p>
+
+<h2>Cloud-Abgleich (freiwillig, nur wenn eingerichtet)</h2>
+<p>
+  Wer den Abgleich nutzt, überträgt Repertoires, Lernstand und Punktestand an
+  den Server von MasterOpening, damit sie auf einem zweiten Gerät zur
+  Verfügung stehen. Gespeichert werden dort:
+</p>
+<table>
+  <tr><th>Daten</th><th>Zweck</th></tr>
+  <tr><td>Lichess-Kennung und Benutzername</td><td>Konto zuordnen</td></tr>
+  <tr><td>Repertoires (als PGN)</td><td>Abgleich zwischen Geräten</td></tr>
+  <tr><td>Lernstand je Zug</td><td>Abgleich zwischen Geräten</td></tr>
+  <tr><td>Punkte, Level, Serie</td><td>Abgleich zwischen Geräten</td></tr>
+  <tr><td>Geräte-Kennung, Plattform</td><td>Sitzungen verwalten</td></tr>
+</table>
+<p>
+  Das Lichess-Zugriffstoken wird <em>nicht</em> gespeichert; es dient einmalig
+  als Nachweis, dass das Konto wirklich dem Anrufer gehört. Anmeldetoken
+  liegen nur als Hash in der Datenbank.
+</p>
+
+<h2>Löschen</h2>
+<ul>
+  <li><strong>Serverkonto:</strong> Einstellungen → Konto → „Konto löschen“.
+      Alle Daten auf dem Server werden dabei sofort und vollständig entfernt,
+      nicht nur markiert.</li>
+  <li><strong>Alles auf dem Gerät:</strong> Die App deinstallieren oder in den
+      Android-Einstellungen den Speicher der App leeren.</li>
+  <li><strong>Lichess-Zugriff:</strong> lässt sich zusätzlich jederzeit unter
+      <a href="https://lichess.org/account/security">lichess.org</a>
+      widerrufen.</li>
+</ul>
+
+<h2>Berechtigungen</h2>
+<ul>
+  <li><strong>Internet</strong> — nur für die Lichess-Anbindung und den
+      optionalen Abgleich.</li>
+  <li><strong>Benachrichtigungen</strong> — nur für die Lernerinnerungen, und
+      erst, wenn man sie einschaltet.</li>
+</ul>
+
+<h2>Verantwortlich</h2>
+<p>
+  Leonid Potap · <a href="https://github.com/Leon2012320/MasterOpening">Quellcode auf GitHub</a>
+</p>
+<p>
+  Der Quellcode der App und des Servers ist offen einsehbar. Wer prüfen will,
+  ob diese Seite stimmt, kann genau das tun.
+</p>
+
+<p class="updated">Stand: 31. Juli 2026</p>
+
+</div>
+</body>
+</html>

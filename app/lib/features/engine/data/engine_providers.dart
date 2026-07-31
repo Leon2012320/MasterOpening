@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:masteropening/core/settings/settings_controller.dart';
-import 'package:masteropening/features/engine/data/stockfish_transport.dart';
+import 'package:masteropening/features/engine/data/engine_platform.dart';
 import 'package:masteropening/features/engine/domain/engine_service.dart';
 import 'package:masteropening/features/engine/domain/uci.dart';
 

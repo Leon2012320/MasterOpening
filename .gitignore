@@ -113,3 +113,6 @@ desktop.ini
 
 # Die urspruengliche Aufgabenbeschreibung bleibt lokal.
 promt.txt
+
+# Build-Ausgaben der Release-Vorbereitung
+store/screenshots/

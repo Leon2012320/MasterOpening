@@ -1,0 +1,14 @@
+# Kopiere diese Datei nach android/key.properties und trage deine Werte ein.
+# key.properties und die Keystore-Datei sind in .gitignore — ein
+# Upload-Schlüssel im Repo waere der Schluessel zur App.
+#
+# Keystore erzeugen (einmalig, gut aufbewahren — ohne ihn laesst sich kein
+# Update mehr veroeffentlichen):
+#
+#   keytool -genkey -v -keystore upload-keystore.jks \
+#     -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+
+storeFile=../upload-keystore.jks
+storePassword=
+keyAlias=upload
+keyPassword=

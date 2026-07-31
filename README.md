@@ -81,17 +81,41 @@ laufend verbucht; der Import merkt sich den Zeitpunkt der jüngsten Partie und
 holt beim nächsten Mal nur das, was seitdem dazugekommen ist. Er ist idempotent,
 eine doppelt gelieferte Partie bleibt eine Zeile.
 
+## Release-Build
+
+```bash
+cd app
+flutter build appbundle --release
+```
+
+Für die Signierung `android/key.properties.example` nach
+`android/key.properties` kopieren und ausfüllen; ohne die Datei baut der
+Release mit den Debug-Schlüsseln weiter, damit CI und `flutter run --release`
+ohne Geheimnisse funktionieren. Der Keystore gehört **nicht** ins Repo — ohne
+ihn lässt sich später kein Update mehr veröffentlichen.
+
+Das App-Icon und der Startbildschirm werden erzeugt, nicht abgelegt:
+
+```bash
+node tools/make-icons.mjs
+```
+
+Store-Texte, Datensicherheitsangaben und was noch fehlt: `store/README.md`.
+
 ## Engine
 
-Stockfish liegt als native Bibliothek bei und läuft nur auf Android und iOS —
-für Windows und Linux bringt das Paket keine mit. Statt dort abzustürzen
-liefert die App eine Engine, die es nicht gibt: `NoopEngineService` antwortet
-auf jede Frage mit „keine Angabe". Jede Stelle, die eine Bewertung anzeigt,
-muss ohnehin damit umgehen können.
+**Aktuell liegt keine Engine bei.** Das einzige Flutter-Paket mit
+mitgelieferter Stockfish-Bibliothek (`stockfish` 1.8.1) hat einen
+Android-Build aus der Zeit von AGP 3.5 und `jcenter()` und lässt sich mit dem
+heutigen Gradle nicht mehr übersetzen. Eine App, die sich nicht bauen lässt,
+wäre schlechter als eine ohne Engine.
 
-Das UCI-Protokoll selbst spricht `UciEngineService` über einen austauschbaren
-Transport. Dadurch lässt sich prüfen, ob die App richtig mit einer Engine
-redet, ohne eine native Bibliothek zu starten.
+Alles darüber steht bereits: `UciEngineService` spricht das UCI-Protokoll über
+einen austauschbaren Transport und ist geprüft, ohne dass dafür eine native
+Bibliothek startet. `NoopEngineService` antwortet solange auf jede Frage mit
+„keine Angabe" — jede Stelle, die eine Bewertung anzeigt, muss das ohnehin
+können. Sobald ein baubares Paket vorliegt, ist nur der Transport in
+`lib/features/engine/data/engine_platform.dart` zu ersetzen.
 
 ## Cloud-Sync
 

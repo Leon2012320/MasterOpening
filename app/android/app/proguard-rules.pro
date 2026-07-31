@@ -1,15 +1,19 @@
-# Flutter wraps its own engine rules; these cover the plugins we ship.
+# Flutter bringt die Regeln für seine Engine selbst mit; hier steht, was die
+# eingebundenen Plugins brauchen.
 
-# flutter_local_notifications keeps notification payload classes via reflection.
+# flutter_local_notifications hält seine Nutzdaten-Klassen über Reflexion.
 -keep class com.dexterous.** { *; }
 
-# Drift / sqlite3_flutter_libs load the native library by name.
+# Drift und sqlite3_flutter_libs laden die native Bibliothek über ihren Namen.
 -keep class org.sqlite.** { *; }
 
-# Stockfish is reached through FFI; the loader must survive shrinking.
--keep class com.example.stockfish.** { *; }
+# flutter_secure_storage benutzt den Keystore über androidx.security.
+-keep class androidx.security.crypto.** { *; }
 
-# Keep annotation attributes used by json_serializable-generated reflection-free
-# code paths and by the Play Core split-install stubs Flutter references.
+# flutter_web_auth_2 nimmt die OAuth-Rückleitung in einer eigenen Activity an.
+-keep class com.linusu.flutter_web_auth_2.** { *; }
+
+# Anmerkungen bleiben erhalten; Play Core referenziert Flutter, ohne dass wir
+# es einbinden.
 -keepattributes *Annotation*
 -dontwarn com.google.android.play.core.**

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nocturne bg (dunkel). Steht hinter dem Icon und hinter dem
+         Startbildschirm, damit der Übergang in die App nicht blitzt. -->
+    <color name="ic_launcher_background">#161826</color>
+    <color name="splash_background">#161826</color>
+</resources>
