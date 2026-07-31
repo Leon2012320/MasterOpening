@@ -562,6 +562,94 @@
   "repairMistakeTrain": "Gezielt üben",
   "repairNoMistakes": "Im Training ist bisher nichts danebengegangen.",
 
+  "antiPrepTitle": "Gegner ausspähen",
+  "antiPrepAction": "Anti-Vorbereitung",
+  "antiPrepHint": "Gib den Lichess-Namen deines nächsten Gegners ein. MasterOpening liest seine öffentlichen Partien und zeigt dir, was er spielt.",
+  "antiPrepUsername": "Lichess-Benutzername",
+  "antiPrepSearch": "Auswerten",
+  "antiPrepRefresh": "Neu holen",
+  "antiPrepSearching": "Hole Partien …",
+  "antiPrepBasis": "{games} Partien · Stand {date}",
+  "@antiPrepBasis": {
+    "description": "Grundlage des Berichts.",
+    "placeholders": {
+      "games": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "antiPrepAsWhite": "Du hast Weiß",
+  "antiPrepAsBlack": "Du hast Schwarz",
+  "antiPrepSectionLikely": "Damit rechnest du",
+  "antiPrepSectionWeak": "Wo er liegen lässt",
+  "antiPrepSectionUncovered": "Dafür fehlt dir eine Antwort",
+  "antiPrepShare": "{percent} % seiner Partien",
+  "@antiPrepShare": {
+    "description": "Wie oft der Gegner diese Folge spielt.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "antiPrepHisScore": "er holt {percent} %",
+  "@antiPrepHisScore": {
+    "description": "Punkteausbeute des Gegners in dieser Folge.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "antiPrepGames": "{count, plural, =1{1 Partie} other{{count} Partien}}",
+  "@antiPrepGames": {
+    "description": "Anzahl Partien einer Zugfolge.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "antiPrepDrill": "Diese Linie üben",
+  "antiPrepCovered": "vorbereitet",
+  "antiPrepEmptyTitle": "Keine Partien gefunden",
+  "antiPrepEmptyMessage": "Für diesen Namen liegen keine öffentlichen Wertungspartien vor. Vertippt?",
+  "antiPrepNeedsLichess": "Verbinde zuerst dein Lichess-Konto — ohne Zugang lassen sich keine Partien holen.",
+
+  "styleTitle": "Dein Spielstil",
+  "styleAction": "Spielstil-Empfehlung",
+  "styleAxisAggressive": "Angriff",
+  "styleAxisSolid": "Solidität",
+  "styleAxisTactical": "Taktik",
+  "styleAxisPositional": "Strategie",
+  "styleAxisOpen": "Offen",
+  "styleAxisClosed": "Geschlossen",
+  "styleSectionProfile": "Dein Profil",
+  "styleSectionSuggestions": "Das könnte zu dir passen",
+  "styleBasis": "Aus {games} ausgewerteten Partien",
+  "@styleBasis": {
+    "description": "Grundlage der Stilanalyse.",
+    "placeholders": {
+      "games": {
+        "type": "int"
+      }
+    }
+  },
+  "styleNoDataTitle": "Zu wenige Partien",
+  "styleNoDataMessage": "Importiere ein paar Partien, dann lässt sich ablesen, welche Art Stellung dir liegt.",
+  "styleMatch": "{percent} % Übereinstimmung",
+  "@styleMatch": {
+    "description": "Wie gut eine Eröffnung zum Stil passt.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+
   "settingsSectionAppearance": "Darstellung",
   "settingsSectionTraining": "Training",
   "settingsSectionReminders": "Erinnerungen",

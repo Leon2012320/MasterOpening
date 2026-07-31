@@ -42,6 +42,9 @@ abstract final class Routes {
   // ── Lichess ───────────────────────────────────────────────────────────────
   static const lichessGapsName = 'lichessGaps';
   static const lichessGaps = '$lichess/gaps';
+  static const antiPrepName = 'antiPrep';
   static const antiPrep = '$lichess/anti-prep';
+
+  static const styleAdviceName = 'styleAdvice';
   static const styleAdvice = '$lichess/style';
 }

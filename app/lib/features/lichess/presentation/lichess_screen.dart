@@ -34,6 +34,8 @@ class LichessScreen extends ConsumerWidget {
       onImport: controller.importGames,
       onDisconnect: () => _confirmDisconnect(context, ref),
       onRepair: () => context.push(Routes.lichessGaps),
+      onAntiPrep: () => context.push(Routes.antiPrep),
+      onStyle: () => context.push(Routes.styleAdvice),
     );
   }
 
@@ -75,6 +77,8 @@ class LichessView extends StatelessWidget {
     this.onImport,
     this.onDisconnect,
     this.onRepair,
+    this.onAntiPrep,
+    this.onStyle,
   });
 
   final LichessState state;
@@ -85,6 +89,8 @@ class LichessView extends StatelessWidget {
   final Future<void> Function()? onImport;
   final Future<void> Function()? onDisconnect;
   final Future<void> Function()? onRepair;
+  final Future<void> Function()? onAntiPrep;
+  final Future<void> Function()? onStyle;
 
   /// Mehr als das passt nicht auf einen Tab, ohne zur Liste zu werden.
   static const _recentGames = 8;
@@ -165,18 +171,43 @@ class LichessView extends StatelessWidget {
             ),
           ),
 
-          if (games.isNotEmpty)
-            SliverBox(
-              bottom: AppSpacing.xxl,
-              child: AppButton.block(
-                label: l10n.lichessRepairAction,
-                icon: PhIcons.wrench,
-                variant: AppButtonVariant.secondary,
-                onPressed: onRepair == null
-                    ? null
-                    : () => unawaited(onRepair!()),
-              ),
+          SliverBox(
+            bottom: AppSpacing.xxl,
+            child: Column(
+              children: [
+                if (games.isNotEmpty) ...[
+                  AppButton.block(
+                    label: l10n.lichessRepairAction,
+                    icon: PhIcons.wrench,
+                    variant: AppButtonVariant.secondary,
+                    onPressed: onRepair == null
+                        ? null
+                        : () => unawaited(onRepair!()),
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  AppButton.block(
+                    label: l10n.styleAction,
+                    icon: PhIcons.compass,
+                    variant: AppButtonVariant.secondary,
+                    onPressed: onStyle == null
+                        ? null
+                        : () => unawaited(onStyle!()),
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                ],
+                // Ausspähen geht auch ohne eigene Partien — der Bericht
+                // handelt schliesslich vom Gegner.
+                AppButton.block(
+                  label: l10n.antiPrepAction,
+                  icon: PhIcons.crosshair,
+                  variant: AppButtonVariant.secondary,
+                  onPressed: onAntiPrep == null
+                      ? null
+                      : () => unawaited(onAntiPrep!()),
+                ),
+              ],
             ),
+          ),
 
           if (games.isEmpty)
             SliverToBoxAdapter(

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:masteropening/core/router/app_routes.dart';
 import 'package:masteropening/core/router/app_shell.dart';
 import 'package:masteropening/features/analysis/presentation/repair_screen.dart';
+import 'package:masteropening/features/antiprep/presentation/antiprep_screen.dart';
 import 'package:masteropening/features/gamification/presentation/achievements_screen.dart';
 import 'package:masteropening/features/gamification/presentation/stats_screen.dart';
 import 'package:masteropening/features/home/presentation/home_screen.dart';
@@ -14,6 +15,7 @@ import 'package:masteropening/features/lichess/presentation/lichess_screen.dart'
 import 'package:masteropening/features/repertoire/presentation/import_pgn_screen.dart';
 import 'package:masteropening/features/repertoire/presentation/repertoire_edit_screen.dart';
 import 'package:masteropening/features/settings/presentation/settings_screen.dart';
+import 'package:masteropening/features/style/presentation/style_screen.dart';
 import 'package:masteropening/features/training/presentation/mode_picker_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -119,6 +121,18 @@ final routerProvider = Provider<GoRouter>((ref) {
                     name: Routes.lichessGapsName,
                     parentNavigatorKey: _rootNavigatorKey,
                     builder: (context, state) => const RepairScreen(),
+                  ),
+                  GoRoute(
+                    path: 'anti-prep',
+                    name: Routes.antiPrepName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const AntiPrepScreen(),
+                  ),
+                  GoRoute(
+                    path: 'style',
+                    name: Routes.styleAdviceName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const StyleScreen(),
                   ),
                 ],
               ),

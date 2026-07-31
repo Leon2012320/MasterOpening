@@ -81,6 +81,18 @@ laufend verbucht; der Import merkt sich den Zeitpunkt der jüngsten Partie und
 holt beim nächsten Mal nur das, was seitdem dazugekommen ist. Er ist idempotent,
 eine doppelt gelieferte Partie bleibt eine Zeile.
 
+## Engine
+
+Stockfish liegt als native Bibliothek bei und läuft nur auf Android und iOS —
+für Windows und Linux bringt das Paket keine mit. Statt dort abzustürzen
+liefert die App eine Engine, die es nicht gibt: `NoopEngineService` antwortet
+auf jede Frage mit „keine Angabe". Jede Stelle, die eine Bewertung anzeigt,
+muss ohnehin damit umgehen können.
+
+Das UCI-Protokoll selbst spricht `UciEngineService` über einen austauschbaren
+Transport. Dadurch lässt sich prüfen, ob die App richtig mit einer Engine
+redet, ohne eine native Bibliothek zu starten.
+
 ## Cloud-Sync
 
 Der Abgleich ist optional und standardmäßig aus. Die Serveradresse steht beim
