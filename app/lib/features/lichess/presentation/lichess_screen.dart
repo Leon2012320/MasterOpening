@@ -2,7 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:masteropening/core/db/app_database.dart';
+import 'package:masteropening/core/router/app_routes.dart';
 import 'package:masteropening/core/theme/app_dimens.dart';
 import 'package:masteropening/core/theme/app_tokens.dart';
 import 'package:masteropening/core/theme/ph_icons.dart';
@@ -31,6 +33,7 @@ class LichessScreen extends ConsumerWidget {
       onConnect: controller.connect,
       onImport: controller.importGames,
       onDisconnect: () => _confirmDisconnect(context, ref),
+      onRepair: () => context.push(Routes.lichessGaps),
     );
   }
 
@@ -71,6 +74,7 @@ class LichessView extends StatelessWidget {
     this.onConnect,
     this.onImport,
     this.onDisconnect,
+    this.onRepair,
   });
 
   final LichessState state;
@@ -80,6 +84,7 @@ class LichessView extends StatelessWidget {
   final Future<void> Function()? onConnect;
   final Future<void> Function()? onImport;
   final Future<void> Function()? onDisconnect;
+  final Future<void> Function()? onRepair;
 
   /// Mehr als das passt nicht auf einen Tab, ohne zur Liste zu werden.
   static const _recentGames = 8;
@@ -152,13 +157,26 @@ class LichessView extends StatelessWidget {
             ),
 
           SliverBox(
-            bottom: AppSpacing.xxl,
+            bottom: AppSpacing.xl,
             child: _ImportRow(
               state: state,
               storedGames: games.length,
               onImport: onImport,
             ),
           ),
+
+          if (games.isNotEmpty)
+            SliverBox(
+              bottom: AppSpacing.xxl,
+              child: AppButton.block(
+                label: l10n.lichessRepairAction,
+                icon: PhIcons.wrench,
+                variant: AppButtonVariant.secondary,
+                onPressed: onRepair == null
+                    ? null
+                    : () => unawaited(onRepair!()),
+              ),
+            ),
 
           if (games.isEmpty)
             SliverToBoxAdapter(

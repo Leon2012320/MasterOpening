@@ -177,6 +177,29 @@ abstract final class PgnIo {
     return result;
   }
 
+  /// Nur die Hauptvariante einer Partie, als SAN-Züge.
+  ///
+  /// Für den Abgleich mit dem Repertoire: eine gespielte Partie hat keine
+  /// Varianten, und den ganzen Baum dafür aufzubauen wäre Verschwendung.
+  /// Unlesbare Eingaben ergeben eine leere Liste statt einer Ausnahme —
+  /// importierte Partien enthalten gelegentlich Unfug.
+  static List<String> mainlineSan(String pgn) {
+    final PgnGame<PgnNodeData> game;
+    try {
+      game = PgnGame.parsePgn(pgn);
+    } on Object {
+      return const [];
+    }
+
+    final moves = <String>[];
+    var node = game.moves.children.firstOrNull;
+    while (node != null) {
+      moves.add(node.data.san);
+      node = node.children.firstOrNull;
+    }
+    return moves;
+  }
+
   /// PGN erlaubt mehrere Kommentare je Zug; in der App ist es ein Textfeld.
   static String? _joinComments(PgnNodeData data) {
     final parts = <String>[

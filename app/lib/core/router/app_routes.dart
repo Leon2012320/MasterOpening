@@ -40,6 +40,7 @@ abstract final class Routes {
   static const achievements = '$home/achievements';
 
   // ── Lichess ───────────────────────────────────────────────────────────────
+  static const lichessGapsName = 'lichessGaps';
   static const lichessGaps = '$lichess/gaps';
   static const antiPrep = '$lichess/anti-prep';
   static const styleAdvice = '$lichess/style';

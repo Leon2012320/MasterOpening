@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:masteropening/core/router/app_routes.dart';
 import 'package:masteropening/core/router/app_shell.dart';
+import 'package:masteropening/features/analysis/presentation/repair_screen.dart';
 import 'package:masteropening/features/gamification/presentation/achievements_screen.dart';
 import 'package:masteropening/features/gamification/presentation/stats_screen.dart';
 import 'package:masteropening/features/home/presentation/home_screen.dart';
@@ -112,6 +113,14 @@ final routerProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: Routes.lichess,
                 builder: (context, state) => const LichessScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'gaps',
+                    name: Routes.lichessGapsName,
+                    parentNavigatorKey: _rootNavigatorKey,
+                    builder: (context, state) => const RepairScreen(),
+                  ),
+                ],
               ),
             ],
           ),

@@ -481,6 +481,86 @@
     }
   },
   "lichessScopeHint": "MasterOpening liest nur dein Profil und deine Partien. Es spielt nichts und ändert nichts an deinem Konto.",
+  "lichessRepairAction": "Repertoire reparieren",
+
+  "repairTitle": "Repertoire reparieren",
+  "repairAnalyse": "Partien auswerten",
+  "repairAnalysing": "Werte aus …",
+  "repairSummary": "{games} Partien geprüft · {gaps} Lücken · {deviations} eigene Abweichungen",
+  "@repairSummary": {
+    "description": "Ergebnis eines Analyselaufs.",
+    "placeholders": {
+      "games": {
+        "type": "int"
+      },
+      "gaps": {
+        "type": "int"
+      },
+      "deviations": {
+        "type": "int"
+      }
+    }
+  },
+  "repairSectionGaps": "Fehlende Varianten",
+  "repairSectionMistakes": "Häufige Fehler",
+  "repairGapExplain": "Dein Gegner hat hier etwas gespielt, worauf dein Repertoire keine Antwort kennt.",
+  "repairGapOccurrences": "{count, plural, =1{1 Partie} other{{count} Partien}}",
+  "@repairGapOccurrences": {
+    "description": "Wie oft eine Lücke aufgetreten ist.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "repairGapPointsLost": "{points} Punkte verloren",
+  "@repairGapPointsLost": {
+    "description": "Punktverlust durch eine Lücke.",
+    "placeholders": {
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "repairGapAdd": "Ins Repertoire",
+  "repairGapDismiss": "Ausblenden",
+  "repairGapAdded": "„{san}\" steht jetzt im Repertoire. Trag im Editor deine Antwort ein.",
+  "@repairGapAdded": {
+    "description": "Bestätigung nach dem Hinzufügen einer Lücke.",
+    "placeholders": {
+      "san": {
+        "type": "String"
+      }
+    }
+  },
+  "repairGapAddFailed": "Der Zug passt nicht mehr zum Repertoire.",
+  "repairNoGapsTitle": "Keine Lücken gefunden",
+  "repairNoGapsMessage": "Entweder deckt dein Repertoire alles ab, was gespielt wurde — oder es sind noch zu wenige Partien importiert.",
+  "repairNoGamesTitle": "Noch keine Partien",
+  "repairNoGamesMessage": "Importiere im Lichess-Tab deine Partien, dann findet die Auswertung hier die Lücken.",
+  "repairMistakeRate": "{wrong} von {attempts} falsch",
+  "@repairMistakeRate": {
+    "description": "Fehlerquote eines Zuges im Training.",
+    "placeholders": {
+      "wrong": {
+        "type": "int"
+      },
+      "attempts": {
+        "type": "int"
+      }
+    }
+  },
+  "repairMistakeInstead": "meist stattdessen {san}",
+  "@repairMistakeInstead": {
+    "description": "Der häufigste falsche Zug an dieser Stelle.",
+    "placeholders": {
+      "san": {
+        "type": "String"
+      }
+    }
+  },
+  "repairMistakeTrain": "Gezielt üben",
+  "repairNoMistakes": "Im Training ist bisher nichts danebengegangen.",
 
   "settingsSectionAppearance": "Darstellung",
   "settingsSectionTraining": "Training",
